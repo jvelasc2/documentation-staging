@@ -7,11 +7,11 @@
 
     <title>Forking and publishing &#8212; System Level Documentation  documentation</title>
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8e8a900e" />
-    <link rel="stylesheet" type="text/css" href="../_static/app.min.css?v=cad18f0a" />
+    <link rel="stylesheet" type="text/css" href="../_static/app.min.css?v=0ea85bdb" />
     <script src="../_static/documentation_options.js?v=5929fcd5"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
-    <script defer="" src="../_static/app.umd.js?v=dcfbb431"></script>
+    <script defer="" src="../_static/app.umd.js?v=25136f1d"></script>
     <link rel="icon" href="../_static/icon.svg"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -373,6 +373,7 @@ Content on this topic
   <div class="document">
       <div class="documentwrapper">
         <div class="bodywrapper" id="top-anchor">
+          
           <div class="body" role="main">
             
   <section id="forking-and-publishing">
@@ -712,9 +713,36 @@ git repository, in an external server.</p>
 <p>When you do <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">clone/pull</span></code>, by default LFS will also download the binaries
 at the “smudge” step.
 But we <strong>highly</strong> recommend to change this behaviour to fetch the artifacts on
-demand by setting globally <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">lfs</span> <span class="pre">install</span> <span class="pre">--skip-smudge</span></code> or temporally with
-<code class="docutils literal notranslate"><span class="pre">GIT_LFS_SKIP_SMUDGE=1</span></code> environment variable.
+demand by setting globally <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">lfs</span> <span class="pre">install</span> <span class="pre">--skip-smudge</span></code>.
 It is recommended because it saves a lot of bandwidth and (your precious) time.</p>
+<div class="admonition caution">
+<p class="admonition-title">Caution</p>
+<p><code class="docutils literal notranslate"><span class="pre">GIT_LFS_SKIP_SMUDGE=1</span></code> and <code class="docutils literal notranslate"><span class="pre">--skip-smudge</span></code> are not the identical!</p>
+<div class="code-shell"><div><div class="no-select float-left highlight-default notranslate"><div class="highlight"><pre><span></span>$
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Still fetches with either set.</span>
+</pre></div>
+</div>
+<div class="clear-left"></div></div><div><div class="no-select float-left highlight-default notranslate"><div class="highlight"><pre><span></span>$
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>lfs<span class="w"> </span>pull<span class="w"> </span>-I<span class="w"> </span>pointer_file
+</pre></div>
+</div>
+<div class="clear-left"></div></div><div><div class="no-select float-left highlight-default notranslate"><div class="highlight"><pre><span></span>$
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Only still fetches with --skip-smudge, skipped with GIT_LFS_SKIP_SMUDGE=1</span>
+</pre></div>
+</div>
+<div class="clear-left"></div></div><div><div class="no-select float-left highlight-default notranslate"><div class="highlight"><pre><span></span>$
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>lfs<span class="w"> </span>smudge<span class="w"> </span>&lt;<span class="w"> </span>pointer_file<span class="w"> </span>&gt;<span class="w"> </span>/tmp/file.png<span class="sb">``</span>
+</pre></div>
+</div>
+<div class="clear-left"></div></div></div></div>
 <p>In this configuration, you can fetch the artifact:</p>
 <div class="code-shell"><div><div class="no-select float-left highlight-default notranslate"><div class="highlight"><pre><span></span>~/documentation$
 </pre></div>
