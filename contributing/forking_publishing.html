@@ -7,11 +7,8 @@
 
     <title>Forking and publishing &#8212; System Level Documentation  documentation</title>
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8e8a900e" />
-    <link rel="stylesheet" type="text/css" href="../_static/app.min.css?v=0ea85bdb" />
-    <script src="../_static/documentation_options.js?v=5929fcd5"></script>
-    <script src="../_static/doctools.js?v=9bcbadda"></script>
-    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
-    <script defer="" src="../_static/app.umd.js?v=25136f1d"></script>
+    <link rel="stylesheet" type="text/css" href="../_static/app.min.css?v=47649d88" />
+    <script defer="" src="../_static/app.umd.js?v=9e881883"></script>
     <link rel="icon" href="../_static/icon.svg"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -47,8 +44,7 @@
   <div class="search-area">
     <form action="" method="get">
       <input type="text" name="q" aria-labelledby="search-documentation" value="" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" role="search" placeholder="Search"/>
-      <button value="search" class="icon"></button>
-      <span id="search-progress"></span>
+      <button class="icon"></button>
     </form>
   </div>
   
@@ -315,6 +311,7 @@ Content on this topic
 <li class="toctree-l3"><a class="reference internal" href="../solutions/reference-designs/ad-swiot1l-sl/software-guide/index.html">Software User Guide</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../solutions/reference-designs/eval-cn0565-ardz/index.html">EVAL-CN0565-ARDZ</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../solutions/reference-designs/eval-cn0575-rpiz/index.html">EVAL-CN0575-RPIZ</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../solutions/reference-designs/eval-cn0577-fmcz/index.html">EVAL-CN0577-FMCZ</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../solutions/reference-designs/eval-ess1-sys/index.html">EVAL-ESS1-SYS</a></li>
@@ -857,12 +854,10 @@ If you don’t care about this file at the moment, just <code class="docutils li
 <div class="clear-left"></div></div></div></section>
 <section id="pull-request-permission">
 <h3>Pull request permission<a class="headerlink" href="#pull-request-permission" title="Link to this heading"></a></h3>
-<blockquote>
-<div><p>When a user creates a pull request, they temporarily grant write permission
+<p>When a user creates a pull request, they temporarily grant write permission
 for the removal of branches containing commits.
 However, this does not extend to LFS.
 As such, pushing LFS artifacts to their remote will result in:</p>
-</div></blockquote>
 <div class="code-shell"><div><div class="no-select float-left highlight-default notranslate"><div class="highlight"><pre><span></span>$
 </pre></div>
 </div>
@@ -895,7 +890,73 @@ contributor permissions to their repository.</p>
 If the pull request is complex, you can push to a new branch, work on it, and
 once both parties are satisfied, close the original PR without merging, merging
 the branch onto the main remote instead.</p>
-</section>
+<p>But if you <strong>don’t</strong> want to touch any LFS file and are only rebasing, you can temporarily
+disable lfs, work, push, and enable again, for example:</p>
+<div class="code-shell"><div><div class="no-select float-left highlight-default notranslate"><div class="highlight"><pre><span></span>~$
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>lfs<span class="w"> </span>uninstall
+</pre></div>
+</div>
+<div class="clear-left"></div></div><div><div class="no-select highlight-text notranslate"><div class="highlight"><pre><span></span>Hooks for this repository have been removed.
+Global Git LFS configuration has been removed.
+</pre></div>
+</div>
+<div class="clear-left"></div></div><div><div class="no-select float-left highlight-default notranslate"><div class="highlight"><pre><span></span>~$
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Restore any smudged file to its pointer state, to make sure no miss touches</span>
+</pre></div>
+</div>
+<div class="clear-left"></div></div><div><div class="no-select float-left highlight-default notranslate"><div class="highlight"><pre><span></span>~$
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>restore<span class="w"> </span>.
+</pre></div>
+</div>
+<div class="clear-left"></div></div><div><div class="no-select float-left highlight-default notranslate"><div class="highlight"><pre><span></span>~$
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Work, work, work...</span>
+</pre></div>
+</div>
+<div class="clear-left"></div></div><div><div class="no-select float-left highlight-default notranslate"><div class="highlight"><pre><span></span>~$
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>rebase<span class="w"> </span>-i<span class="w"> </span>@~20
+</pre></div>
+</div>
+<div class="clear-left"></div></div><div><div class="no-select float-left highlight-default notranslate"><div class="highlight"><pre><span></span>~$
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Push even to a contributor&#39;s fork with an open PR</span>
+</pre></div>
+</div>
+<div class="clear-left"></div></div><div><div class="no-select float-left highlight-default notranslate"><div class="highlight"><pre><span></span>~$
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>push<span class="w"> </span>contributor<span class="w"> </span>branch-name:branch-name
+</pre></div>
+</div>
+<div class="clear-left"></div></div><div><div class="no-select highlight-text notranslate"><div class="highlight"><pre><span></span>Enumerating objects: 6, done.
+Writing objects: 100% (4/4), 768 bytes | 768.00 KiB/s, done.
+To https://github.com/contributor/documentation.git
+   21s72b2..1b31311  branch-name -&gt; branch-name
+</pre></div>
+</div>
+<div class="clear-left"></div></div><div><div class="no-select float-left highlight-default notranslate"><div class="highlight"><pre><span></span>~$
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Re-install lfs</span>
+</pre></div>
+</div>
+<div class="clear-left"></div></div><div><div class="no-select float-left highlight-default notranslate"><div class="highlight"><pre><span></span>~$
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>lfs<span class="w"> </span>install<span class="w"> </span>--skip-smudge
+</pre></div>
+</div>
+<div class="clear-left"></div></div></div></section>
 </section>
 </section>
 
@@ -910,8 +971,6 @@ the branch onto the main remote instead.</p>
         </div>
       </div>
   </div>
-
-  <div id="vertical-border"></div>
 
   <label id="cancel-area-show-toc" for="input-show-toc"></label>
   <label id="cancel-area-show-localtoc" for="input-show-localtoc"></label>
