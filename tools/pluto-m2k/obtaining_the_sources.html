@@ -4,11 +4,12 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta content="Building the PlutoSDR or M2k Firmware Image involves several components managed in individual source code repositories. However since these components are heavily interrelated the approach taken utilizes Git-Submodules." name="description" />
 
     <title>Obtaining the Build Sources &#8212; System Level Documentation  documentation</title>
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8e8a900e" />
-    <link rel="stylesheet" type="text/css" href="../../_static/app.min.css?v=c218d0f6" />
-    <script defer="" src="../../_static/app.umd.js?v=8984ea49"></script>
+    <link rel="stylesheet" type="text/css" href="../../_static/app.min.css?v=33d8ff8e" />
+    <script async="async" src="../../_static/app.umd.js?v=cd58f2cb"></script>
     <link rel="icon" href="../../_static/icon.svg"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -18,6 +19,9 @@
   
   <meta name="repository" content="documentation">
   <meta name="version" content="">
+  
+    <meta name="page_source_suffix" content=".rst">
+  
   
 
 
@@ -56,7 +60,7 @@
     </div>
     <div id="right">
       <span>
-        <a id="logo-org" href="https://analog.com"></a>
+        <a id="logo-org" href="https://analog.com" aria-label="Analog Devices Inc. landing page"></a>
         <div class="vertical-divider"></div>
         <label id="show-repotoc" for="input-show-repotoc" title="Show/hide docs" tabindex="0">Docs</label>
         <a id="logo" href="../../index.html">
@@ -391,20 +395,20 @@ Content on this topic
 <p>Building the PlutoSDR or M2k Firmware Image involves several components managed
 in individual source code repositories. However since these components are
 heavily interrelated the approach taken utilizes
-<a class="reference external" href="https://git-scm.com/book/en/v2/Git-Tools-Submodules">Git-Submodules</a>.</p>
+<a class="icon link reference external" href="https://git-scm.com/book/en/v2/Git-Tools-Submodules" target="_blank">Git-Submodules</a>.</p>
 <p>Firmware image components (Submodules):</p>
 <ul class="simple">
-<li><p><a class="icon git reference external" href="https://github.com/analogdevicesinc/linux/tree/main/">ADI Linux repository</a></p></li>
-<li><p><a class="icon git reference external" href="https://github.com/analogdevicesinc/hdl/tree/main/">ADI HDL repository</a></p></li>
-<li><p><a class="icon git reference external" href="https://github.com/analogdevicesinc/buildroot/tree/master/">buildroot</a></p></li>
-<li><p><a class="icon git reference external" href="https://github.com/analogdevicesinc/u-boot-xlnx/tree/pluto/">u-boot Bootloader</a></p></li>
+<li><p><a class="icon git reference external" href="https://github.com/analogdevicesinc/linux/tree/main/" target="_blank">ADI Linux repository</a></p></li>
+<li><p><a class="icon git reference external" href="https://github.com/analogdevicesinc/hdl/tree/main/" target="_blank">ADI HDL repository</a></p></li>
+<li><p><a class="icon git reference external" href="https://github.com/analogdevicesinc/buildroot/tree/master/" target="_blank">buildroot</a></p></li>
+<li><p><a class="icon git reference external" href="https://github.com/analogdevicesinc/u-boot-xlnx/tree/pluto/" target="_blank">u-boot Bootloader</a></p></li>
 </ul>
 <p>Submodules allow you to keep a Git repository as a subdirectory of another, the
 main Git repository.</p>
 <p>The main repositories can be found here:</p>
 <ul class="simple">
-<li><p><a class="icon git reference external" href="https://github.com/analogdevicesinc/plutosdr-fw/tree/master/">PlutoSDR-fw</a></p></li>
-<li><p><a class="icon git reference external" href="https://github.com/analogdevicesinc/m2k-fw/tree/master/">M2k-fw</a></p></li>
+<li><p><a class="icon git reference external" href="https://github.com/analogdevicesinc/plutosdr-fw/tree/master/" target="_blank">PlutoSDR-fw</a></p></li>
+<li><p><a class="icon git reference external" href="https://github.com/analogdevicesinc/m2k-fw/tree/master/" target="_blank">M2k-fw</a></p></li>
 </ul>
 <section id="cloning-the-repository">
 <h2>Cloning the repository<a class="headerlink" href="#cloning-the-repository" title="Link to this heading"></a></h2>

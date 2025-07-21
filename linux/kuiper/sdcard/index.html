@@ -4,11 +4,12 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta content="Follow the tutorial below based on your host system: Linux or Windows." name="description" />
 
     <title>SD Card flashing &#8212; System Level Documentation  documentation</title>
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=8e8a900e" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/app.min.css?v=c218d0f6" />
-    <script defer="" src="../../../_static/app.umd.js?v=8984ea49"></script>
+    <link rel="stylesheet" type="text/css" href="../../../_static/app.min.css?v=33d8ff8e" />
+    <script async="async" src="../../../_static/app.umd.js?v=cd58f2cb"></script>
     <link rel="icon" href="../../../_static/icon.svg"/>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
@@ -18,6 +19,9 @@
   
   <meta name="repository" content="documentation">
   <meta name="version" content="">
+  
+    <meta name="page_source_suffix" content=".rst">
+  
   
 
 
@@ -56,7 +60,7 @@
     </div>
     <div id="right">
       <span>
-        <a id="logo-org" href="https://analog.com"></a>
+        <a id="logo-org" href="https://analog.com" aria-label="Analog Devices Inc. landing page"></a>
         <div class="vertical-divider"></div>
         <label id="show-repotoc" for="input-show-repotoc" title="Show/hide docs" tabindex="0">Docs</label>
         <a id="logo" href="../../../index.html">
@@ -495,7 +499,7 @@ md5sum on resulted file:</p>
 <p>This will overwrite your entire SD card completely.
 Backup anything from the card you want to keep.</p>
 </div>
-<p>It is recommended to use <a class="reference external" href="https://www.balena.io/etcher/">Etcher</a> to write to
+<p>It is recommended to use <a class="icon link reference external" href="https://www.balena.io/etcher/" target="_blank">Etcher</a> to write to
 your SD card but other options exist. Only the process for Etcher is covered
 here.</p>
 <p>Insert your target SD card and launch Etcher. With Etcher:</p>
@@ -568,9 +572,9 @@ will be ready to use.</p>
 <p>Since it’s possible that the write process of a disk image can have some issues
 (if the target had a sector marked as bad, dd will not notice, and write on top
 of it), the safest thing to do is to run a
-<a class="reference external" href="https://en.wikipedia.org/wiki/fsck">file system consistency check</a> on things.
+<a class="icon link reference external" href="https://en.wikipedia.org/wiki/fsck" target="_blank">file system consistency check</a> on things.
 If you are unsure of how to use this tool, check the
-<a class="reference external" href="http://linux.die.net/man/8/fsck">man page</a>.</p>
+<a class="icon link reference external" href="http://linux.die.net/man/8/fsck" target="_blank">man page</a>.</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p>Most Linux kernels will need to have a physical eject between the steps
@@ -656,10 +660,10 @@ file location.</p></li>
 <p>This step will decompress the large software image file you downloaded. Ensure
 you have a decompression utility installed on your computer, capable of
 extracting
-<a class="reference external" href="https://en.wikipedia.org/wiki/Zip_(file_format)">.Zip file format</a>
+<a class="icon link reference external" href="https://en.wikipedia.org/wiki/Zip_(file_format)" target="_blank">.Zip file format</a>
 or
-<a class="reference external" href="https://en.wikipedia.org/wiki/Xz">.Xz file format</a> such as
-<a class="reference external" href="http://www.7-zip.org/">7-Zip</a></p>
+<a class="icon link reference external" href="https://en.wikipedia.org/wiki/Xz" target="_blank">.Xz file format</a> such as
+<a class="icon link reference external" href="http://www.7-zip.org/" target="_blank">7-Zip</a></p>
 <ul class="simple">
 <li><p>Extract the software image file to a known location on your computer.</p></li>
 </ul>
@@ -677,7 +681,7 @@ there are plenty of USB connectable SD Card reader devices available.</p>
 <p>This step is used to validate that the image you downloaded. Ensuring that it is
 the version is correct and that the software wasn’t corrupted during download.</p>
 <p>Ensure you have the following application installed on your computer:
-<a class="reference external" href="http://www.winmd5.com/">WinMD5</a>.</p>
+<a class="icon link reference external" href="http://www.winmd5.com/" target="_blank">WinMD5</a>.</p>
 <ol class="arabic simple">
 <li><p>Open up WinMD5 application on your computer.</p></li>
 <li><p>Browse to the extracted file location.</p></li>
@@ -693,7 +697,7 @@ reconfigured.</p>
 <section id="using-sd-card-formatter">
 <h4>Using SD Card Formatter<a class="headerlink" href="#using-sd-card-formatter" title="Link to this heading"></a></h4>
 <p>Ensure you have the following application installed on your computer:
-<a class="reference external" href="https://www.sdcardformatter.com/">SD Card Formatter</a>.</p>
+<a class="icon link reference external" href="https://www.sdcardformatter.com/" target="_blank">SD Card Formatter</a>.</p>
 <p>Open the SD Card Formatter application on your computer, and set the following
 fields:</p>
 <ol class="arabic">
@@ -739,9 +743,9 @@ will be ready for use.</p>
 <p>There are several Windows applications that can flash SD Cards, we will describe
 how to do it using two common tools. Ensure you have at least one of the
 following tools installed on your computer:</p>
-<p><a class="reference external" href="https://sourceforge.net/projects/win32diskimager/files/latest/download?source=navbar">Win32DiskImager from Sourceforge</a>
+<p><a class="icon link reference external" href="https://sourceforge.net/projects/win32diskimager/files/latest/download?source=navbar" target="_blank">Win32DiskImager from Sourceforge</a>
 or
-<a class="reference external" href="https://sourceforge.net/projects/etcher.mirror/">Etcher from Sourceforge</a>.</p>
+<a class="icon link reference external" href="https://sourceforge.net/projects/etcher.mirror/" target="_blank">Etcher from Sourceforge</a>.</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p>If you are unsure, or don’t understand these directions - STOP.

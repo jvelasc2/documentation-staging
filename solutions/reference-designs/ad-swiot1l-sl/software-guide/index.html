@@ -4,11 +4,12 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta content="Development kit: AD-SWIOT1L-SL Software-configurable Analog and Digital I/O with 10BASE-T1L" name="description" />
 
     <title>Software User Guide &#8212; System Level Documentation  documentation</title>
     <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=8e8a900e" />
-    <link rel="stylesheet" type="text/css" href="../../../../_static/app.min.css?v=c218d0f6" />
-    <script defer="" src="../../../../_static/app.umd.js?v=8984ea49"></script>
+    <link rel="stylesheet" type="text/css" href="../../../../_static/app.min.css?v=33d8ff8e" />
+    <script async="async" src="../../../../_static/app.umd.js?v=cd58f2cb"></script>
     <link rel="icon" href="../../../../_static/icon.svg"/>
     <link rel="index" title="Index" href="../../../../genindex.html" />
     <link rel="search" title="Search" href="../../../../search.html" />
@@ -18,6 +19,9 @@
   
   <meta name="repository" content="documentation">
   <meta name="version" content="">
+  
+    <meta name="page_source_suffix" content=".rst">
+  
   
 
 
@@ -56,7 +60,7 @@
     </div>
     <div id="right">
       <span>
-        <a id="logo-org" href="https://analog.com"></a>
+        <a id="logo-org" href="https://analog.com" aria-label="Analog Devices Inc. landing page"></a>
         <div class="vertical-divider"></div>
         <label id="show-repotoc" for="input-show-repotoc" title="Show/hide docs" tabindex="0">Docs</label>
         <a id="logo" href="../../../../index.html">
@@ -397,9 +401,9 @@ Content on this topic
 <section id="required-hardware">
 <h3>Required Hardware<a class="headerlink" href="#required-hardware" title="Link to this heading"></a></h3>
 <ul class="simple">
-<li><p><strong>Development kit</strong>: <a class="icon adi reference external" href="https://www.analog.com/AD-SWIOT1L-SL">AD-SWIOT1L-SL</a> Software-configurable Analog and Digital I/O with 10BASE-T1L</p></li>
+<li><p><strong>Development kit</strong>: <a class="icon adi reference external" href="https://www.analog.com/AD-SWIOT1L-SL" target="_blank">AD-SWIOT1L-SL</a> Software-configurable Analog and Digital I/O with 10BASE-T1L</p></li>
 <li><p><strong>Power supplies</strong>: 24V power supply at minimum 2A</p></li>
-<li><p><strong>Programmer</strong>: <a class="icon adi reference external" href="https://www.analog.com/MAX32625PICO">MAX32625PICO</a> or any other similar programmer supporting the SWD interface</p></li>
+<li><p><strong>Programmer</strong>: <a class="icon adi reference external" href="https://www.analog.com/MAX32625PICO" target="_blank">MAX32625PICO</a> or any other similar programmer supporting the SWD interface</p></li>
 <li><p>Connect the AD-SWIOT1L-SL to the AD-T1LUSB2.0-EBZ using the single pair Ethernet cable.</p></li>
 <li><p>Connect the AD-T1LUSB2.0-EBZ to your PC using an USB cable.</p></li>
 <li><p>Connect the 24 V power supply to the AD-SWIOT1L-SL.</p></li>
@@ -415,7 +419,7 @@ Content on this topic
 <a class="reference internal image-reference" href="../../../../_images/picture3.jpg"><img alt="../../../../_images/picture3.jpg" src="../../../../_images/picture3.jpg" style="width: 600px;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Figure 2 </span><span class="caption-text">Connecting the <a class="icon adi reference external" href="https://www.analog.com/MAX32625PICO">MAX32625PICO</a> Programmer</span><a class="headerlink" href="#id2" title="Link to this image"></a></p>
+<p><span class="caption-number">Figure 2 </span><span class="caption-text">Connecting the <a class="icon adi reference external" href="https://www.analog.com/MAX32625PICO" target="_blank">MAX32625PICO</a> Programmer</span><a class="headerlink" href="#id2" title="Link to this image"></a></p>
 </figcaption>
 </figure>
 </section>
@@ -425,11 +429,11 @@ Content on this topic
 <p>The system is accompanied by an open-source software stack and associated
 collateral, enabling a complete experience from evaluation and prototyping all
 the way to production firmware and applications development.</p>
-<p>The <a class="reference external" href="https://wiki.analog.com/university/tools/m2k/scopy/plugins/swiot1l">Scopy</a> PC application
+<p>The <a class="icon dokuwiki reference external" href="https://wiki.analog.com/university/tools/m2k/scopy/plugins/swiot1l" target="_blank">Scopy</a> PC application
 provides system configuration and data visualization tools to enable easy system
 evaluation from a PC connected to the AD-SWIOT1L-SL via the 10BASE-T1L
 interface.</p>
-<p>The <a class="icon git reference external" href="https://github.com/analogdevicesinc/no-OS/tree/main/projects/swiot1l">AD-SWIOT1L-SL firmware</a> is
+<p>The <a class="icon git reference external" href="https://github.com/analogdevicesinc/no-OS/tree/main/projects/swiot1l" target="_blank">AD-SWIOT1L-SL firmware</a> is
 based on Analog Devices’ open-source no-OS framework, which includes all the
 tools required for embedded code development and debugging as well as libraries
 enabling host-side connectivity for system configuration and data transfer over
@@ -442,14 +446,14 @@ works with the <strong>Scopy</strong> application, allowing complete system eval
 <p>The firmware should be updated only to switch to a newer version or as part of
 the software development process.</p>
 <p><strong>Scopy</strong> will work only with the official
-<a class="icon git reference external" href="https://github.com/analogdevicesinc/no-OS/releases/tag/swiot1l-v0.1">AD-SWIOT1L-SL firmware releases</a></p>
+<a class="icon git reference external" href="https://github.com/analogdevicesinc/no-OS/releases/tag/swiot1l-v0.1" target="_blank">AD-SWIOT1L-SL firmware releases</a></p>
 </div>
 <section id="updating-the-ad-swiot1l-sl-firmware">
 <h3>Updating the AD-SWIOT1L-SL Firmware<a class="headerlink" href="#updating-the-ad-swiot1l-sl-firmware" title="Link to this heading"></a></h3>
 <p>To update the board’s firmware, a new bootloader has to be flashed on the
 MAX32625PICO.</p>
 <ol class="arabic">
-<li><p>Download the firmware image: <a class="reference external" href="https://github.com/MaximIntegrated/max32625pico-firmware-images/raw/master/bin/max32625_max32650fthr_if_crc_swd_v1.0.6.bin">MAX32625PICO firmware</a></p></li>
+<li><p>Download the firmware image: <a class="icon link reference external" href="https://github.com/MaximIntegrated/max32625pico-firmware-images/raw/master/bin/max32625_max32650fthr_if_crc_swd_v1.0.6.bin" target="_blank">MAX32625PICO firmware</a></p></li>
 <li><p>Set the MAX32625PICO in MAINTENANCE mode:</p>
 <ul>
 <li><p>Disconnect the MAX32625PICO from the PC and the AD-SWIOT1L-SL board.</p></li>

@@ -4,11 +4,12 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta content="Development Kits" name="description" />
 
     <title>Using with Raspberry Pi &#8212; System Level Documentation  documentation</title>
     <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=8e8a900e" />
-    <link rel="stylesheet" type="text/css" href="../../../../_static/app.min.css?v=c218d0f6" />
-    <script defer="" src="../../../../_static/app.umd.js?v=8984ea49"></script>
+    <link rel="stylesheet" type="text/css" href="../../../../_static/app.min.css?v=33d8ff8e" />
+    <script async="async" src="../../../../_static/app.umd.js?v=cd58f2cb"></script>
     <link rel="icon" href="../../../../_static/icon.svg"/>
     <link rel="index" title="Index" href="../../../../genindex.html" />
     <link rel="search" title="Search" href="../../../../search.html" />
@@ -18,6 +19,9 @@
   
   <meta name="repository" content="documentation">
   <meta name="version" content="">
+  
+    <meta name="page_source_suffix" content=".rst">
+  
   
 
 
@@ -56,7 +60,7 @@
     </div>
     <div id="right">
       <span>
-        <a id="logo-org" href="https://analog.com"></a>
+        <a id="logo-org" href="https://analog.com" aria-label="Analog Devices Inc. landing page"></a>
         <div class="vertical-divider"></div>
         <label id="show-repotoc" for="input-show-repotoc" title="Show/hide docs" tabindex="0">Docs</label>
         <a id="logo" href="../../../../index.html">
@@ -401,14 +405,14 @@ Content on this topic
 <h2>Required Hardware<a class="headerlink" href="#required-hardware" title="Link to this heading"></a></h2>
 <p><strong>Development Kits</strong></p>
 <ul class="simple">
-<li><p><a class="icon adi reference external" href="https://www.analog.com/en/resources/evaluation-hardware-and-software/evaluation-boards-kits/ad-gmslcamrpi-adp.html">AD-GMSLCAMRPI-ADP# GMSL EV Kit Adapter Board</a></p></li>
-<li><p><a class="icon adi reference external" href="https://www.analog.com/en/products/max96724.html">MAX96724 GMSL Deserializer Evaluation Kit</a></p></li>
-<li><p><a class="icon adi reference external" href="https://www.analog.com/en/products/max96717.html">MAX96717 GMSL Serializer Evaluation Kit</a> or <em>GMSL camera</em></p></li>
-<li><p><a class="reference external" href="https://www.raspberrypi.com/products/raspberry-pi-4-model-b">Raspberry Pi 4 Model B</a> <em>(2GB of RAM or more preferred)</em></p></li>
+<li><p><a class="icon adi reference external" href="https://www.analog.com/en/resources/evaluation-hardware-and-software/evaluation-boards-kits/ad-gmslcamrpi-adp.html" target="_blank">AD-GMSLCAMRPI-ADP# GMSL EV Kit Adapter Board</a></p></li>
+<li><p><a class="icon adi reference external" href="https://www.analog.com/en/products/max96724.html" target="_blank">MAX96724 GMSL Deserializer Evaluation Kit</a></p></li>
+<li><p><a class="icon adi reference external" href="https://www.analog.com/en/products/max96717.html" target="_blank">MAX96717 GMSL Serializer Evaluation Kit</a> or <em>GMSL camera</em></p></li>
+<li><p><a class="icon link reference external" href="https://www.raspberrypi.com/products/raspberry-pi-4-model-b" target="_blank">Raspberry Pi 4 Model B</a> <em>(2GB of RAM or more preferred)</em></p></li>
 </ul>
 <p><strong>Supported Image Sensors &amp; Cameras</strong></p>
 <ul class="simple">
-<li><p><a class="reference external" href="https://www.raspberrypi.com/products/camera-module-v2/">IMX219 Raspberry Pi Camera Module 2</a></p></li>
+<li><p><a class="icon link reference external" href="https://www.raspberrypi.com/products/camera-module-v2/" target="_blank">IMX219 Raspberry Pi Camera Module 2</a></p></li>
 </ul>
 <p><strong>Cables</strong></p>
 <div class="admonition warning">
@@ -416,8 +420,8 @@ Content on this topic
 <p>Do not use the 15-pin ribbon cable included with the Raspberry Pi camera since that is an opposite sided cable.</p>
 </div>
 <ul class="simple">
-<li><p>15-Pin Type A (<strong>same side</strong>) Flexible Ribbon Cable, P/N: MP-FFCA10152003A or <a class="reference external" href="https://www.amazon.com/dp/B07RVD2MZV">similar</a></p></li>
-<li><p>22-Pin Type B (<strong>opposite side</strong>) Flexible Ribbon Cable, P/N: MP-FFCA05222002B or <a class="reference external" href="https://www.amazon.com/dp/B07S1BSPYD">similar</a></p></li>
+<li><p>15-Pin Type A (<strong>same side</strong>) Flexible Ribbon Cable, P/N: MP-FFCA10152003A or <a class="icon link reference external" href="https://www.amazon.com/dp/B07RVD2MZV" target="_blank">similar</a></p></li>
+<li><p>22-Pin Type B (<strong>opposite side</strong>) Flexible Ribbon Cable, P/N: MP-FFCA05222002B or <a class="icon link reference external" href="https://www.amazon.com/dp/B07S1BSPYD" target="_blank">similar</a></p></li>
 <li><p>FAKRA Jack to FAKRA Jack coaxial cable, provided in EV kits</p></li>
 </ul>
 <figure class="align-default" id="id2">
@@ -429,7 +433,7 @@ Content on this topic
 </section>
 <section id="board-modifications">
 <h2>Board Modifications<a class="headerlink" href="#board-modifications" title="Link to this heading"></a></h2>
-<p>Using the procedure to <a class="reference external" href="https://wiki.analog.com/products/gmsl/gui/tools/set_cfg_pin_levels">Set CFG Pin Levels</a>, configure the SerDess
+<p>Using the procedure to <a class="icon dokuwiki reference external" href="https://wiki.analog.com/products/gmsl/gui/tools/set_cfg_pin_levels" target="_blank">Set CFG Pin Levels</a>, configure the SerDess
 pair as follows:</p>
 <div class="table-wrapper docutils container">
 <table class="docutils align-default">
@@ -456,8 +460,8 @@ pair as follows:</p>
 <p>For more information about the default CFG configuration of each evaluation
 board, please visit the respective datasheet documentation:</p>
 <ul class="simple">
-<li><p><a class="icon adi reference external" href="https://www.analog.com/media/en/technical-documentation/data-sheets/max96717ev.pdf">MAX98717EVKIT Data Sheet</a></p></li>
-<li><p><a class="icon adi reference external" href="https://www.analog.com/media/en/technical-documentation/data-sheets/max96724-bak-evk-max96724r-bak-evk.pdf">MAX98724EVKIT Data Sheet</a></p></li>
+<li><p><a class="icon adi reference external" href="https://www.analog.com/media/en/technical-documentation/data-sheets/max96717ev.pdf" target="_blank">MAX98717EVKIT Data Sheet</a></p></li>
+<li><p><a class="icon adi reference external" href="https://www.analog.com/media/en/technical-documentation/data-sheets/max96724-bak-evk-max96724r-bak-evk.pdf" target="_blank">MAX98724EVKIT Data Sheet</a></p></li>
 </ul>
 <p><strong>GMSL Deserializer Evaluation Kit</strong></p>
 <ul>
@@ -709,7 +713,7 @@ evaluation setup.</p>
 <h2>Getting the Software<a class="headerlink" href="#getting-the-software" title="Link to this heading"></a></h2>
 <p>The GMSL Linux kernel drivers, the complete Linux distributions for the
 supported processing platforms, and software user guides can be found on the
-<a class="icon git reference external" href="https://github.com/analogdevicesinc/gmsl/tree/main/">Analog Devices GMSL GitHub repository</a>.</p>
+<a class="icon git reference external" href="https://github.com/analogdevicesinc/gmsl/tree/main/" target="_blank">Analog Devices GMSL GitHub repository</a>.</p>
 </section>
 <section id="tips-for-troubleshooting">
 <h2>Tips for Troubleshooting<a class="headerlink" href="#tips-for-troubleshooting" title="Link to this heading"></a></h2>
@@ -796,7 +800,7 @@ camera setup.</p>
 <aside class="footnote-list brackets">
 <aside class="footnote brackets" id="f1" role="doc-footnote">
 <span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">1</a><span class="fn-bracket">]</span></span>
-<p>More information about these commands found at <a class="reference external" href="https://www.mankier.com/8/i2cdetect">mankier.com/8/i2cdetect</a>.</p>
+<p>More information about these commands found at <a class="icon link reference external" href="https://www.mankier.com/8/i2cdetect" target="_blank">mankier.com/8/i2cdetect</a>.</p>
 </aside>
 </aside>
 </section>

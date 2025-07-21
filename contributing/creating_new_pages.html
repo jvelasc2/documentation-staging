@@ -4,11 +4,12 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta content="The first step on adding new content is to understand the Documentation structure. Then, proceed with Adding content." name="description" />
 
     <title>Creating new pages &#8212; System Level Documentation  documentation</title>
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8e8a900e" />
-    <link rel="stylesheet" type="text/css" href="../_static/app.min.css?v=c218d0f6" />
-    <script defer="" src="../_static/app.umd.js?v=8984ea49"></script>
+    <link rel="stylesheet" type="text/css" href="../_static/app.min.css?v=33d8ff8e" />
+    <script async="async" src="../_static/app.umd.js?v=cd58f2cb"></script>
     <link rel="icon" href="../_static/icon.svg"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -18,6 +19,9 @@
   
   <meta name="repository" content="documentation">
   <meta name="version" content="">
+  
+    <meta name="page_source_suffix" content=".rst">
+  
   
 
 
@@ -56,7 +60,7 @@
     </div>
     <div id="right">
       <span>
-        <a id="logo-org" href="https://analog.com"></a>
+        <a id="logo-org" href="https://analog.com" aria-label="Analog Devices Inc. landing page"></a>
         <div class="vertical-divider"></div>
         <label id="show-repotoc" for="input-show-repotoc" title="Show/hide docs" tabindex="0">Docs</label>
         <a id="logo" href="../index.html">
@@ -390,7 +394,7 @@ Content on this topic
 Then, proceed with <a class="reference internal" href="#creating-new-pages-adding-content"><span class="std std-ref">Adding content</span></a>.</p>
 <section id="documentation-structure">
 <span id="creating-new-pages-documentation-structure"></span><h2>Documentation structure<a class="headerlink" href="#documentation-structure" title="Link to this heading"></a></h2>
-<p><a class="icon git reference external" href="https://github.com/analogdevicesinc/documentation/tree/main/">This</a> repository hosts any type of content that is not
+<p><a class="icon git reference external" href="https://github.com/analogdevicesinc/documentation/tree/main/" target="_blank">This</a> repository hosts any type of content that is not
 version controlled with a particular source code, or in other words,
 “don’t deserve their own repository”.</p>
 <p>Due to this, there are multiple topics,
@@ -401,9 +405,9 @@ to
 <p>As an analogy, if this documentation were a encyclopedia, each topic would be
 a volume.</p>
 <p>To create each “volume”, two
-<a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html#directive-toctree">toctrees</a>
+<a class="icon link reference external" href="https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html#directive-toctree" target="_blank">toctrees</a>
 replicate the structure of the context top level.</p>
-<p>For example, while in <a class="icon git reference external" href="https://github.com/analogdevicesinc/documentation/tree/main/docs/index.rst#L24">docs/index.rst#L24</a>
+<p>For example, while in <a class="icon git reference external" href="https://github.com/analogdevicesinc/documentation/tree/main/docs/index.rst#L24" target="_blank">docs/index.rst#L24</a>
 we have:</p>
 <div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">toctree</span><span class="p">::</span>
    <span class="nc">:caption:</span> Linux Kernel &amp; Software
@@ -413,7 +417,7 @@ we have:</p>
    linux/*/index
 </pre></div>
 </div>
-<p>At the specific context toctree (<a class="icon git reference external" href="https://github.com/analogdevicesinc/documentation/tree/main/docs/linux/index.rst#L9">docs/linux/index.rst#L9</a>)
+<p>At the specific context toctree (<a class="icon git reference external" href="https://github.com/analogdevicesinc/documentation/tree/main/docs/linux/index.rst#L9" target="_blank">docs/linux/index.rst#L9</a>)
 we have:</p>
 <div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">toctree</span><span class="p">::</span>
    <span class="nc">:glob:</span>
@@ -575,28 +579,28 @@ are not “applying” to the documentation.
 Just rebuild the whole doc with <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">clean</span> <span class="pre">html</span></code> if the output is confusing.</p>
 </div>
 <p>Even better than having to run <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">html</span></code> at every edit, you can leverage
-<a class="reference external" href="https://analogdevicesinc.github.io/doctools/cli.html#author-mode" title="(in Doctools vmain)"><span>Why was Author Mode renamed to Serve?</span></a> to have a live-updating instance of the doc,
+<a class="icon link reference external" href="https://analogdevicesinc.github.io/doctools/cli.html#author-mode" target="_blank" title="(in Doctools vmain)"><span>Why was Author Mode renamed to Serve?</span></a> to have a live-updating instance of the doc,
 you just need to save the file and the build will be triggered automatically.</p>
 <section id="adding-images-and-other-binary-files">
 <h3>Adding images and other binary files<a class="headerlink" href="#adding-images-and-other-binary-files" title="Link to this heading"></a></h3>
 <p>As described in <a class="reference internal" href="forking_publishing.html#forking-publishing"><span class="std std-ref">Forking and publishing</span></a>, this repository leverages
-<a class="reference external" href="https://git-lfs.com/">git-lfs</a> to keep clone time low and storage space
+<a class="icon link reference external" href="https://git-lfs.com/" target="_blank">git-lfs</a> to keep clone time low and storage space
 in check.
-It also recommends setting <code class="docutils literal notranslate"><span class="pre">--skip-smudge</span></code> globally and let <a class="reference external" href="https://analogdevicesinc.github.io/doctools/cli.html#serve" title="(in Doctools vmain)"><span>Serve</span></a>
+It also recommends setting <code class="docutils literal notranslate"><span class="pre">--skip-smudge</span></code> globally and let <a class="icon link reference external" href="https://analogdevicesinc.github.io/doctools/cli.html#serve" target="_blank" title="(in Doctools vmain)"><span>Serve</span></a>
 manage them for you.</p>
-<p>When adding images and other binary files, if the extension matches the <a class="icon git reference external" href="https://github.com/analogdevicesinc/documentation/tree/main/.gitattributes">.gitattributes</a>
+<p>When adding images and other binary files, if the extension matches the <a class="icon git reference external" href="https://github.com/analogdevicesinc/documentation/tree/main/.gitattributes" target="_blank">.gitattributes</a>
 file, git lfs will automatically create a symbolic link and upload to the remote with
 <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">lfs</span> <span class="pre">push</span> <span class="pre">public</span> <span class="pre">--all</span></code>.</p>
 <p>Please remember that repository write permission is required for pushing git lfs artifacts,
 so if you are working on a fork, push them to your fork, and a reviewer can fetch and push to public/origin
 accordingly.</p>
-<p>Finally, if you are adding a binary type not in the <a class="icon git reference external" href="https://github.com/analogdevicesinc/documentation/tree/main/.gitattributes">.gitattributes</a> file, please add it
+<p>Finally, if you are adding a binary type not in the <a class="icon git reference external" href="https://github.com/analogdevicesinc/documentation/tree/main/.gitattributes" target="_blank">.gitattributes</a> file, please add it
 to it also, this way we can keep the repository lean and efficient long-term.</p>
 </section>
 <section id="importing-from-dokuwiki">
 <span id="importing-dokuwiki"></span><h3>Importing from DokuWiki<a class="headerlink" href="#importing-from-dokuwiki" title="Link to this heading"></a></h3>
 <p>To import content from dokuwiki, a script is available to help on this task:
-<a class="reference external" href="https://gist.github.com/gastmaier/9d9c8281dc3c8551991a857cdb2692cc">DokuWiki to Sphinx (bash.sh)</a>.</p>
+<a class="icon link reference external" href="https://gist.github.com/gastmaier/9d9c8281dc3c8551991a857cdb2692cc" target="_blank">DokuWiki to Sphinx (bash.sh)</a>.</p>
 <p>It requires you have <code class="docutils literal notranslate"><span class="pre">pandoc</span></code> and <code class="docutils literal notranslate"><span class="pre">sed</span></code> installed:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>pandoc<span class="w"> </span>sed
 </pre></div>
@@ -606,7 +610,7 @@ please review the content carefully.</p>
 <p>For images, ensure to click on the image on <em>wiki.analog.com</em> to ensure you
 download the original and not the compressed image.</p>
 <p>Always prioritize vector images (<em>.svg</em>).</p>
-<p>Finally, content yet not imported, keep/use the <a class="reference external" href="https://analogdevicesinc.github.io/doctools/docs_guidelines/roles.html#role-dokuwiki" title="(in Doctools vmain)"><span>Dokuwiki</span></a>.
+<p>Finally, content yet not imported, keep/use the <a class="icon link reference external" href="https://analogdevicesinc.github.io/doctools/docs_guidelines/roles.html#role-dokuwiki" target="_blank" title="(in Doctools vmain)"><span>Dokuwiki</span></a>.
 And for deprecated content, add the qualifier <code class="docutils literal notranslate"><span class="pre">+deprecated</span></code>, for example:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>:dokuwiki+deprecated:`Old content &lt;resources/old/content&gt;`
 </pre></div>

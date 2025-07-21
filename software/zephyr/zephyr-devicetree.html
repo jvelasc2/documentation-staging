@@ -4,11 +4,12 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta content="Zephyr contains a concept borrowed from Linux called the “Devicetree”, which is a key differentiator between Zephyr and other Real-Time Operating Systems (RTOSes). This page will educate a reader on essential Devicetree concepts as they relate to Zephyr and writing Zephyr drivers.  The device tree basics and format described here is applicable to Linux too!" name="description" />
 
     <title>Intro to Devicetree &#8212; System Level Documentation  documentation</title>
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8e8a900e" />
-    <link rel="stylesheet" type="text/css" href="../../_static/app.min.css?v=c218d0f6" />
-    <script defer="" src="../../_static/app.umd.js?v=8984ea49"></script>
+    <link rel="stylesheet" type="text/css" href="../../_static/app.min.css?v=33d8ff8e" />
+    <script async="async" src="../../_static/app.umd.js?v=cd58f2cb"></script>
     <link rel="icon" href="../../_static/icon.svg"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -18,6 +19,9 @@
   
   <meta name="repository" content="documentation">
   <meta name="version" content="">
+  
+    <meta name="page_source_suffix" content=".rst">
+  
   
 
 
@@ -56,7 +60,7 @@
     </div>
     <div id="right">
       <span>
-        <a id="logo-org" href="https://analog.com"></a>
+        <a id="logo-org" href="https://analog.com" aria-label="Analog Devices Inc. landing page"></a>
         <div class="vertical-divider"></div>
         <label id="show-repotoc" for="input-show-repotoc" title="Show/hide docs" tabindex="0">Docs</label>
         <a id="logo" href="../../index.html">
@@ -587,11 +591,11 @@ This is useful for implementations of vendor-specific hardware, such as
 I2C controller drivers across different microcontroller SDKs. As such,
 questions such as “How do I enable internal pullups for a GPIO?” are
 answered differently for different vendors. The place to look for where
-these properties are defined is the <a class="reference external" href="https://docs.zephyrproject.org/latest/build/dts/api/bindings.html">Zephyr Devicetree Bindings
+these properties are defined is the <a class="icon link reference external" href="https://docs.zephyrproject.org/latest/build/dts/api/bindings.html" target="_blank">Zephyr Devicetree Bindings
 Index</a>.
 Here you can find different vendor-specific properties by looking at the
 vendor’s implementation of particular drivers. For example, the ADI
-Zephyr driver for MAX32xxx GPIO controllers is under “<a class="reference external" href="https://docs.zephyrproject.org/latest/build/dts/api/bindings/gpio/adi%2Cmax32-gpio.html#dtbinding-adi-max32-gpio">adi,
+Zephyr driver for MAX32xxx GPIO controllers is under “<a class="icon link reference external" href="https://docs.zephyrproject.org/latest/build/dts/api/bindings/gpio/adi%2Cmax32-gpio.html#dtbinding-adi-max32-gpio" target="_blank">adi,
 max32-gpio</a>”.</p>
 </section>
 <section id="dts-vs-dtsi-vs-dtoverlay">
@@ -654,7 +658,7 @@ a device tree overlay, or .dtoverlay file.</p>
 <section id="how-can-i-look-at-the-compiled-devicetree">
 <h3>How can I look at the compiled Devicetree?<a class="headerlink" href="#how-can-i-look-at-the-compiled-devicetree" title="Link to this heading"></a></h3>
 <p>A helpful way to view compiled devicetree within a Zephyr project is
-the <a class="reference external" href="https://pypi.org/project/dtsh/">dtsh Python module</a>. This module
+the <a class="icon link reference external" href="https://pypi.org/project/dtsh/" target="_blank">dtsh Python module</a>. This module
 has some small bugs on Windows at the time of writing, but is mostly
 cross-platform, and can be used to analyze the compiled Devicetree in a
 neat, readable format.</p>
@@ -686,9 +690,9 @@ by an API or type “const struct device” (e.g. “const struct device
 </li>
 </ul>
 <p>The code is located here:
-<a class="reference external" href="https://github.com/zephyrproject-rtos/zephyr/blob/main/samples/basic/blinky/src/main.c">https://github.com/zephyrproject-rtos/zephyr/blob/main/samples/basic/blinky/src/main.c</a>
+<a class="icon link reference external" href="https://github.com/zephyrproject-rtos/zephyr/blob/main/samples/basic/blinky/src/main.c" target="_blank">https://github.com/zephyrproject-rtos/zephyr/blob/main/samples/basic/blinky/src/main.c</a>
 and documented here:
-<a class="reference external" href="https://github.com/zephyrproject-rtos/zephyr/blob/main/samples/basic/blinky/README.rst">README.rst</a></p>
+<a class="icon link reference external" href="https://github.com/zephyrproject-rtos/zephyr/blob/main/samples/basic/blinky/README.rst" target="_blank">README.rst</a></p>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cm">/*</span>
 <span class="cm"> * Copyright (c) 2016 Intel Corporation</span>
 <span class="cm"> *</span>
@@ -741,10 +745,10 @@ and documented here:
 <ul class="simple">
 <li><p>If you have to develop or modify Devicetree beyond this level, it’s
 likely you need to read the Devicetree specification:
-<a class="reference external" href="https://www.devicetree.org/">The Devicetree Project</a></p></li>
+<a class="icon link reference external" href="https://www.devicetree.org/" target="_blank">The Devicetree Project</a></p></li>
 <li><p>For Zephyr-specific devicetree APIs, pair the Devicetree spec
 (platform-independent) with the Zephyr Devicetree API Reference:
-<a class="reference external" href="https://docs.zephyrproject.org/latest/build/dts/index.html">Devicetree — Zephyr Project Documentation</a></p></li>
+<a class="icon link reference external" href="https://docs.zephyrproject.org/latest/build/dts/index.html" target="_blank">Devicetree — Zephyr Project Documentation</a></p></li>
 </ul>
 </section>
 </section>

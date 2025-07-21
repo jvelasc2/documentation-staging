@@ -4,11 +4,12 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta content="Libm2k includes bitbang implementations on a variety of protocols." name="description" />
 
     <title>Digital communication &#8212; System Level Documentation  documentation</title>
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8e8a900e" />
-    <link rel="stylesheet" type="text/css" href="../../_static/app.min.css?v=c218d0f6" />
-    <script defer="" src="../../_static/app.umd.js?v=8984ea49"></script>
+    <link rel="stylesheet" type="text/css" href="../../_static/app.min.css?v=33d8ff8e" />
+    <script async="async" src="../../_static/app.umd.js?v=cd58f2cb"></script>
     <link rel="icon" href="../../_static/icon.svg"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -18,6 +19,9 @@
   
   <meta name="repository" content="documentation">
   <meta name="version" content="">
+  
+    <meta name="page_source_suffix" content=".rst">
+  
   
 
 
@@ -56,7 +60,7 @@
     </div>
     <div id="right">
       <span>
-        <a id="logo-org" href="https://analog.com"></a>
+        <a id="logo-org" href="https://analog.com" aria-label="Analog Devices Inc. landing page"></a>
         <div class="vertical-divider"></div>
         <label id="show-repotoc" for="input-show-repotoc" title="Show/hide docs" tabindex="0">Docs</label>
         <a id="logo" href="../../index.html">
@@ -715,11 +719,11 @@ this descriptor every time when a writing/reading operation is performed.</p></l
 </section>
 <section id="libm2k-and-no-os-drivers">
 <h2>Libm2k and no-OS drivers<a class="headerlink" href="#libm2k-and-no-os-drivers" title="Link to this heading"></a></h2>
-<p>Analog Devices offers a variety of <a class="icon git reference external" href="https://github.com/analogdevicesinc/no-OS/tree/main/drivers">No-OS drivers</a>
+<p>Analog Devices offers a variety of <a class="icon git reference external" href="https://github.com/analogdevicesinc/no-OS/tree/main/drivers" target="_blank">No-OS drivers</a>
 for a variety peripherals in a hardware agnostic format.
 These drivers can be interfaced with the libm2k
 in order to use the M2K as a master to configure/use the peripheral.
-Documentation for the drivers available at <a class="reference external" href="https://analogdevicesinc.github.io/no-OS/drivers_doc.html" title="(in no-OS)"><span>no-OS drivers list</span></a>.</p>
+Documentation for the drivers available at <a class="icon link reference external" href="https://analogdevicesinc.github.io/no-OS/drivers_doc.html" target="_blank" title="(in no-OS)"><span>no-OS drivers list</span></a>.</p>
 <p>In order to integrate libm2k with no-OS drivers some standard steps must be
 followed:</p>
 <ul class="simple">
@@ -772,9 +776,9 @@ voltage values, communicating with the chip using SPI.</p>
 </ul>
 </li>
 <li><p>Get all AD5592r drivers from
-<a class="icon git reference external" href="https://github.com/analogdevicesinc/no-OS/tree/main/drivers/adc-dac/ad5592r">drivers/adc-dac/ad5592r</a></p></li>
+<a class="icon git reference external" href="https://github.com/analogdevicesinc/no-OS/tree/main/drivers/adc-dac/ad5592r" target="_blank">drivers/adc-dac/ad5592r</a></p></li>
 <li><p>Get delay header from
-<a class="icon git reference external" href="https://github.com/analogdevicesinc/no-OS/tree/main/include/delay.h">include/delay.h</a></p></li>
+<a class="icon git reference external" href="https://github.com/analogdevicesinc/no-OS/tree/main/include/delay.h" target="_blank">include/delay.h</a></p></li>
 <li><p>Implement mdelay function from delay.h</p></li>
 </ul>
 <div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;delay.h&quot;</span>

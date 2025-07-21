@@ -4,11 +4,12 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta content="For certain applications, it may be necessary to leverage the Kernel, libraries and other tools provided by meta-adi, but bypass the device tree process it generates.  For this type of application, the device tree will be based on the Petalinux Device Tree Generator (DTG).    The most practical use case for this is working with custom hardware, however Petalinux does provide out of the box support for Xilinx development kits." name="description" />
 
     <title>Custom Device Trees with DTG (meta-adi Bypass) &#8212; System Level Documentation  documentation</title>
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=8e8a900e" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/app.min.css?v=c218d0f6" />
-    <script defer="" src="../../../_static/app.umd.js?v=8984ea49"></script>
+    <link rel="stylesheet" type="text/css" href="../../../_static/app.min.css?v=33d8ff8e" />
+    <script async="async" src="../../../_static/app.umd.js?v=cd58f2cb"></script>
     <link rel="icon" href="../../../_static/icon.svg"/>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
@@ -18,6 +19,9 @@
   
   <meta name="repository" content="documentation">
   <meta name="version" content="">
+  
+    <meta name="page_source_suffix" content=".rst">
+  
   
 
 
@@ -56,7 +60,7 @@
     </div>
     <div id="right">
       <span>
-        <a id="logo-org" href="https://analog.com"></a>
+        <a id="logo-org" href="https://analog.com" aria-label="Analog Devices Inc. landing page"></a>
         <div class="vertical-divider"></div>
         <label id="show-repotoc" for="input-show-repotoc" title="Show/hide docs" tabindex="0">Docs</label>
         <a id="logo" href="../../../index.html">
@@ -401,7 +405,7 @@ a custom device tree and Petalinux’s DTG.  There are several features of the
 DTG not covered in this, which may be helpful for your project.  Refer to
 Xilinx/AMD UG1144 - Petalinux Tools Reference Guide, DTG Settings sections
 for more detailed information.</p>
-<p><a class="reference external" href="https://docs.amd.com/r/2023.2-English/ug1144-petalinux-tools-reference-guide/Overview/">UG1144 (docs.amd.com)</a></p>
+<p><a class="icon link reference external" href="https://docs.amd.com/r/2023.2-English/ug1144-petalinux-tools-reference-guide/Overview/" target="_blank">UG1144 (docs.amd.com)</a></p>
 </div>
 <section id="bypass-meta-adi-s-device-trees">
 <h2>1. Bypass meta-adi’s Device trees<a class="headerlink" href="#bypass-meta-adi-s-device-trees" title="Link to this heading"></a></h2>
@@ -447,7 +451,7 @@ prototyping, to reduce the additional work needed to bring the boards up.</p>
 board devices will need to be included by you in your custom device tree.
 The following table (extracted from the UG1144 Reference Guide) shows the
 available EvKits in the Petalinux 2023.2 distribution.  Always refer to
-<a class="reference external" href="https://docs.amd.com/r/2023.2-English/ug1144-petalinux-tools-reference-guide/Overview/">UG1144 (docs.amd.com)</a>
+<a class="icon link reference external" href="https://docs.amd.com/r/2023.2-English/ug1144-petalinux-tools-reference-guide/Overview/" target="_blank">UG1144 (docs.amd.com)</a>
 for the most up to date information.</p>
 <div class="table-wrapper docutils container">
 <table class="docutils align-default">

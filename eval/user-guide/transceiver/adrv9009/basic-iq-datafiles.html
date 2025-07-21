@@ -4,11 +4,12 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta content="DDS Mode - DAC Buffer Output allows loading of Matlab MAT, Binary and ASCII TEXT sample files." name="description" />
 
     <title>Basic IQ Datafiles &#8212; System Level Documentation  documentation</title>
     <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=8e8a900e" />
-    <link rel="stylesheet" type="text/css" href="../../../../_static/app.min.css?v=c218d0f6" />
-    <script defer="" src="../../../../_static/app.umd.js?v=8984ea49"></script>
+    <link rel="stylesheet" type="text/css" href="../../../../_static/app.min.css?v=33d8ff8e" />
+    <script async="async" src="../../../../_static/app.umd.js?v=cd58f2cb"></script>
     <link rel="icon" href="../../../../_static/icon.svg"/>
     <link rel="index" title="Index" href="../../../../genindex.html" />
     <link rel="search" title="Search" href="../../../../search.html" />
@@ -18,6 +19,9 @@
   
   <meta name="repository" content="documentation">
   <meta name="version" content="">
+  
+    <meta name="page_source_suffix" content=".rst">
+  
   
 
 
@@ -56,7 +60,7 @@
     </div>
     <div id="right">
       <span>
-        <a id="logo-org" href="https://analog.com"></a>
+        <a id="logo-org" href="https://analog.com" aria-label="Analog Devices Inc. landing page"></a>
         <div class="vertical-divider"></div>
         <label id="show-repotoc" for="input-show-repotoc" title="Show/hide docs" tabindex="0">Docs</label>
         <a id="logo" href="../../../../index.html">
@@ -427,25 +431,25 @@ determined by the sample rate.</p></td>
 <td><p>MATLAB file</p></td>
 <td><p>7.68MSPS</p></td>
 <td><p>Created via
-<a class="reference external" href="https://wiki.analog.com/resources/tools-software/linux-software/libiio/clients/lte_example">lte_example</a></p></td>
+<a class="icon dokuwiki reference external" href="https://wiki.analog.com/resources/tools-software/linux-software/libiio/clients/lte_example" target="_blank">lte_example</a></p></td>
 </tr>
 <tr class="row-even"><td><p>LTE10.mat</p></td>
 <td><p>MATLAB file</p></td>
 <td><p>15.36MSPS</p></td>
 <td><p>Created via
-<a class="reference external" href="https://wiki.analog.com/resources/tools-software/linux-software/libiio/clients/lte_example">lte_example</a></p></td>
+<a class="icon dokuwiki reference external" href="https://wiki.analog.com/resources/tools-software/linux-software/libiio/clients/lte_example" target="_blank">lte_example</a></p></td>
 </tr>
 <tr class="row-odd"><td><p>LTE15.mat</p></td>
 <td><p>MATLAB file</p></td>
 <td><p>23.04MSPS</p></td>
 <td><p>Created via
-<a class="reference external" href="https://wiki.analog.com/resources/tools-software/linux-software/libiio/clients/lte_example">lte_example</a></p></td>
+<a class="icon dokuwiki reference external" href="https://wiki.analog.com/resources/tools-software/linux-software/libiio/clients/lte_example" target="_blank">lte_example</a></p></td>
 </tr>
 <tr class="row-even"><td><p>LTE20.mat</p></td>
 <td><p>MATLAB file</p></td>
 <td><p>30.72MSPS</p></td>
 <td><p>Created via
-<a class="reference external" href="https://wiki.analog.com/resources/tools-software/linux-software/libiio/clients/lte_example">lte_example</a></p></td>
+<a class="icon dokuwiki reference external" href="https://wiki.analog.com/resources/tools-software/linux-software/libiio/clients/lte_example" target="_blank">lte_example</a></p></td>
 </tr>
 <tr class="row-odd"><td><p>sinewave_0.3.mat</p></td>
 <td><p>MATLAB file</p></td>
@@ -498,7 +502,7 @@ channel 1 and 2.</p></td>
 receiver design. (this would include root raised cosine decimator,
 equalization, frequency compenstation, retiming, etc. and is best looked at
 by a MathWorks example
-<a class="reference external" href="https://www.mathworks.com/help/comm/examples/hdl-optimized-qpsk-receiver-with-captured-data.html">here</a>.
+<a class="icon link reference external" href="https://www.mathworks.com/help/comm/examples/hdl-optimized-qpsk-receiver-with-captured-data.html" target="_blank">here</a>.
 Since there is no default receiver in the default HDL design that ADI provides -
 looking at things with the osc application - you will not see good results.
 This is expected, and normal.</p>
@@ -507,9 +511,9 @@ This is expected, and normal.</p>
 <section id="matlab-format">
 <h2>MATLAB format<a class="headerlink" href="#matlab-format" title="Link to this heading"></a></h2>
 <p>The <code class="docutils literal notranslate"><span class="pre">./osc</span></code> application uses the
-<a class="reference external" href="http://sourceforge.net/projects/matio/">MAT File I/O Library</a>
+<a class="icon link reference external" href="http://sourceforge.net/projects/matio/" target="_blank">MAT File I/O Library</a>
 to be able to read
-<a class="reference external" href="https://www.mathworks.com/products/matlab">MATLAB</a> files into the system.</p>
+<a class="icon link reference external" href="https://www.mathworks.com/products/matlab" target="_blank">MATLAB</a> files into the system.</p>
 <p>There are two ways to scale the data:</p>
 <ul class="simple">
 <li><p>less than ±1.0 : ±1.0 will be assumed as full scale, so something that is
@@ -524,7 +528,7 @@ assumed to be full scale.</p></li>
 (imaginary)</p></li>
 </ul>
 <p>Basic examples are checked into the waveforms directory, which can be loaded up
-in <a class="reference external" href="https://www.mathworks.com/products/matlab">MATLAB</a> for further explanation.</p>
+in <a class="icon link reference external" href="https://www.mathworks.com/products/matlab" target="_blank">MATLAB</a> for further explanation.</p>
 </section>
 <section id="binary-format">
 <h2>Binary Format<a class="headerlink" href="#binary-format" title="Link to this heading"></a></h2>

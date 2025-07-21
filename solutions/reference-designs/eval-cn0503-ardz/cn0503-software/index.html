@@ -4,11 +4,12 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta content="The ADuCM3029_demo_cn0503 project provides a solution to get multiple liquid parameters (for example, turbidity, pH, fluorescence, etc.) using the EVAL-CN0503-ARDZ and the EVAL-ADICUP3029. It uses a complete multimodal sensor front end, stimulating up to eight LEDs and measuring the return signal on up to eight separate current inputs using photo-diodes. The board is controlled via a command line interface (CLI), Python scripts that provide high level functions or a Python GUI that communicates with the firmware via serial terminal." name="description" />
 
     <title>Software User Guide &#8212; System Level Documentation  documentation</title>
     <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=8e8a900e" />
-    <link rel="stylesheet" type="text/css" href="../../../../_static/app.min.css?v=c218d0f6" />
-    <script defer="" src="../../../../_static/app.umd.js?v=8984ea49"></script>
+    <link rel="stylesheet" type="text/css" href="../../../../_static/app.min.css?v=33d8ff8e" />
+    <script async="async" src="../../../../_static/app.umd.js?v=cd58f2cb"></script>
     <link rel="icon" href="../../../../_static/icon.svg"/>
     <link rel="index" title="Index" href="../../../../genindex.html" />
     <link rel="search" title="Search" href="../../../../search.html" />
@@ -18,6 +19,9 @@
   
   <meta name="repository" content="documentation">
   <meta name="version" content="">
+  
+    <meta name="page_source_suffix" content=".rst">
+  
   
 
 
@@ -56,7 +60,7 @@
     </div>
     <div id="right">
       <span>
-        <a id="logo-org" href="https://analog.com"></a>
+        <a id="logo-org" href="https://analog.com" aria-label="Analog Devices Inc. landing page"></a>
         <div class="vertical-divider"></div>
         <label id="show-repotoc" for="input-show-repotoc" title="Show/hide docs" tabindex="0">Docs</label>
         <a id="logo" href="../../../../index.html">
@@ -412,7 +416,7 @@ via <strong>serial terminal</strong>.</p>
 <h2>General Description<a class="headerlink" href="#general-description" title="Link to this heading"></a></h2>
 <p>The <strong>ADuCM_demo_cn0503</strong> project uses <strong>EVAL-CN0503-ARDZ</strong> to provide a method
 to determine properties of liquids, for example, turbidity, fluorescence, and pH.
-To do this, the application must configure the <a class="icon adi reference external" href="https://www.analog.com/ADPD4101">ADPD4101</a>
+To do this, the application must configure the <a class="icon adi reference external" href="https://www.analog.com/ADPD4101" target="_blank">ADPD4101</a>
 sensor, read the data from it and perform calculations on the data to improve
 <strong>SNR</strong> and pre-process it to units as close to the desired measurement as
 possible.</p>
@@ -447,8 +451,8 @@ platform.</p>
 <p><strong>Hardware</strong></p>
 <blockquote>
 <div><ul class="simple">
-<li><p><a class="icon adi reference external" href="https://www.analog.com/EVAL-ADICUP3029">EVAL-ADICUP3029</a></p></li>
-<li><p><a class="icon adi reference external" href="https://www.analog.com/EVAL-CN0503-ARDZ">EVAL-CN0503-ARDZ</a></p></li>
+<li><p><a class="icon adi reference external" href="https://www.analog.com/EVAL-ADICUP3029" target="_blank">EVAL-ADICUP3029</a></p></li>
+<li><p><a class="icon adi reference external" href="https://www.analog.com/EVAL-CN0503-ARDZ" target="_blank">EVAL-CN0503-ARDZ</a></p></li>
 <li><p>Micro USB to USB cable</p></li>
 <li><p>PC or Laptop with a USB port</p></li>
 <li><p>3D printed mechanical fixtures described in the <a class="reference internal" href="../index.html#eval-cn0503-ardz"><span class="std std-ref">Hardware User Guide</span></a></p></li>
@@ -457,10 +461,10 @@ platform.</p>
 <p><strong>Software</strong></p>
 <blockquote>
 <div><ul class="simple">
-<li><p><a class="icon git reference external" href="https://github.com/analogdevicesinc/repo/tree/https///github.com/analogdevicesinc/EVAL-ADICUP3029/tree/master/projects/ADuCM3029_demo_cn0503">AduCM3029_demo_cn0503 demo application</a></p></li>
-<li><p><a class="icon adi reference external" href="https://www.analog.com//resources/evaluation-hardware-and-software/embedded-development-software/adswt-cces.html">CrossCore Embedded Studio (2.8.0 or higher)</a></p></li>
-<li><p><a class="reference external" href="https://www.keil.arm.com/packs/aducm302x_dfp-analogdevices/boards/">ADuCM302x DFP (3.2.0 or higher)</a></p></li>
-<li><p><a class="reference external" href="https://wiki.analog.com/resources/eval/user-guides/eval-adicup3029/software/adicup3029">ADICUP3029 BSP (1.1.0 or higher)</a></p></li>
+<li><p><a class="icon git reference external" href="https://github.com/analogdevicesinc/repo/tree/https///github.com/analogdevicesinc/EVAL-ADICUP3029/tree/master/projects/ADuCM3029_demo_cn0503" target="_blank">AduCM3029_demo_cn0503 demo application</a></p></li>
+<li><p><a class="icon adi reference external" href="https://www.analog.com//resources/evaluation-hardware-and-software/embedded-development-software/adswt-cces.html" target="_blank">CrossCore Embedded Studio (2.8.0 or higher)</a></p></li>
+<li><p><a class="icon link reference external" href="https://www.keil.arm.com/packs/aducm302x_dfp-analogdevices/boards/" target="_blank">ADuCM302x DFP (3.2.0 or higher)</a></p></li>
+<li><p><a class="icon dokuwiki reference external" href="https://wiki.analog.com/resources/eval/user-guides/eval-adicup3029/software/adicup3029" target="_blank">ADICUP3029 BSP (1.1.0 or higher)</a></p></li>
 <li><p>Serial Terminal Program such as Putty or Tera Term</p></li>
 </ul>
 </div></blockquote>
@@ -496,9 +500,9 @@ or 25-pin serial port). There are many open-source applications, and while there
 are many choices, typically we use one of the following:</p>
 <blockquote>
 <div><ul class="simple">
-<li><p><a class="reference external" href="https://ttssh2.osdn.jp/index.html.en">Tera Term</a></p></li>
-<li><p><a class="reference external" href="https://www.putty.org/">Putty</a></p></li>
-<li><p><a class="reference external" href="https://realterm.sourceforge.io/">Real Term</a></p></li>
+<li><p><a class="icon link reference external" href="https://ttssh2.osdn.jp/index.html.en" target="_blank">Tera Term</a></p></li>
+<li><p><a class="icon link reference external" href="https://www.putty.org/" target="_blank">Putty</a></p></li>
+<li><p><a class="icon link reference external" href="https://realterm.sourceforge.io/" target="_blank">Real Term</a></p></li>
 </ul>
 </div></blockquote>
 <p>Before continuing, please make sure you download and install one of the above
@@ -999,28 +1003,28 @@ and will require you to download the CrossCore toolchain.</p>
 <div class="admonition-download admonition">
 <p class="admonition-title">Download</p>
 <p>Prebuilt CN0503 Hex File :
-<a class="icon git reference external" href="https://github.com/analogdevicesinc/repo/tree/https///github.com/analogdevicesinc/EVAL-ADICUP3029/releases/download/Latest/ADuCM3029_demo_cn0503.hex">AduCM3029_demo_cn0503.hex</a></p>
+<a class="icon git reference external" href="https://github.com/analogdevicesinc/repo/tree/https///github.com/analogdevicesinc/EVAL-ADICUP3029/releases/download/Latest/ADuCM3029_demo_cn0503.hex" target="_blank">AduCM3029_demo_cn0503.hex</a></p>
 <p>Complete CN0503 Source Files :
-<a class="icon git reference external" href="https://github.com/analogdevicesinc/repo/tree/https///github.com/analogdevicesinc/EVAL-ADICUP3029/tree/master/projects/ADuCM3029_demo_cn0503">AduCM3029_demo_cn0503 Source Code</a></p>
+<a class="icon git reference external" href="https://github.com/analogdevicesinc/repo/tree/https///github.com/analogdevicesinc/EVAL-ADICUP3029/tree/master/projects/ADuCM3029_demo_cn0503" target="_blank">AduCM3029_demo_cn0503 Source Code</a></p>
 </div>
 </section>
 <section id="how-to-use-the-tools">
 <h2>How to Use the Tools<a class="headerlink" href="#how-to-use-the-tools" title="Link to this heading"></a></h2>
 <p>The official tool we promote for use with the EVAL-ADICUP3029 is CrossCore
 Embedded Studio. For more information on downloading the tools and a quick start
-guide on how to use the tool basics, please check out the <a class="reference external" href="https://wiki.analog.com/resources/eval/user-guides/eval-adicup3029/tools">Tools Overview page</a>.</p>
+guide on how to use the tool basics, please check out the <a class="icon dokuwiki reference external" href="https://wiki.analog.com/resources/eval/user-guides/eval-adicup3029/tools" target="_blank">Tools Overview page</a>.</p>
 <section id="importing">
 <h3>Importing<a class="headerlink" href="#importing" title="Link to this heading"></a></h3>
 <p>For more detailed instructions on importing this application/demo example into
 the CrossCore Embedded Studios tools, please view our
-<a class="reference external" href="https://wiki.analog.com/resources/eval/user-guides/eval-adicup3029/tools/cces_user_guide#how_to_import_existing_projects_into_your_workspace">How to import existing projects into your workspace</a>
+<a class="icon dokuwiki reference external" href="https://wiki.analog.com/resources/eval/user-guides/eval-adicup3029/tools/cces_user_guide#how_to_import_existing_projects_into_your_workspace" target="_blank">How to import existing projects into your workspace</a>
 section.</p>
 </section>
 <section id="debugging">
 <h3>Debugging<a class="headerlink" href="#debugging" title="Link to this heading"></a></h3>
 <p>For more detailed instructions on importing this application/demo example into
 the CrossCore Embedded Studios tools, please view our
-<a class="reference external" href="https://wiki.analog.com/resources/eval/user-guides/eval-adicup3029/tools/cces_user_guide#how_to_configure_the_debug_session_for_an_aducm3029_application">How to configure the debug session</a>
+<a class="icon dokuwiki reference external" href="https://wiki.analog.com/resources/eval/user-guides/eval-adicup3029/tools/cces_user_guide#how_to_configure_the_debug_session_for_an_aducm3029_application" target="_blank">How to configure the debug session</a>
 section.</p>
 </section>
 <section id="project-structure">
@@ -1050,8 +1054,8 @@ taking data out of the device and displaying it and for implementing the user
 <h3>Interacting with the CLI<a class="headerlink" href="#interacting-with-the-cli" title="Link to this heading"></a></h3>
 <ol class="arabic simple">
 <li><p>Run commands directly from Putty.</p></li>
-<li><p>Use example scripts from <a class="reference external" href="https://github.com/analogdevicesinc/EVAL-ADICUP3029/tree/master/projects/ADuCM3029_demo_cn0503/scripts">this folder</a>
-and see the <a class="reference external" href="https://github.com/analogdevicesinc/EVAL-ADICUP3029/blob/master/projects/ADuCM3029_demo_cn0503/scripts/README.md">readme file</a>
+<li><p>Use example scripts from <a class="icon link reference external" href="https://github.com/analogdevicesinc/EVAL-ADICUP3029/tree/master/projects/ADuCM3029_demo_cn0503/scripts" target="_blank">this folder</a>
+and see the <a class="icon link reference external" href="https://github.com/analogdevicesinc/EVAL-ADICUP3029/blob/master/projects/ADuCM3029_demo_cn0503/scripts/README.md" target="_blank">readme file</a>
 to learn how to use them.</p></li>
 </ol>
 </section>

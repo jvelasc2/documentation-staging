@@ -4,11 +4,12 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta content="It is recommenced to use the pre-build images, which can be found at PlutoSDR Firmware releases. found at M2k Firmware releases. These are build and tested by Analog Devices, and should work on your PlutoSDR without issues." name="description" />
 
     <title>Building the Firmware Image &#8212; System Level Documentation  documentation</title>
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8e8a900e" />
-    <link rel="stylesheet" type="text/css" href="../../_static/app.min.css?v=c218d0f6" />
-    <script defer="" src="../../_static/app.umd.js?v=8984ea49"></script>
+    <link rel="stylesheet" type="text/css" href="../../_static/app.min.css?v=33d8ff8e" />
+    <script async="async" src="../../_static/app.umd.js?v=cd58f2cb"></script>
     <link rel="icon" href="../../_static/icon.svg"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -18,6 +19,9 @@
   
   <meta name="repository" content="documentation">
   <meta name="version" content="">
+  
+    <meta name="page_source_suffix" content=".rst">
+  
   
 
 
@@ -56,7 +60,7 @@
     </div>
     <div id="right">
       <span>
-        <a id="logo-org" href="https://analog.com"></a>
+        <a id="logo-org" href="https://analog.com" aria-label="Analog Devices Inc. landing page"></a>
         <div class="vertical-divider"></div>
         <label id="show-repotoc" for="input-show-repotoc" title="Show/hide docs" tabindex="0">Docs</label>
         <a id="logo" href="../../index.html">
@@ -412,8 +416,8 @@ Content on this topic
   <section id="building-the-firmware-image">
 <span id="pluto-m2k-building-the-image"></span><h1>Building the Firmware Image<a class="headerlink" href="#building-the-firmware-image" title="Link to this heading"></a></h1>
 <p>It is recommenced to use the pre-build images, which can be
-found at <a class="icon git reference external" href="https://github.com/analogdevicesinc/plutosdr-fw/releases/latest">PlutoSDR Firmware releases</a>.
-found at <a class="icon git reference external" href="https://github.com/analogdevicesinc/m2k-fw/releases/latest">M2k Firmware releases</a>.
+found at <a class="icon git reference external" href="https://github.com/analogdevicesinc/plutosdr-fw/releases/latest" target="_blank">PlutoSDR Firmware releases</a>.
+found at <a class="icon git reference external" href="https://github.com/analogdevicesinc/m2k-fw/releases/latest" target="_blank">M2k Firmware releases</a>.
 These are build and tested by Analog Devices, and should work on your PlutoSDR
 without issues.</p>
 <p>If you want to change functionality, you will need to follow
@@ -444,9 +448,9 @@ sources link above).</p>
 <div class="clear-left"></div></div></div></li>
 </ul>
 </li>
-<li><p>You need <a class="reference external" href="https://www.xilinx.com/support/download.html">Xilinx Vivado Design Suite</a> to
+<li><p>You need <a class="icon link reference external" href="https://www.xilinx.com/support/download.html" target="_blank">Xilinx Vivado Design Suite</a> to
 compile the Verilog into the FPGA bit file.</p></li>
-<li><p>You need <a class="reference external" href="https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav/vitis.html">Xilinx Vivado Vitis</a>
+<li><p>You need <a class="icon link reference external" href="https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav/vitis.html" target="_blank">Xilinx Vivado Vitis</a>
 to compile C code for the ARM inside the AMD Zynq.</p>
 <ul class="simple">
 <li><p>If you are using very old versions of Xilinx tools, you need to make sure
@@ -503,7 +507,7 @@ Firmware Image.</p>
 <p class="admonition-title">Hint</p>
 <p>It is recommended that if you are building in a Virtual Machine
 (which is totally fine), the Base Memory be set to at least 4096 MBytes. The
-AMD Xilinx <a class="reference external" href="https://www.xilinx.com/products/design-tools/vivado/memory.html">Vivado</a> tools
+AMD Xilinx <a class="icon link reference external" href="https://www.xilinx.com/products/design-tools/vivado/memory.html" target="_blank">Vivado</a> tools
 require at least 1.6 Gig of memory when compile for the <code class="docutils literal notranslate"><span class="pre">XC7Z010</span></code>. It has been
 reported that 2048 Mbytes is not enough, and will cause the tools to hang.</p>
 </div>
@@ -542,7 +546,7 @@ to match your Xilinx Vivado and Vitis install folders.</p>
 </pre></div>
 </div>
 <div class="clear-left"></div></div></div><p>The initial build takes some time to complete, and also requires an INTERNET
-connection, since <a class="reference external" href="https://buildroot.org/">buildroot</a> downloads the source
+connection, since <a class="icon link reference external" href="https://buildroot.org/" target="_blank">buildroot</a> downloads the source
 packages from the WEB.</p>
 <div class="admonition hint">
 <p class="admonition-title">Hint</p>
@@ -591,7 +595,7 @@ drwxrwxr-x 6 michael 4,0K Apr 19 17:45 sdk
 <div class="clear-left"></div></div></div></section>
 <section id="testing-on-the-target">
 <h3>Testing on the target<a class="headerlink" href="#testing-on-the-target" title="Link to this heading"></a></h3>
-<p>There is a script in the <a class="icon git reference external" href="https://github.com/analogdevicesinc/plutosdr_scripts/">plutosdr_scripts</a> repo
+<p>There is a script in the <a class="icon git reference external" href="https://github.com/analogdevicesinc/plutosdr_scripts/" target="_blank">plutosdr_scripts</a> repo
 that will quickly download a build artifact (the <code class="docutils literal notranslate"><span class="pre">pluto.dfu</span></code> file) to an USB
 attached PlutoSDR. This will load the image into RAM, and not write to flash,
 enabling easy testing of images. However, since it is loading into RAM, it is
@@ -722,7 +726,7 @@ explained here, for those who are interested.</p>
 </thead>
 <tbody>
 <tr class="row-even"><td><p>PlutoSDR Linux Kernel Config</p></td>
-<td><p><a class="icon git reference external" href="https://github.com/analogdevicesinc/linux/tree/main/arch/arm/configs/zynq_pluto_defconfig">zynq_pluto_defconfig</a></p></td>
+<td><p><a class="icon git reference external" href="https://github.com/analogdevicesinc/linux/tree/main/arch/arm/configs/zynq_pluto_defconfig" target="_blank">zynq_pluto_defconfig</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -824,10 +828,10 @@ and</p>
 </thead>
 <tbody>
 <tr class="row-even"><td><p>PlutoSDR Rev.A Device Tree</p></td>
-<td><p><a class="icon git reference external" href="https://github.com/analogdevicesinc/linux/tree/main/arch/arm/boot/dts/xilinx/zynq-pluto-sdr.dts">zynq-pluto-sdr.dts</a></p></td>
+<td><p><a class="icon git reference external" href="https://github.com/analogdevicesinc/linux/tree/main/arch/arm/boot/dts/xilinx/zynq-pluto-sdr.dts" target="_blank">zynq-pluto-sdr.dts</a></p></td>
 </tr>
 <tr class="row-odd"><td><p>PlutoSDR Rev.B Device Tree</p></td>
-<td><p><a class="icon git reference external" href="https://github.com/analogdevicesinc/linux/tree/main/arch/arm/boot/dts/xilinx/zynq-pluto-sdr-revb.dts">zynq-pluto-sdr-revb.dts</a></p></td>
+<td><p><a class="icon git reference external" href="https://github.com/analogdevicesinc/linux/tree/main/arch/arm/boot/dts/xilinx/zynq-pluto-sdr-revb.dts" target="_blank">zynq-pluto-sdr-revb.dts</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -868,7 +872,7 @@ and</p>
 </thead>
 <tbody>
 <tr class="row-even"><td><p>PlutoSDR Buildroot Config</p></td>
-<td><p><a class="icon git reference external" href="https://github.com/analogdevicesinc/buildroot/tree/master/configs/zynq_pluto_defconfig">zynq_pluto_defconfig</a></p></td>
+<td><p><a class="icon git reference external" href="https://github.com/analogdevicesinc/buildroot/tree/master/configs/zynq_pluto_defconfig" target="_blank">zynq_pluto_defconfig</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -935,7 +939,7 @@ system will use the new file.</p>
 </thead>
 <tbody>
 <tr class="row-even"><td><p>Pluto HDL Project</p></td>
-<td><p><a class="icon git reference external" href="https://github.com/analogdevicesinc/hdl/tree/main/projects/pluto">Files</a></p></td>
+<td><p><a class="icon git reference external" href="https://github.com/analogdevicesinc/hdl/tree/main/projects/pluto" target="_blank">Files</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -970,7 +974,7 @@ system will use the new file.</p>
 </thead>
 <tbody>
 <tr class="row-even"><td><p>Create FSBL TCL script</p></td>
-<td><p><a class="icon git reference external" href="https://github.com/analogdevicesinc/plutosdr-fw/tree/master/scripts/create_fsbl_project.tcl">create_fsbl_project.tcl</a></p></td>
+<td><p><a class="icon git reference external" href="https://github.com/analogdevicesinc/plutosdr-fw/tree/master/scripts/create_fsbl_project.tcl" target="_blank">create_fsbl_project.tcl</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -1005,7 +1009,7 @@ system will use the new file.</p>
 </thead>
 <tbody>
 <tr class="row-even"><td><p>PlutoSDR Image Tree Source</p></td>
-<td><p><a class="icon git reference external" href="https://github.com/analogdevicesinc/plutosdr-fw/tree/master/scripts/pluto.its">pluto.its</a></p></td>
+<td><p><a class="icon git reference external" href="https://github.com/analogdevicesinc/plutosdr-fw/tree/master/scripts/pluto.its" target="_blank">pluto.its</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -1064,10 +1068,10 @@ system will use the new file.</p>
 </thead>
 <tbody>
 <tr class="row-even"><td><p>PlutoSDR u-boot Config</p></td>
-<td><p><a class="icon git reference external" href="https://github.com/analogdevicesinc/u-boot-xlnx/tree/pluto/configs/zynq_pluto_defconfig">zynq_pluto_defconfig</a></p></td>
+<td><p><a class="icon git reference external" href="https://github.com/analogdevicesinc/u-boot-xlnx/tree/pluto/configs/zynq_pluto_defconfig" target="_blank">zynq_pluto_defconfig</a></p></td>
 </tr>
 <tr class="row-odd"><td><p>PlutoSDR u-boot Device Tree</p></td>
-<td><p><a class="icon git reference external" href="https://github.com/analogdevicesinc/u-boot-xlnx/tree/pluto/arch/arm/dts/zynq-pluto-sdr.dts">zynq-pluto-sdr.dts</a></p></td>
+<td><p><a class="icon git reference external" href="https://github.com/analogdevicesinc/u-boot-xlnx/tree/pluto/arch/arm/dts/zynq-pluto-sdr.dts" target="_blank">zynq-pluto-sdr.dts</a></p></td>
 </tr>
 </tbody>
 </table>

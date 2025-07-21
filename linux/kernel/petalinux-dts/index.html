@@ -4,11 +4,12 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta content="Petalinux is Xilinx’s flavor of Linux based on the Yocto project.  One of the unique pieces of Petalinux is how the device tree is automatically generated based on the imported XSA/HDF file, using Xilinx’s Device Tree Generator (DTG). The generated device tree includes nodes for the PS as well as nodes for the Xilinx blocks located in the PL.  The DTG regenerates the device tree on each build, which makes it difficult to edit the .dts files directly for modification. Further, the PL nodes may conflict with Linux device drivers which may access the FPGA blocks.  This is especially a problem for ADI’s provided reference designs which use IIO based drivers for accessing FPGA IP." name="description" />
 
     <title>Petalinux Device Trees &#8212; System Level Documentation  documentation</title>
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=8e8a900e" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/app.min.css?v=c218d0f6" />
-    <script defer="" src="../../../_static/app.umd.js?v=8984ea49"></script>
+    <link rel="stylesheet" type="text/css" href="../../../_static/app.min.css?v=33d8ff8e" />
+    <script async="async" src="../../../_static/app.umd.js?v=cd58f2cb"></script>
     <link rel="icon" href="../../../_static/icon.svg"/>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
@@ -18,6 +19,9 @@
   
   <meta name="repository" content="documentation">
   <meta name="version" content="">
+  
+    <meta name="page_source_suffix" content=".rst">
+  
   
 
 
@@ -56,7 +60,7 @@
     </div>
     <div id="right">
       <span>
-        <a id="logo-org" href="https://analog.com"></a>
+        <a id="logo-org" href="https://analog.com" aria-label="Analog Devices Inc. landing page"></a>
         <div class="vertical-divider"></div>
         <label id="show-repotoc" for="input-show-repotoc" title="Show/hide docs" tabindex="0">Docs</label>
         <a id="logo" href="../../../index.html">

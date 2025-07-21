@@ -4,11 +4,12 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta content="Colorimetry can be used to determine the concentration of materials in a solution based on its absorbance. One application of colorimetry is pH measurement with the aid of a coloring reagent. This page details the steps in setting up the EVAL-CN0503-ARDZ for pH measurement." name="description" />
 
     <title>pH Measurement Demo &#8212; System Level Documentation  documentation</title>
     <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=8e8a900e" />
-    <link rel="stylesheet" type="text/css" href="../../../../_static/app.min.css?v=c218d0f6" />
-    <script defer="" src="../../../../_static/app.umd.js?v=8984ea49"></script>
+    <link rel="stylesheet" type="text/css" href="../../../../_static/app.min.css?v=33d8ff8e" />
+    <script async="async" src="../../../../_static/app.umd.js?v=cd58f2cb"></script>
     <link rel="icon" href="../../../../_static/icon.svg"/>
     <link rel="index" title="Index" href="../../../../genindex.html" />
     <link rel="search" title="Search" href="../../../../search.html" />
@@ -18,6 +19,9 @@
   
   <meta name="repository" content="documentation">
   <meta name="version" content="">
+  
+    <meta name="page_source_suffix" content=".rst">
+  
   
 
 
@@ -56,7 +60,7 @@
     </div>
     <div id="right">
       <span>
-        <a id="logo-org" href="https://analog.com"></a>
+        <a id="logo-org" href="https://analog.com" aria-label="Analog Devices Inc. landing page"></a>
         <div class="vertical-divider"></div>
         <label id="show-repotoc" for="input-show-repotoc" title="Show/hide docs" tabindex="0">Docs</label>
         <a id="logo" href="../../../../index.html">
@@ -423,11 +427,11 @@ set up the pH measurement curve using a spreadsheet.</p>
 <h2>Demo Requirements<a class="headerlink" href="#demo-requirements" title="Link to this heading"></a></h2>
 <p>The following is a list of items needed in order to replicate this demo.</p>
 <ul class="simple">
-<li><p><a class="icon adi reference external" href="https://www.analog.com/CN0503">CN0503</a>, completely assembled (see <a class="reference internal" href="../index.html#eval-cn0503-ardz"><span class="std std-ref">Hardware User Guide</span></a>)</p></li>
-<li><p><a class="icon adi reference external" href="https://www.analog.com/EVAL-ADICUP3029">EVAL-ADICUP3029</a> with firmware (see <a class="reference internal" href="../cn0503-software/index.html#cn0503-software"><span class="std std-ref">Software User Guide</span></a>)</p></li>
+<li><p><a class="icon adi reference external" href="https://www.analog.com/CN0503" target="_blank">CN0503</a>, completely assembled (see <a class="reference internal" href="../index.html#eval-cn0503-ardz"><span class="std std-ref">Hardware User Guide</span></a>)</p></li>
+<li><p><a class="icon adi reference external" href="https://www.analog.com/EVAL-ADICUP3029" target="_blank">EVAL-ADICUP3029</a> with firmware (see <a class="reference internal" href="../cn0503-software/index.html#cn0503-software"><span class="std std-ref">Software User Guide</span></a>)</p></li>
 <li><p>Host computer with CN0503 software (see <a class="reference download internal" download="" href="../../../../_downloads/203a10ef9f1994617acf2b4751fe1aee/cn0503_gui_quick_start_guide.docx"><code class="xref download docutils literal notranslate"><span class="pre">Quick</span> <span class="pre">Setup</span> <span class="pre">Guide</span></code></a>)
 and Microsoft Excel (Optional for generating your own measurement curve)</p></li>
-<li><p>Bromothymol blue or API pH Test Kit <a class="reference external" href="https://apifishcare.com/product/ph-test-kit">API Fish Care pH Test Kit</a></p></li>
+<li><p>Bromothymol blue or API pH Test Kit <a class="icon link reference external" href="https://apifishcare.com/product/ph-test-kit" target="_blank">API Fish Care pH Test Kit</a></p></li>
 <li><p>pH Buffer Solutions (Optional for calibration)</p></li>
 <li><p>Common household chemicals for testing (caustic soda, baking soda, vinegar,
 and distilled water)</p></li>
@@ -436,10 +440,10 @@ and distilled water)</p></li>
 <section id="setting-up-the-eval-cn0503-ardz">
 <h2>Setting up the EVAL-CN0503-ARDZ<a class="headerlink" href="#setting-up-the-eval-cn0503-ardz" title="Link to this heading"></a></h2>
 <p>Before starting with these steps, please check the <a class="reference internal" href="../index.html#eval-cn0503-ardz"><span class="std std-ref">Hardware User Guide</span></a> for the
-steps to assembling the <a class="icon adi reference external" href="https://www.analog.com/CN0503">CN0503</a>. Additionally, please check the <a class="reference internal" href="../cn0503-software/index.html#cn0503-software"><span class="std std-ref">Software User Guide</span></a>
+steps to assembling the <a class="icon adi reference external" href="https://www.analog.com/CN0503" target="_blank">CN0503</a>. Additionally, please check the <a class="reference internal" href="../cn0503-software/index.html#cn0503-software"><span class="std std-ref">Software User Guide</span></a>
 for the steps in setting up the firmware and the <a class="reference download internal" download="" href="../../../../_downloads/203a10ef9f1994617acf2b4751fe1aee/cn0503_gui_quick_start_guide.docx"><code class="xref download docutils literal notranslate"><span class="pre">Quick</span> <span class="pre">Setup</span> <span class="pre">Guide</span></code></a>
 for running the software. This demo assumes that you already have an assembled board with a
-working firmware already programmed on the <a class="icon adi reference external" href="https://www.analog.com/EVAL-ADICUP3029">EVAL-ADICUP3029</a>
+working firmware already programmed on the <a class="icon adi reference external" href="https://www.analog.com/EVAL-ADICUP3029" target="_blank">EVAL-ADICUP3029</a>
 and a ready-to-run software in the host computer.</p>
 <p>Configure the onboard jumper shunt connection as below:</p>
 <div class="table-wrapper docutils container">
@@ -476,7 +480,7 @@ and a ready-to-run software in the host computer.</p>
 respectively.</p>
 <img alt="../../../../_images/ph_ledplacement.jpg" src="../../../../_images/ph_ledplacement.jpg" />
 </li>
-<li><p>Connect the <a class="icon adi reference external" href="https://www.analog.com/EVAL-ADICUP3029">EVAL-ADICUP3029</a> to the <a class="icon adi reference external" href="https://www.analog.com/CN0503">CN0503</a>
+<li><p>Connect the <a class="icon adi reference external" href="https://www.analog.com/EVAL-ADICUP3029" target="_blank">EVAL-ADICUP3029</a> to the <a class="icon adi reference external" href="https://www.analog.com/CN0503" target="_blank">CN0503</a>
 and connect a microUSB-to-USB cable from the board to
 the host computer.</p></li>
 <li><p>Run the software using python scripts or the executable, see the
