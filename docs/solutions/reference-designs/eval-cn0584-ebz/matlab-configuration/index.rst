@@ -1,4 +1,4 @@
-.. _matlab-configuration:
+.. _eval-cn0584-ebz matlab-configuration:
 
 MATLAB Configuration
 =====================

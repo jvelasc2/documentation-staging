@@ -796,7 +796,7 @@ integrates that into a larger reference design. HDL_DUT can be integrated inside
 HDL reference design in three different configurations which are Rx,Tx and
 Rx-TX. Figure 19 and Figure 20 demonstrates how HDL_DUT is placed between Tx and
 Rx path for these three configuration types. HDL_DUT Code Generation Workflow is
-described in :ref:`Configuring Matlab guide <matlab-configuration>`.
+described in :ref:`Configuring Matlab guide <eval-cn0584-ebz matlab-configuration>`.
 
 Digital Template
 ----------------

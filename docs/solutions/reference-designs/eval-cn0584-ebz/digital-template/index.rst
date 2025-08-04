@@ -422,8 +422,8 @@ Build
 After the HighSpeedConvertToolbox repo is set up on the machine as described in
 the Matlab Configuration Guide page of the wiki and the digital template models
 have been put in the correct folder, the Simulink model can be opened and built.
-This mostly follows the step on :ref:`matlab-configuration`, but a few changes
-are required.
+This mostly follows the step on :ref:`eval-cn0584-ebz matlab-configuration`,
+but a few changes are required.
 
 Before starting the build process, go to Configuration Parameters -> HDL Code
 Generation -> Global Settings and set the Reset Type to Synchronous.
