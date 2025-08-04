@@ -1,6 +1,6 @@
 .. _matlab-configuration:
 
-MATLAB Configuration 
+MATLAB Configuration
 =====================
 
 Configuring Custom HDL Models using Simulink
@@ -12,10 +12,10 @@ Prerequisites
 - Recommended versions: Vivado 2021.1 – Matlab 2022B_U2
 - Recommended terminal for Windows: Cygwin (https://cygwin.com)
 - Make sure that the Vitis 2021.1 is installed.
-- The latest branch: `https://github.com/analogdevicesinc/HighSpeedConverterToolbox/tree/cn0585_v1`_
+- The latest branch: :git-HighSpeedConverterToolbox:`cn0585_v1:`
 
 Make sure that the “SoC Blockset” and “SoC Blockset Support Package for Xilinx
-Devices” Add-ons are installed. 
+Devices” Add-ons are installed.
 
 .. figure:: socblocksetaddon.png
 
@@ -30,35 +30,38 @@ Instructions to build the toolbox from terminal
 
 **1.1** Make a clone of the HDL repo and checkout the desired branch
 
-.. code-block:: bash
+.. shell::
 
-   >git clone https://github.com/analogdevicesinc/HighSpeedConverterToolbox.git
-   > cd HighSpeedConverterToolbox 
-   ../HighSpeedConverterToolbox> git submodule update --init --recursive 
-   ../HighSpeedConverterToolbox > git checkout cn0585_v1 
+   $git clone https://github.com/analogdevicesinc/HighSpeedConverterToolbox.git
+   $cd HighSpeedConverterToolbox
+   $git submodule update --init --recursive
+   $git checkout cn0585_v1
 
 To avoid tool mismatches, before opening MATLAB set this variable in the
 terminal:
 
-.. code-block:: bash
+.. shell::
 
-   ../HighSpeedConverterToolbox> export ADI_IGNORE_VERSION_CHECK=TRUE
+   ~/HighSpeedConverterToolbox
+   $export ADI_IGNORE_VERSION_CHECK=TRUE
 
 Build according to the branch
 
-.. code-block:: bash
+.. shell::
 
-   ../HighSpeedConverterToolbox > cd CI/scripts 
-   ../HighSpeedConverterToolbox/CI/scripts > make build HDLBRANCH=cn0585_v1 
+   ~/HighSpeedConverterToolbox
+   $cd CI/scripts
+   $make build HDLBRANCH=cn0585_v1
 
 **1.2** In Matlab current folder list, navigate to the folder where
 the files had been copied from previous step. Launch MATLAB in the root of the
 HighSpeedConverterToolbox folder:
 
-.. code-block:: bash
+.. shell::
 
-   ../HighSpeedConverterToolbox/CI/scripts > cd ../../ 
-   ../HighSpeedConverterToolbox > matlab . 
+   ~/HighSpeedConverterToolbox/CI/scripts
+   $cd ../../
+   $matlab .
 
 Creating BOOT.BIN from Simulink Model
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -68,7 +71,7 @@ Creating BOOT.BIN from Simulink Model
     HighSpeedConverterToolbox Sources
 
 **2.1** Right click on test -> Add to Path -> Selected folders and subfolders.
-Right click on hdl -> Add to Path -> Selected folders and subfolders. 
+Right click on hdl -> Add to Path -> Selected folders and subfolders.
 
 **2.2** In the Matlab command window set the path to Vivado installation folder. The tool
 path should be replaced with the user’s Vivado path.
@@ -78,10 +81,10 @@ For example:
 .. code-block:: matlab
 
      hdlsetuptoolpath(‘ToolName’, ‘Xilinx Vivado’, ’ToolPath’,
-     ‘</opt/Xilinx/Vivado/2021.1/bin/vivado>’) 
+     ‘</opt/Xilinx/Vivado/2021.1/bin/vivado>’)
 
 **2.3** Expand the test folder and double click on the desired Simulink test
-model, as shown in Figure 4. 
+model, as shown in Figure 4.
 
 .. figure:: figure4.png
 
@@ -130,8 +133,8 @@ for TX configuration address.
 
     Set Output Target Interface
 
-For RX and RX-TX port assignment is done similarly according to Table 2 and Table 3. 
-Table 1 shows port descriptions for HDL DUT Tx Reference Design. 
+For RX and RX-TX port assignment is done similarly according to Table 2 and Table 3.
+Table 1 shows port descriptions for HDL DUT Tx Reference Design.
 
 AXI registers are defined in the Simulink model as input or
 output ports (AXI-lite option is selected in “Target Platform Interfaces”
@@ -207,8 +210,8 @@ hdl_prj/vivado_ip_prj folder, or the project folder name that was chosen in
     Generate Software Interface
 
 **2.14** Choose the “Custom” option for the Tcl file synthesis build, then
-Browse for the adi_build.tcl file located under HighSpeedConverterToolbox/CI/scripts, 
-as shown in Figure 17. A bash prompt will open, and you can see the entire build process log file, 
+Browse for the adi_build.tcl file located under HighSpeedConverterToolbox/CI/scripts,
+as shown in Figure 17. A bash prompt will open, and you can see the entire build process log file,
 as shown in Figure 17 and Figure 18. This step usually takes about an hour or more.
 
 .. figure:: figure17.png
@@ -230,7 +233,7 @@ located in:
 
 Tab 4.4 in the HDL Workflow Advisor is incompatible with The ADI SD card flow.
 Instead, choose one of the following methods to update the BOOT.BIN file on the
-SD card (BOOT.BIN with register access found in :download:`SD Card Configuration Files<sd_card_config_files_revb.zip>`). 
+SD card (BOOT.BIN with register access found in :download:`SD Card Configuration Files<sd_card_config_files_revb.zip>`).
 After the BOOT.BIN file is generated, you have 2 options:
 
     #. Copy the BOOT.BIN file on the SD Card directly.
@@ -247,7 +250,7 @@ After the BOOT.BIN file is generated, you have 2 options:
 
         ::
 
-            scp BOOT.BIN root@<your_board_ip>:/boot 
+            scp BOOT.BIN root@<your_board_ip>:/boot
 
     #. Finally, reboot the board.
 
@@ -262,29 +265,30 @@ PyADI-IIO
 
 Get the PyADI-IIO repo, and switch to the compatible branch.
 
-.. code-block:: bash
+.. shell::
 
-   git clone https://github.com/analogdevicesinc/pyadi-iio.git
-   cd pyadi-iio  
-   git checkout cn0585_v1     
+   $git clone https://github.com/analogdevicesinc/pyadi-iio.git
+   $cd pyadi-iio 
+   $git checkout cn0585_v1    
 
 Setup Python and run the example file. The path in the first line should be
 replaced with the location where you cloned the pyadi-iio repository.
 
-.. code-block:: python
+.. shell:: ps1
 
-   export PYTHONPATH=C:/work/python_LLDK/documentation_clone/pyadi-iio/  
-   > ../pyadi-iio > pip install .  
-   > ../pyadi-iio > pip install -r requirements.txt  
-   > ../pyadi-iio > pip install -r requirements_dev.txt  
-   > ../pyadi-iio> python examples/cn0585_fmcz_example.py ip:<your_board_ip> 
+   ~/pyadi-iio
+   export PYTHONPATH=C:\work\python_LLDK\documentation_clone\pyadi-iio
+   $pip install . 
+   $pip install -r requirements.txt 
+   $pip install -r requirements_dev.txt 
+   $python examples/cn0585_fmcz_example.py ip:<your_board_ip>
 
 The console output will contain these 2 new lines:
 
 ::
 
-   AXI4-Lite 0x108 register value: 0x2 
-   AXI4-Lite 0x10c register value: 0xB 
+   AXI4-Lite 0x108 register value: 0x2
+   AXI4-Lite 0x10c register value: 0xB
 
 These are the functions that were added to be able to access the HDL_DUT IP
 registers trough AXI4-Lite:
@@ -318,9 +322,9 @@ MATLAB
 
         .. code-block:: matlab
 
-            write_reg = soc.libiio.aximm.WriteHost(devName='mwipcore0:mmwrchannel0',IPAddress=board_ip); 
-            read_reg = soc.libiio.aximm.WriteHost(devName='mwipcore0:mmrdchannel1',IPAddress=board_ip); 
-            write_reg.writeReg(hex2dec('100'),85) 
+            write_reg = soc.libiio.aximm.WriteHost(devName='mwipcore0:mmwrchannel0',IPAddress=board_ip);
+            read_reg = soc.libiio.aximm.WriteHost(devName='mwipcore0:mmrdchannel1',IPAddress=board_ip);
+            write_reg.writeReg(hex2dec('100'),85)
             write_reg.writeReg(hex2dec('104'),22)
 
 Simulink

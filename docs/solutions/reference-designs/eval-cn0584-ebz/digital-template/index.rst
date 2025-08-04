@@ -1,6 +1,6 @@
-.. _digital-template:
+.. _eval-cn0584-ebz digital-template:
 
-Digital Template Model 
+Digital Template Model
 =======================
 
 A digital template is provided as a starting point for designs. There are four
@@ -9,12 +9,12 @@ controller.
 
 Python scripts are provided that showcase each subsystem. These scripts are
 designed to run with the ADCs and DACs connected in loopback mode, as described
-in the example :ref:`Setting Up the Hardware Section <setting_up_the_hardware>`, 
+in the example :ref:`Setting Up the Hardware Section <eval-cn0584-ebz setting-up-the-hardware>`,
 and shown in the following image.
 
 .. figure:: cn0584_loopback_connection.png
 
-    EVAL-CN0585-FMCZ with loopback connection 
+    EVAL-CN0585-FMCZ with loopback connection
 
 The additional packages required to run these scripts are: scipy.fft,
 scipy.signal.
@@ -43,16 +43,16 @@ Files
 ~~~~~
 
 The simulink model files can be downloaded from this zip file
-:download:`Simulink models<digital_template_simulink_models.zip>` and placed in the
+:download:`Simulink models <digital_template_simulink_models.zip>` and placed in the
 HighSpeedConverterToolbox/test folder. The PID and DDS are submodels within the
 top level testModel_template_top.slx file, and the path pointing to the
-submodels should be updated to reflect the new correct path on the user’s
-machine. See the Build section at the bottom of this page for instructions on
+submodels should be updated to reflect the new correct path on the user's
+machine. See the Build section at the bottom of tutorial for instructions on
 implementing the model. Additionally, the bootfile is provided here :download:`Boot file<boot.zip>`
 and can be copied directly into the boot directory of the SD card.
 
 The Python example scripts can be downloaded from this zip file
-:download:`Python Examples<digital_template_python_example_scripts.zip>`, and placed in the
+:download:`Python Examples <digital_template_python_example_scripts.zip>`, and placed in the
 pyadi-iio/examples folder while in the cn0585_v1 branch.
 
 The following sections describe the model and scripts in more detail.
@@ -131,7 +131,7 @@ from 0 to 1000000 in steps of 1, the units are Hertz. The *amp* variable
 controls the amplitude of the sine wave, in units of DAC codes, with a maximum
 value of 32767, or 2^15-1, in steps of 1. The conversion between DAC codes and
 voltage can be found on the :adi:`AD3552R` datasheet. The *phase_shift* offsets
-the sine wave phase, from -360 to 360 in steps of 1, in units of degrees. 
+the sine wave phase, from -360 to 360 in steps of 1, in units of degrees.
 The *external_signals* variable should be set to 0 when the
 ADCs and DACs are connected in loopback mode, and set to 1 when the signals are
 being driven and measured with external devices. See following section for more
@@ -197,7 +197,7 @@ The below window will pop up. The first plot shows the DDS output captured on
 ADC3, and the second plot shows the input on ADC0. The final two plots show the
 mixer output looped back and captured from ADC2, and its FFT transformation.
 
-.. figure:: dt_mixer_plot.png 
+.. figure:: dt_mixer_plot.png
 
     Mixer inputs from DDS and ADC0 (top 2 graphs), Mixer out and its FFT
     (bottom 2 graphs)
@@ -385,7 +385,7 @@ The terminal output should resemble the following.
    Register value for kd: 10 decimal value:  0.009765625
 
 And the window with the below plots should pop up. The input to the set point is
-displayed on top graph, it’s a 500Hz square wave with -/+4V amplitude. The
+displayed on top graph, it's a 500Hz square wave with -/+4V amplitude. The
 bottom graph is the feedback which resembles the set point with some overshoot
 feature and small latency.
 
@@ -414,7 +414,7 @@ decimal bits.
    # user inputs
    Kp = 1
    Ki = 0.2
-   Kd = 0.01 
+   Kd = 0.01
 
 Build
 -----
@@ -422,8 +422,8 @@ Build
 After the HighSpeedConvertToolbox repo is set up on the machine as described in
 the Matlab Configuration Guide page of the wiki and the digital template models
 have been put in the correct folder, the Simulink model can be opened and built.
-This mostly follows the step on `this page <matlab-configuration>`_,
-but a few changes are required.
+This mostly follows the step on :ref:`matlab-configuration`, but a few changes
+are required.
 
 Before starting the build process, go to Configuration Parameters -> HDL Code
 Generation -> Global Settings and set the Reset Type to Synchronous.
