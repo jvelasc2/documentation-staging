@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta content="Follow the tutorial below based on your host system: Linux or Windows." name="description" />
 
-    <title>SD Card flashing &#8212; System Level Documentation  documentation</title>
+    <title>SD card flashing &#8212; System Level Documentation  documentation</title>
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=8e8a900e" />
     <link rel="stylesheet" type="text/css" href="../../../_static/app.min.css?v=3f4bd1a2" />
     <script async="async" src="../../../_static/app.umd.js?v=75bad8ae"></script>
@@ -91,28 +91,32 @@
         </div>
         <nav>
           <ul>
-<li><a class="reference internal" href="#">SD Card flashing</a><ul>
+<li><a class="reference internal" href="#">SD card flashing</a><ul>
 <li><a class="reference internal" href="#from-linux-hosts">From Linux hosts</a><ul>
 <li><a class="reference internal" href="#download-the-file">Download the file</a></li>
 <li><a class="reference internal" href="#verify-the-download">Verify the download</a></li>
-<li><a class="reference internal" href="#writing-sd-card-gui">Writing SD Card GUI</a></li>
-<li><a class="reference internal" href="#writing-sd-card-command-line">Writing SD Card Command Line</a></li>
+<li><a class="reference internal" href="#writing-sd-card-gui">Writing SD card GUI</a></li>
+<li><a class="reference internal" href="#writing-sd-card-command-line">Writing SD card Command Line</a></li>
 <li><a class="reference internal" href="#verify">Verify</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#from-windows-hosts">From Windows hosts</a><ul>
-<li><a class="reference internal" href="#download-the-sd-card-file">Download the SD Card File</a></li>
+<li><a class="reference internal" href="#using-the-adi-kuiper-imager-recommended">Using the ADI Kuiper Imager (RECOMMENDED)</a></li>
+<li><a class="reference internal" href="#using-third-party-tools">Using third party tools</a><ul>
+<li><a class="reference internal" href="#download-the-sd-card-file">Download the SD card File</a></li>
 <li><a class="reference internal" href="#extract-the-software-image-file">Extract the Software Image File</a></li>
-<li><a class="reference internal" href="#connect-the-sd-card-to-the-computer">Connect the SD Card to the Computer</a></li>
-<li><a class="reference internal" href="#verify-the-download-optional">Verify the Download (Optional)</a></li>
-<li><a class="reference internal" href="#format-the-sd-card-optional">Format the SD Card (Optional)</a><ul>
-<li><a class="reference internal" href="#using-sd-card-formatter">Using SD Card Formatter</a></li>
+<li><a class="reference internal" href="#connect-the-sd-card-to-the-computer">Connect the SD card to the Computer</a></li>
+<li><a class="reference internal" href="#verify-the-download-optional">Verify the download (optional)</a></li>
+<li><a class="reference internal" href="#format-the-sd-card-optional">Format the SD card (optional)</a><ul>
+<li><a class="reference internal" href="#using-sd-card-formatter">Using SD card Formatter</a></li>
 <li><a class="reference internal" href="#using-diskpart-via-windows-command-prompt">Using DISKPART via Windows command prompt</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#flash-the-sd-card">Flash the SD Card</a><ul>
+<li><a class="reference internal" href="#flash-the-sd-card">Flash the SD card</a><ul>
 <li><a class="reference internal" href="#win32diskimager">Win32DiskImager</a></li>
 <li><a class="reference internal" href="#etcher">Etcher</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -184,7 +188,7 @@ Content on this topic
 </li>
 <li class="toctree-l1 current"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-3" id="toctree-collapse-3" checked=""/><div class="collapse"><a class="reference internal" href="../index.html">Kuiper Linux</a><label for="toctree-collapse-3"><div class="icon"></div></label></div><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../release-notes.html">Release notes</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">SD Card flashing</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">SD card flashing</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../project-list.html">Project list</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../update.html">Updating</a></li>
 </ul>
@@ -419,7 +423,7 @@ Content on this topic
           <div class="body" role="main">
             
   <section id="sd-card-flashing">
-<span id="kuiper-sdcard"></span><h1>SD Card flashing<a class="headerlink" href="#sd-card-flashing" title="Link to this heading"></a></h1>
+<span id="kuiper-sdcard"></span><h1>SD card flashing<a class="headerlink" href="#sd-card-flashing" title="Link to this heading"></a></h1>
 <p>Follow the tutorial below based on your host system:
 <a class="reference internal" href="#kuiper-sdcard-linux"><span class="std std-ref">Linux</span></a>
 or
@@ -427,14 +431,14 @@ or
 <section id="from-linux-hosts">
 <span id="kuiper-sdcard-linux"></span><h2>From Linux hosts<a class="headerlink" href="#from-linux-hosts" title="Link to this heading"></a></h2>
 <p>This section explains how you should go about formatting and flashing the SD
-card with the software required to use many of platforms Analog Devices
-supports.
-There are several steps that need to be completed before your SD Card will be
+card with the software required to use many of the platforms
+<a class="icon adi reference external" href="https://www.analog.com/" target="_blank">Analog Devices</a> supports.</p>
+<p>There are several steps that need to be completed before your SD card will be
 ready to use.</p>
 <section id="download-the-file">
 <h3>Download the file<a class="headerlink" href="#download-the-file" title="Link to this heading"></a></h3>
-<p>Download the relevant SD card image file from the <a class="reference internal" href="../index.html#kuiper"><span class="std std-ref">Kuiper Linux</span></a> page. Please
-get the latest if you can. This can be done with wget as well:</p>
+<p>Download the relevant SD card image file from the <a class="reference internal" href="../index.html#kuiper"><span class="std std-ref">Kuiper Linux</span></a> page. Please,
+get the latest if you can. This can be done with <em>wget</em> as well:</p>
 <div class="code-shell"><div><div class="no-select float-left highlight-default notranslate"><div class="highlight"><pre><span></span>~$
 </pre></div>
 </div>
@@ -459,13 +463,12 @@ awaiting response... 200 OK Length: 15931539 (14.8 GB)
 real 6m53.573s user 0m0.740s sys 0m32.342s
 </pre></div>
 </div>
-<div class="clear-left"></div></div></div><p>Yeah, it takes an hour (or more if your connection is slow).
-At least you can drive down to your favourite coffee store, and indulge yourself.</p>
+<div class="clear-left"></div></div></div><p>It should take about an hour (or more if your connection is slow).</p>
 </section>
 <section id="verify-the-download">
 <h3>Verify the download<a class="headerlink" href="#verify-the-download" title="Link to this heading"></a></h3>
 <ol class="arabic">
-<li><p>Check the md5, to make sure you have the right file.</p>
+<li><p>Check the <em>md5</em>, to make sure you have the right file.</p>
 <div class="code-shell"><div><div class="no-select float-left highlight-default notranslate"><div class="highlight"><pre><span></span>~$
 </pre></div>
 </div>
@@ -476,8 +479,8 @@ At least you can drive down to your favourite coffee store, and indulge yourself
 </pre></div>
 </div>
 <div class="clear-left"></div></div></div></li>
-<li><p>A <code class="docutils literal notranslate"><span class="pre">zip</span></code> file is a compressed file, you need to uncompress it, and check the
-md5sum on resulted file:</p>
+<li><p>A <code class="docutils literal notranslate"><span class="pre">zip</span></code> file is a compressed file; you need to uncompress it, and check the
+<em>md5sum</em> on resulted file:</p>
 <div class="code-shell"><div><div class="no-select float-left highlight-default notranslate"><div class="highlight"><pre><span></span>~$
 </pre></div>
 </div>
@@ -502,16 +505,15 @@ md5sum on resulted file:</p>
 </ol>
 </section>
 <section id="writing-sd-card-gui">
-<h3>Writing SD Card GUI<a class="headerlink" href="#writing-sd-card-gui" title="Link to this heading"></a></h3>
+<h3>Writing SD card GUI<a class="headerlink" href="#writing-sd-card-gui" title="Link to this heading"></a></h3>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>This will overwrite your entire SD card completely.
-Backup anything from the card you want to keep.</p>
+<p>This will overwrite your entire SD card completely. Backup anything from
+the card you want to keep.</p>
 </div>
-<p>It is recommended to use <a class="icon link reference external" href="https://www.balena.io/etcher/" target="_blank">Etcher</a> to write to
-your SD card but other options exist. Only the process for Etcher is covered
-here.</p>
-<p>Insert your target SD card and launch Etcher. With Etcher:</p>
+<p>It is recommended to use <a class="icon link reference external" href="https://www.balena.io/etcher/" target="_blank">Etcher</a> to write to your SD card, but other options
+exist. Only the process for <a class="icon link reference external" href="https://www.balena.io/etcher/" target="_blank">Etcher</a> is covered here.</p>
+<p>Insert your target SD card into your computer, launch <a class="icon link reference external" href="https://www.balena.io/etcher/" target="_blank">Etcher</a> and do:</p>
 <ol class="arabic simple">
 <li><p>Select write image from file</p></li>
 <li><p>Select the <strong>.img</strong> file that you have already extracted</p></li>
@@ -520,24 +522,23 @@ here.</p>
 <li><p>Wait for the card to be flashed and verified</p></li>
 </ol>
 <img alt="../../../_images/etcher.png" src="../../../_images/etcher.png" />
-<p>At this point the SD card is still not bootable,
-follow the topics after <a class="reference internal" href="../index.html#kuiper-imaging-sdcard"><span class="std std-ref">Imaging your SD Card</span></a>.</p>
+<p>At this point, the SD card is still not bootable, so follow the topics after
+<a class="reference internal" href="../index.html#kuiper-imaging-sdcard"><span class="std std-ref">Imaging your SD Card</span></a>.</p>
 </section>
 <section id="writing-sd-card-command-line">
-<h3>Writing SD Card Command Line<a class="headerlink" href="#writing-sd-card-command-line" title="Link to this heading"></a></h3>
+<h3>Writing SD card Command Line<a class="headerlink" href="#writing-sd-card-command-line" title="Link to this heading"></a></h3>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>This will overwrite your entire SD card completely.
-Backup anything from the card you want to keep.</p>
+<p>This will overwrite your entire SD card completely. Backup anything from
+the card you want to keep.</p>
 </div>
-<p>Now that everything looks OK, write the file to your SD Card.</p>
+<p>Now that everything looks OK, write the file to your SD card.</p>
 <p>This will depend on your system, where your SD card installed itself. You also
-need to do this as root, since normal users shouldn’t be able to randomly write
+need to do this as <strong>root</strong>, since normal users shouldn’t be able to randomly write
 files to block devices.</p>
 <ol class="arabic">
-<li><p>plug the SD Card into your SD-Writer. If this mounts the device (which many
-Linux distributions do), it is important that you unmount
-it.</p>
+<li><p>Plug the SD card into your SD-Writer. If this mounts the device (which many
+Linux distributions do), it is important that you unmount it.</p>
 <p><code class="code docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">umount</span> <span class="pre">/dev/mmcblk0p1</span></code></p>
 </li>
 <li><p>Write the file (input file or <code class="docutils literal notranslate"><span class="pre">if</span></code>) to the storage device (output file or
@@ -561,9 +562,10 @@ real 7m54.11s user 0.29s sys 8.94s
 </li>
 </ol>
 <p>This section explains how you should go about formatting and flashing the SD
-card with the software required to use many of platforms Analog Devices
-supports. There are several steps that need to be completed before your SD Card
-will be ready to use.</p>
+card with the software required to use many of the platforms that Analog Devices
+supports.</p>
+<p>There are several steps that need to be completed before your SD card will be
+ready to use.</p>
 <ol class="arabic">
 <li><p>Ensure the output buffers are flushed:</p>
 <div class="code-shell"><div><div class="no-select float-left highlight-default notranslate"><div class="highlight"><pre><span></span>~$
@@ -579,10 +581,10 @@ will be ready to use.</p>
 <section id="verify">
 <h3>Verify<a class="headerlink" href="#verify" title="Link to this heading"></a></h3>
 <p>Since it’s possible that the write process of a disk image can have some issues
-(if the target had a sector marked as bad, dd will not notice, and write on top
-of it), the safest thing to do is to run a
-<a class="icon link reference external" href="https://en.wikipedia.org/wiki/fsck" target="_blank">file system consistency check</a> on things.
-If you are unsure of how to use this tool, check the
+(if the target had a sector marked as bad, <em>dd</em> will not notice, and will write
+on top of it), the safest thing to do is to run a
+<a class="icon link reference external" href="https://en.wikipedia.org/wiki/fsck" target="_blank">file system consistency check</a> on things.</p>
+<p>If you are unsure of how to use this tool, check the
 <a class="icon link reference external" href="http://linux.die.net/man/8/fsck" target="_blank">man page</a>.</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
@@ -634,30 +636,64 @@ e2fsck 1.42.5 (29-Jul-2012)
 </div>
 <div class="clear-left"></div></div></div></li>
 </ol>
-<p>At this point the SD card is still not bootable,
-follow the topics after <a class="reference internal" href="../index.html#kuiper-imaging-sdcard"><span class="std std-ref">Imaging your SD Card</span></a>.</p>
+<p>At this point, the SD card is still not bootable, so follow the topics after
+<a class="reference internal" href="../index.html#kuiper-imaging-sdcard"><span class="std std-ref">Imaging your SD Card</span></a>.</p>
 </section>
 </section>
 <section id="from-windows-hosts">
 <span id="kuiper-sdcard-windows"></span><h2>From Windows hosts<a class="headerlink" href="#from-windows-hosts" title="Link to this heading"></a></h2>
 <p>This section explains how you should go about formatting and flashing the SD
-card with the software required to use many of platforms Analog Devices
-supports.
-There are several steps that need to be completed before your SD Card will be
+card with the software required to use many of the platforms that
+Analog Devices supports.</p>
+<p>There are several steps that need to be completed before your SD card will be
 ready to use.</p>
+<section id="using-the-adi-kuiper-imager-recommended">
+<h3>Using the ADI Kuiper Imager (RECOMMENDED)<a class="headerlink" href="#using-the-adi-kuiper-imager-recommended" title="Link to this heading"></a></h3>
+<ol class="arabic simple">
+<li><p>Download the .exe file to install the ADI Kuiper Imager and run it</p></li>
+<li><p>Connect the SD card to the computer (<strong>make sure it does not encrypt
+the files</strong>)</p></li>
+<li><p>In the ADI Kuiper imager app:</p></li>
+</ol>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>select the <strong>Storage</strong> as your SD card partition;</p></li>
+<li><p>select the <strong>Image source</strong>; this can be either:</p>
+<ul class="simple">
+<li><p>our officially released image <strong>Image source</strong> &gt; <strong>ADI Kuiper Linux</strong> &gt;
+“ADI Kuiper Linux 2023_R2 Patch1” or whichever is the latest release
+you want to use. This will download the image from our sources, so you
+need access to the Internet;</p></li>
+<li><p>in other instances, specialized pre-compiled images that are created
+for projects that are not yet included on the standard image.</p></li>
+</ul>
+</li>
+<li><p>select the <strong>Target</strong>: the FPGA vendor, then the family for it, and lastly
+the evaluation board configuration. This will write the appropriate boot
+files on the SD card once it’s done formatting and flashing the
+ADI Kuiper image first;</p></li>
+<li><p>click the <strong>Write</strong> button from bottom right to start writing to the SD
+card. The whole process should take about 15 minutes, and you need access
+to the internet.</p></li>
+</ol>
+</div></blockquote>
+</section>
+<section id="using-third-party-tools">
+<h3>Using third party tools<a class="headerlink" href="#using-third-party-tools" title="Link to this heading"></a></h3>
 <ol class="arabic simple">
 <li><p>Download the compressed software image file</p></li>
 <li><p>Extract the software image file</p></li>
-<li><p>Connect the SD Card to the computer</p></li>
-<li><p>Verify the software image file (Optional)</p></li>
-<li><p>Format the SD Card (Optional)</p></li>
-<li><p>Flash the SD Card</p></li>
+<li><p>Connect the SD card to the computer (<strong>make sure it does not encrypt
+the files</strong>)</p></li>
+<li><p>Verify the software image file (optional)</p></li>
+<li><p>Format the SD card (optional)</p></li>
+<li><p>Flash the SD card</p></li>
 </ol>
 <section id="download-the-sd-card-file">
-<h3>Download the SD Card File<a class="headerlink" href="#download-the-sd-card-file" title="Link to this heading"></a></h3>
-<p>Download the software image file you want to write onto your SD Card. Typically
+<h4>Download the SD card File<a class="headerlink" href="#download-the-sd-card-file" title="Link to this heading"></a></h4>
+<p>Download the software image file you want to write onto your SD card. Typically,
 this is going to be the standard <a class="reference internal" href="../index.html#kuiper"><span class="std std-ref">Kuiper Linux</span></a>, but in some
-instances specialized pre-compiled images are created for projects that are not
+instances, specialized pre-compiled images are created for projects that are not
 yet included on the standard image. So be sure you have the correct file.</p>
 <ul class="simple">
 <li><p>Save the .Zip file or .Xz file to your local hard drive, and remember the
@@ -665,7 +701,7 @@ file location.</p></li>
 </ul>
 </section>
 <section id="extract-the-software-image-file">
-<h3>Extract the Software Image File<a class="headerlink" href="#extract-the-software-image-file" title="Link to this heading"></a></h3>
+<h4>Extract the Software Image File<a class="headerlink" href="#extract-the-software-image-file" title="Link to this heading"></a></h4>
 <p>This step will decompress the large software image file you downloaded. Ensure
 you have a decompression utility installed on your computer, capable of
 extracting
@@ -680,15 +716,19 @@ or
 </a>
 </section>
 <section id="connect-the-sd-card-to-the-computer">
-<h3>Connect the SD Card to the Computer<a class="headerlink" href="#connect-the-sd-card-to-the-computer" title="Link to this heading"></a></h3>
-<p>Connect the SD Card to either an internal or external SD Card reader which is
-connected to your computer. Most newer computers have an SD Card reader, but
-there are plenty of USB connectable SD Card reader devices available.</p>
+<h4>Connect the SD card to the Computer<a class="headerlink" href="#connect-the-sd-card-to-the-computer" title="Link to this heading"></a></h4>
+<p>Connect the SD card to either an internal or external SD card reader which is
+connected to your computer. Most newer computers have an SD card reader, but
+there are plenty of USB connectable SD card reader devices available.</p>
+<div class="admonition caution">
+<p class="admonition-title">Caution</p>
+<p>Make sure your computer does not encrypt the files that are on the SD card!</p>
+</div>
 </section>
 <section id="verify-the-download-optional">
-<h3>Verify the Download (Optional)<a class="headerlink" href="#verify-the-download-optional" title="Link to this heading"></a></h3>
-<p>This step is used to validate that the image you downloaded. Ensuring that it is
-the version is correct and that the software wasn’t corrupted during download.</p>
+<h4>Verify the download (optional)<a class="headerlink" href="#verify-the-download-optional" title="Link to this heading"></a></h4>
+<p>This step is used to validate the image you downloaded, ensuring that it is
+the correct version and that the software wasn’t corrupted during download.</p>
 <p>Ensure you have the following application installed on your computer:
 <a class="icon link reference external" href="http://www.winmd5.com/" target="_blank">WinMD5</a>.</p>
 <ol class="arabic simple">
@@ -700,17 +740,17 @@ the version is correct and that the software wasn’t corrupted during download.
 </a>
 </section>
 <section id="format-the-sd-card-optional">
-<h3>Format the SD Card (Optional)<a class="headerlink" href="#format-the-sd-card-optional" title="Link to this heading"></a></h3>
-<p>This step should be used if the SD Card format is unknown or needs to be
+<h4>Format the SD card (optional)<a class="headerlink" href="#format-the-sd-card-optional" title="Link to this heading"></a></h4>
+<p>This step should be used if the SD card format is unknown or needs to be
 reconfigured.</p>
 <section id="using-sd-card-formatter">
-<h4>Using SD Card Formatter<a class="headerlink" href="#using-sd-card-formatter" title="Link to this heading"></a></h4>
+<h5>Using SD card Formatter<a class="headerlink" href="#using-sd-card-formatter" title="Link to this heading"></a></h5>
 <p>Ensure you have the following application installed on your computer:
-<a class="icon link reference external" href="https://www.sdcardformatter.com/" target="_blank">SD Card Formatter</a>.</p>
-<p>Open the SD Card Formatter application on your computer, and set the following
+<a class="icon link reference external" href="https://www.sdcardformatter.com/" target="_blank">SD card Formatter</a>.</p>
+<p>Open the SD card Formatter application on your computer, and set the following
 fields:</p>
 <ol class="arabic">
-<li><p><strong>Select Card</strong> = SD Card drive you want to format (usually says “boot” or
+<li><p><strong>Select Card</strong> = SD card drive you want to format (usually says “boot” or
 “volume”)</p></li>
 <li><p><strong>Card Information</strong> = Make sure the disc size approximately matches your SD
 Card capacity</p></li>
@@ -727,7 +767,7 @@ several minutes)</p>
 </ol>
 </section>
 <section id="using-diskpart-via-windows-command-prompt">
-<h4>Using DISKPART via Windows command prompt<a class="headerlink" href="#using-diskpart-via-windows-command-prompt" title="Link to this heading"></a></h4>
+<h5>Using DISKPART via Windows command prompt<a class="headerlink" href="#using-diskpart-via-windows-command-prompt" title="Link to this heading"></a></h5>
 <p>Windows command prompt has <strong>DISKPART</strong> that is also capable of reformatting SD
 cards and other drives.</p>
 <ol class="arabic simple">
@@ -746,10 +786,10 @@ for Windows.</p></li>
 </section>
 </section>
 <section id="flash-the-sd-card">
-<h3>Flash the SD Card<a class="headerlink" href="#flash-the-sd-card" title="Link to this heading"></a></h3>
-<p>This step will physically write the software image file onto the SD Card so it
+<h4>Flash the SD card<a class="headerlink" href="#flash-the-sd-card" title="Link to this heading"></a></h4>
+<p>This step will physically write the software image file onto the SD card, so it
 will be ready for use.</p>
-<p>There are several Windows applications that can flash SD Cards, we will describe
+<p>There are several Windows applications that can flash SD cards; we will describe
 how to do it using two common tools. Ensure you have at least one of the
 following tools installed on your computer:</p>
 <p><a class="icon link reference external" href="https://sourceforge.net/projects/win32diskimager/files/latest/download?source=navbar" target="_blank">Win32DiskImager from Sourceforge</a>
@@ -759,12 +799,12 @@ or
 <p class="admonition-title">Important</p>
 <p>If you are unsure, or don’t understand these directions - STOP.
 If you are not careful, you could accidentally write a Linux image to your
-PC hard drive.
-Your PC will not function properly after this, and your IT department should
-not blame ADI.</p>
+PC hard drive.</p>
+<p>Your PC will not function properly after this, and your IT department should
+not blame <a class="icon adi reference external" href="https://www.analog.com/" target="_blank">ADI</a>.</p>
 </div>
 <section id="win32diskimager">
-<h4>Win32DiskImager<a class="headerlink" href="#win32diskimager" title="Link to this heading"></a></h4>
+<h5>Win32DiskImager<a class="headerlink" href="#win32diskimager" title="Link to this heading"></a></h5>
 <ol class="arabic">
 <li><p>Open up the Win32DiskImager application on your PC</p>
 <a class="reference internal image-reference" href="../../../_images/sd_card_flash_gui.png"><img alt="../../../_images/sd_card_flash_gui.png" src="../../../_images/sd_card_flash_gui.png" style="width: 400px;" />
@@ -777,24 +817,24 @@ it.</p>
 </a>
 </li>
 <li><p>Double check that the <strong>Device</strong> location in the upper-right corner, matches
-the SD Card drive location.</p>
+the SD card drive location.</p>
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
 <p>You DO NOT want to accidentally re-image your hard drive, so this step is
-critical to ensure you are flashing the SD Card and not anything else.</p>
+critical to ensure you are flashing the SD card and not anything else.</p>
 </div>
 </li>
-<li><p>When you are ready to flash the SD Card, click on the “Write” button.</p></li>
+<li><p>When you are ready to flash the SD card, click on the “Write” button.</p></li>
 <li><p>Win32DiskImager will also alert you to make sure you want to write to this
 drive, acting as another failsafe so that you don’t accidentally image the
 wrong drive.</p>
 <a class="reference internal image-reference" href="../../../_images/sd_card_flash_write_confirm.png"><img alt="../../../_images/sd_card_flash_write_confirm.png" src="../../../_images/sd_card_flash_write_confirm.png" style="width: 400px;" />
 </a>
 </li>
-<li><p>Flashing the image to the SD Card typically take 10-15 minutes, but a
+<li><p>Flashing the image to the SD card typically take 10-15 minutes, but a
 progress bar is provided during the process. So grab yourself a coffee.</p></li>
 <li><p>“Write Successful” will appear when the program is finished, letting you know
-the SD Card is ready.</p>
+the SD card is ready.</p>
 <a class="reference internal image-reference" href="../../../_images/sd_card_flash_success.png"><img alt="../../../_images/sd_card_flash_success.png" src="../../../_images/sd_card_flash_success.png" style="width: 400px;" />
 </a>
 </li>
@@ -804,7 +844,7 @@ from the reader.</p></li>
 </ol>
 </section>
 <section id="etcher">
-<h4>Etcher<a class="headerlink" href="#etcher" title="Link to this heading"></a></h4>
+<h5>Etcher<a class="headerlink" href="#etcher" title="Link to this heading"></a></h5>
 <ol class="arabic">
 <li><p>Open Balena Etcher and select the .img file you want to write to the SD
 card.</p>
@@ -840,6 +880,7 @@ use.</p>
 <li><p>Go to the toolbar of your Windows OS, and click on “safely remove hardware”,
 and remove your completed SD card.</p></li>
 </ol>
+</section>
 </section>
 </section>
 </section>
