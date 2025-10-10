@@ -1,4 +1,47 @@
 {
     "pattern": {},
-    "collection": {}
+    "collection": {
+        "EVAL-AD4050/AD4052-ARDZ": {
+            "docname": "documentation/eval/user-guide/adc/ad4052-ardz/index",
+            "description": "",
+            "include": {
+                "documentation": {
+                    "eval/user-guide/adc/ad4052-ardz": {
+                        "name": "User guide"
+                    }
+                },
+                "hdl": {
+                    "projects/ad4052_ardz": {
+                        "name": "HDL Project (ad4052_ardz)"
+                    }
+                },
+                "no-OS": {
+                    "drivers/adc/ad405x": {
+                        "name": "no-OS driver (ad405x)"
+                    }
+                }
+            },
+            "image": "https://media.githubusercontent.com/media/jvelasc2/documentation-staging/main/docs/eval/user-guide/adc/ad4052-ardz/eval-angle.png",
+            "subtitle": "Evaluating the AD4050/AD4052 Compact, Low Power, 12-Bit/16-Bit, 2 MSPS Easy Drive SAR ADCs",
+            "label": [
+                "eval",
+                "user-guide"
+            ]
+        },
+        "Applied Systems Control": {
+            "docname": "documentation/learning/workshops_applied_systems_control/index",
+            "description": "Introduction to applied systems control, focusing on practical applications\nand real-world scenarios. Participants will learn about various control\nsystems, their design and implementation.\n",
+            "include": {
+                "documentation": {
+                    "learning/workshops_applied_systems_control": {},
+                    "solutions/reference-designs/ad-swiot1l-sl/index": {}
+                }
+            },
+            "image": "https://media.githubusercontent.com/media/jvelasc2/documentation-staging/main/docs/learning/workshops_applied_systems_control/industrial.png",
+            "subtitle": "Overview of industrial control and automation systems.",
+            "label": [
+                "workshop"
+            ]
+        }
+    }
 }

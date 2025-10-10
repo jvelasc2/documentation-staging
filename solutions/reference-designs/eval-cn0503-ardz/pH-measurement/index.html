@@ -8,8 +8,8 @@
 
     <title>pH Measurement Demo &#8212; System Level Documentation  documentation</title>
     <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=8e8a900e" />
-    <link rel="stylesheet" type="text/css" href="../../../../_static/app.min.css?v=02e51da6" />
-    <script async="async" src="../../../../_static/app.umd.js?v=a9cc9f1c"></script>
+    <link rel="stylesheet" type="text/css" href="../../../../_static/app.min.css?v=85dade36" />
+    <script async="async" src="../../../../_static/app.umd.js?v=3a4867e9"></script>
     <link rel="icon" href="../../../../_static/icon.svg"/>
     <link rel="index" title="Index" href="../../../../genindex.html" />
     <link rel="search" title="Search" href="../../../../search.html" />
@@ -42,7 +42,10 @@
     }
   }
 </style>
-  </head><body>
+  </head>
+  
+    <body>
+  
   <input type="checkbox" id="input-show-toc">
   <input type="checkbox" id="input-show-localtoc">
   <input type="checkbox" id="input-show-repotoc">
@@ -172,12 +175,14 @@ Content on this topic
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Software</span></p>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../software/ad9084-profile-generator/index.html">AD9084 (Apollo) Profile Generator</a></li>
 <li class="toctree-l1"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-3" id="toctree-collapse-3"/><div class="collapse"><a class="reference internal" href="../../../../software/iio-oscilloscope/index.html">IIO Oscilloscope</a><label for="toctree-collapse-3"><div class="icon"></div></label></div><ul>
 <li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-3-1" id="toctree-collapse-3-1"/><div class="collapse"><a class="reference internal" href="../../../../software/iio-oscilloscope/adrv9009/index.html">ADRV9009</a><label for="toctree-collapse-3-1"><div class="icon"></div></label></div><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../../../software/iio-oscilloscope/adrv9009/plugin.html">Standard Plugin</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../../../software/iio-oscilloscope/adrv9009/advanced-plugin.html">Advanced plugin</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../software/iio-oscilloscope/ad9084/index.html">AD9084</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-4" id="toctree-collapse-4"/><div class="collapse"><a class="reference internal" href="../../../../software/libiio/index.html">Libiio</a><label for="toctree-collapse-4"><div class="icon"></div></label></div><ul>
@@ -213,7 +218,6 @@ Content on this topic
 <li class="toctree-l3"><a class="reference internal" href="../../../../eval/user-guide/adc/ad4052-ardz/user-guide.html">Evaluating the device</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../../../../eval/user-guide/adc/ad9084-ebz/index.html">EVAL-AD9084-EBZ</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../../eval/user-guide/mem/adxl355-pmdz/index.html">EVAL-ADXL355-PMDZ</a></li>
 <li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-8-2" id="toctree-collapse-8-2"/><div class="collapse"><a class="reference internal" href="../../../../eval/user-guide/transceiver/adrv9009/index.html">ADRV9009 &amp; ADRV9008</a><label for="toctree-collapse-8-2"><div class="icon"></div></label></div><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../../../eval/user-guide/transceiver/adrv9009/prerequisites.html">Prerequisites</a></li>
@@ -330,17 +334,28 @@ Content on this topic
 <li class="toctree-l3"><a class="reference internal" href="../../ad-swiot1l-sl/software-guide/index.html">Software User Guide</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-12-10" id="toctree-collapse-12-10"/><div class="collapse"><a class="reference internal" href="../../admv96s-wgbe-ek1/index.html">ADMV96S-WGBE-EK1</a><label for="toctree-collapse-12-10"><div class="icon"></div></label></div><ul>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-12-10" id="toctree-collapse-12-10"/><div class="collapse"><a class="reference internal" href="../../ad9084_ebz/index.html">AD9084-FMCA-EBZ (Apollo)</a><label for="toctree-collapse-12-10"><div class="icon"></div></label></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../ad9084_ebz/prerequisites.html">Prerequisites</a></li>
+<li class="toctree-l3"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-12-10-1" id="toctree-collapse-12-10-1"/><div class="collapse"><a class="reference internal" href="../../ad9084_ebz/quickstart/index.html">Quickstart</a><label for="toctree-collapse-12-10-1"><div class="icon"></div></label></div><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../ad9084_ebz/quickstart/microblaze.html">Virtex UltraScale+ VCU118/VCU128</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../ad9084_ebz/quickstart/versal.html">Versal ACAP VCK190/VPK180</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../ad9084_ebz/quickstart/agilex.html">Intel Agilex 7 I-Series</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../ad9084_ebz/quickstart/new_usecase.html">Running a new JESD mode on hardware</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-12-11" id="toctree-collapse-12-11"/><div class="collapse"><a class="reference internal" href="../../admv96s-wgbe-ek1/index.html">ADMV96S-WGBE-EK1</a><label for="toctree-collapse-12-11"><div class="icon"></div></label></div><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../admv96s-wgbe-ek1/hardware-guide/index.html">Hardware User Guide</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../admv96s-wgbe-ek1/software-guide/index.html">Software User Guide</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../adrd8012-01Z/index.html">ADRD8012-01Z</a></li>
-<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-12-11" id="toctree-collapse-12-11"/><div class="collapse"><a class="reference internal" href="../../eval-adbms6830bmsw/index.html">EVAL-ADBMS6830BMSW</a><label for="toctree-collapse-12-11"><div class="icon"></div></label></div><ul>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-12-12" id="toctree-collapse-12-12"/><div class="collapse"><a class="reference internal" href="../../eval-adbms6830bmsw/index.html">EVAL-ADBMS6830BMSW</a><label for="toctree-collapse-12-12"><div class="icon"></div></label></div><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../eval-adbms6830bmsw/software-guide/index.html">Software User Guide</a></li>
 </ul>
 </li>
-<li class="toctree-l2 current"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-12-12" id="toctree-collapse-12-12" checked=""/><div class="collapse"><a class="reference internal" href="../index.html">EVAL-CN0503-ARDZ</a><label for="toctree-collapse-12-12"><div class="icon"></div></label></div><ul class="current">
+<li class="toctree-l2 current"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-12-13" id="toctree-collapse-12-13" checked=""/><div class="collapse"><a class="reference internal" href="../index.html">EVAL-CN0503-ARDZ</a><label for="toctree-collapse-12-13"><div class="icon"></div></label></div><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="../cn0503-software/index.html">Software User Guide</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../fluorescence-measurement/index.html">Fluorescence Measurement Demo</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../nitrate-measurement/index.html">Nitrate Measurement Demo</a></li>
@@ -352,19 +367,19 @@ Content on this topic
 <li class="toctree-l2"><a class="reference internal" href="../../eval-cn0575-rpiz/index.html">EVAL-CN0575-RPIZ</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../eval-cn0577-fmcz/index.html">EVAL-CN0577-FMCZ</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../eval-cn0581-ebz/index.html">EVAL-CN0581-EBZ</a></li>
-<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-12-13" id="toctree-collapse-12-13"/><div class="collapse"><a class="reference internal" href="../../eval-cn0584-ebz/index.html">EVAL-CN0584-EBZ</a><label for="toctree-collapse-12-13"><div class="icon"></div></label></div><ul>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-12-14" id="toctree-collapse-12-14"/><div class="collapse"><a class="reference internal" href="../../eval-cn0584-ebz/index.html">EVAL-CN0584-EBZ</a><label for="toctree-collapse-12-14"><div class="icon"></div></label></div><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../eval-cn0584-ebz/digital-template/index.html">Digital Template Model</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../eval-cn0584-ebz/matlab-configuration/index.html">MATLAB Configuration</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../eval-cn0585-fmcz/index.html">EVAL-CN0585-FMCZ</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../eval-ess1-sys/index.html">EVAL-ESS1-SYS</a></li>
-<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-12-14" id="toctree-collapse-12-14"/><div class="collapse"><a class="reference internal" href="../../eval-isomax/index.html">EVAL-ISOMAX</a><label for="toctree-collapse-12-14"><div class="icon"></div></label></div><ul>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-12-15" id="toctree-collapse-12-15"/><div class="collapse"><a class="reference internal" href="../../eval-isomax/index.html">EVAL-ISOMAX</a><label for="toctree-collapse-12-15"><div class="icon"></div></label></div><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../eval-isomax/hardware_guide/index.html">Hardware User Guide</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../eval-isomax/software_guide/index.html">Software User Guide</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-12-15" id="toctree-collapse-12-15"/><div class="collapse"><a class="reference internal" href="../../eval-ltpa-kit/index.html">EVAL-LTPA-KIT (LTpowerAnalyzer Kit)</a><label for="toctree-collapse-12-15"><div class="icon"></div></label></div><ul>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-12-16" id="toctree-collapse-12-16"/><div class="collapse"><a class="reference internal" href="../../eval-ltpa-kit/index.html">EVAL-LTPA-KIT (LTpowerAnalyzer Kit)</a><label for="toctree-collapse-12-16"><div class="icon"></div></label></div><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../eval-ltpa-kit/hardware_guide/index.html">EVAL-LTPA-KIT Hardware User Guide</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../eval-ltpa-kit/software_guide/index.html">EVAL-LTPA-KIT Software Guide</a></li>
 </ul>
@@ -398,6 +413,7 @@ Content on this topic
 <li class="toctree-l2"><a class="reference internal" href="../../../../learning/workshops_introduction_to_electronics/index.html">Introduction to Electronics</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../../learning/workshops_embedded_baremetal/index.html">Embedded Baremetal</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../../learning/workshops_embedded_linux/index.html">Embedded Linux</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../learning/workshops_applied_systems_control/index.html">Applied Systems Control Workshop</a></li>
 </ul>
 </li>
 </ul>
@@ -458,7 +474,7 @@ set up the pH measurement curve using a spreadsheet.</p>
 <ul class="simple">
 <li><p><a class="icon adi reference external" href="https://www.analog.com/CN0503" target="_blank">CN0503</a>, completely assembled (see <a class="reference internal" href="../index.html#eval-cn0503-ardz"><span class="std std-ref">Hardware User Guide</span></a>)</p></li>
 <li><p><a class="icon adi reference external" href="https://www.analog.com/EVAL-ADICUP3029" target="_blank">EVAL-ADICUP3029</a> with firmware (see <a class="reference internal" href="../cn0503-software/index.html#cn0503-software"><span class="std std-ref">Software User Guide</span></a>)</p></li>
-<li><p>Host computer with CN0503 software (see <a class="reference download internal" download="" href="../../../../_downloads/203a10ef9f1994617acf2b4751fe1aee/cn0503_gui_quick_start_guide.docx"><code class="xref download docutils literal notranslate"><span class="pre">Quick</span> <span class="pre">Setup</span> <span class="pre">Guide</span></code></a>)
+<li><p>Host computer with CN0503 software (see <a class="icon reference download external" download="" href="https://media.githubusercontent.com/media/jvelasc2/documentation-staging/main/docs/solutions/reference-designs/eval-cn0503-ardz/pH-measurement/cn0503_gui_quick_start_guide.docx"><code class="xref download docutils literal notranslate"><span class="pre">Quick</span> <span class="pre">Setup</span> <span class="pre">Guide</span></code></a>)
 and Microsoft Excel (Optional for generating your own measurement curve)</p></li>
 <li><p>Bromothymol blue or API pH Test Kit <a class="icon link reference external" href="https://apifishcare.com/product/ph-test-kit" target="_blank">API Fish Care pH Test Kit</a></p></li>
 <li><p>pH Buffer Solutions (Optional for calibration)</p></li>
@@ -470,7 +486,7 @@ and distilled water)</p></li>
 <h2>Setting up the EVAL-CN0503-ARDZ<a class="headerlink" href="#setting-up-the-eval-cn0503-ardz" title="Link to this heading"></a></h2>
 <p>Before starting with these steps, please check the <a class="reference internal" href="../index.html#eval-cn0503-ardz"><span class="std std-ref">Hardware User Guide</span></a> for the
 steps to assembling the <a class="icon adi reference external" href="https://www.analog.com/CN0503" target="_blank">CN0503</a>. Additionally, please check the <a class="reference internal" href="../cn0503-software/index.html#cn0503-software"><span class="std std-ref">Software User Guide</span></a>
-for the steps in setting up the firmware and the <a class="reference download internal" download="" href="../../../../_downloads/203a10ef9f1994617acf2b4751fe1aee/cn0503_gui_quick_start_guide.docx"><code class="xref download docutils literal notranslate"><span class="pre">Quick</span> <span class="pre">Setup</span> <span class="pre">Guide</span></code></a>
+for the steps in setting up the firmware and the <a class="icon reference download external" download="" href="https://media.githubusercontent.com/media/jvelasc2/documentation-staging/main/docs/solutions/reference-designs/eval-cn0503-ardz/pH-measurement/cn0503_gui_quick_start_guide.docx"><code class="xref download docutils literal notranslate"><span class="pre">Quick</span> <span class="pre">Setup</span> <span class="pre">Guide</span></code></a>
 for running the software. This demo assumes that you already have an assembled board with a
 working firmware already programmed on the <a class="icon adi reference external" href="https://www.analog.com/EVAL-ADICUP3029" target="_blank">EVAL-ADICUP3029</a>
 and a ready-to-run software in the host computer.</p>
@@ -486,17 +502,17 @@ and a ready-to-run software in the host computer.</p>
 <tbody>
 <tr class="row-even"><td><p><em>LD2SEL and LD3SEL</em></p></td>
 <td><p>Set to VARD</p></td>
-<td><img alt="../../../../_images/ld2sel-ard2.png" src="../../../../_images/ld2sel-ard2.png" />
+<td><img alt="https://media.githubusercontent.com/media/jvelasc2/documentation-staging/main/docs/solutions/reference-designs/eval-cn0503-ardz/pH-measurement/ld2sel-ard.png" src="https://media.githubusercontent.com/media/jvelasc2/documentation-staging/main/docs/solutions/reference-designs/eval-cn0503-ardz/pH-measurement/ld2sel-ard.png" />
 </td>
 </tr>
 <tr class="row-odd"><td><p><em>IOSEL</em></p></td>
 <td><p>Set to ARD</p></td>
-<td><img alt="../../../../_images/iosel-ard3.png" src="../../../../_images/iosel-ard3.png" />
+<td><img alt="https://media.githubusercontent.com/media/jvelasc2/documentation-staging/main/docs/solutions/reference-designs/eval-cn0503-ardz/pH-measurement/iosel-ard.png" src="https://media.githubusercontent.com/media/jvelasc2/documentation-staging/main/docs/solutions/reference-designs/eval-cn0503-ardz/pH-measurement/iosel-ard.png" />
 </td>
 </tr>
 <tr class="row-even"><td><p><em>P1.8V</em></p></td>
 <td><p>Shorted</p></td>
-<td><img alt="../../../../_images/p1.8v-ard3.png" src="../../../../_images/p1.8v-ard3.png" />
+<td><img alt="https://media.githubusercontent.com/media/jvelasc2/documentation-staging/main/docs/solutions/reference-designs/eval-cn0503-ardz/pH-measurement/p1.8v-ard.png" src="https://media.githubusercontent.com/media/jvelasc2/documentation-staging/main/docs/solutions/reference-designs/eval-cn0503-ardz/pH-measurement/p1.8v-ard.png" />
 </td>
 </tr>
 </tbody>
@@ -507,34 +523,34 @@ and a ready-to-run software in the host computer.</p>
 <ol class="arabic">
 <li><p>Connect the 430nm LED Board and the 615nm LED Board to LED2 and LED3,
 respectively.</p>
-<img alt="../../../../_images/ph_ledplacement.jpg" src="../../../../_images/ph_ledplacement.jpg" />
+<img alt="https://media.githubusercontent.com/media/jvelasc2/documentation-staging/main/docs/solutions/reference-designs/eval-cn0503-ardz/pH-measurement/ph_ledplacement.jpg" src="https://media.githubusercontent.com/media/jvelasc2/documentation-staging/main/docs/solutions/reference-designs/eval-cn0503-ardz/pH-measurement/ph_ledplacement.jpg" />
 </li>
 <li><p>Connect the <a class="icon adi reference external" href="https://www.analog.com/EVAL-ADICUP3029" target="_blank">EVAL-ADICUP3029</a> to the <a class="icon adi reference external" href="https://www.analog.com/CN0503" target="_blank">CN0503</a>
 and connect a microUSB-to-USB cable from the board to
 the host computer.</p></li>
 <li><p>Run the software using python scripts or the executable, see the
-<a class="reference download internal" download="" href="../../../../_downloads/203a10ef9f1994617acf2b4751fe1aee/cn0503_gui_quick_start_guide.docx"><code class="xref download docutils literal notranslate"><span class="pre">Quick</span> <span class="pre">Setup</span> <span class="pre">Guide</span></code></a>
+<a class="icon reference download external" download="" href="https://media.githubusercontent.com/media/jvelasc2/documentation-staging/main/docs/solutions/reference-designs/eval-cn0503-ardz/pH-measurement/cn0503_gui_quick_start_guide.docx"><code class="xref download docutils literal notranslate"><span class="pre">Quick</span> <span class="pre">Setup</span> <span class="pre">Guide</span></code></a>
 and wait for the main window to open.</p>
-<img alt="../../../../_images/ph_mainwindow2.png" src="../../../../_images/ph_mainwindow2.png" />
+<img alt="https://media.githubusercontent.com/media/jvelasc2/documentation-staging/main/docs/solutions/reference-designs/eval-cn0503-ardz/pH-measurement/ph_mainwindow.png" src="https://media.githubusercontent.com/media/jvelasc2/documentation-staging/main/docs/solutions/reference-designs/eval-cn0503-ardz/pH-measurement/ph_mainwindow.png" />
 </li>
 <li><p>Click the Gear icon at the top right of the window to open Settings.</p>
-<img alt="../../../../_images/ph_opensettings1.png" src="../../../../_images/ph_opensettings1.png" />
+<img alt="https://media.githubusercontent.com/media/jvelasc2/documentation-staging/main/docs/solutions/reference-designs/eval-cn0503-ardz/pH-measurement/ph_opensettings.png" src="https://media.githubusercontent.com/media/jvelasc2/documentation-staging/main/docs/solutions/reference-designs/eval-cn0503-ardz/pH-measurement/ph_opensettings.png" />
 </li>
 <li><p>Select the correct COM Port of the device and then click the <code class="docutils literal notranslate"><span class="pre">Connect</span></code> button.
-(see <a class="reference download internal" download="" href="../../../../_downloads/203a10ef9f1994617acf2b4751fe1aee/cn0503_gui_quick_start_guide.docx"><code class="xref download docutils literal notranslate"><span class="pre">Quick</span> <span class="pre">Setup</span> <span class="pre">Guide</span></code></a> for help)</p>
-<img alt="../../../../_images/ph_clickconnect1.png" src="../../../../_images/ph_clickconnect1.png" />
+(see <a class="icon reference download external" download="" href="https://media.githubusercontent.com/media/jvelasc2/documentation-staging/main/docs/solutions/reference-designs/eval-cn0503-ardz/pH-measurement/cn0503_gui_quick_start_guide.docx"><code class="xref download docutils literal notranslate"><span class="pre">Quick</span> <span class="pre">Setup</span> <span class="pre">Guide</span></code></a> for help)</p>
+<img alt="https://media.githubusercontent.com/media/jvelasc2/documentation-staging/main/docs/solutions/reference-designs/eval-cn0503-ardz/pH-measurement/ph_clickconnect.png" src="https://media.githubusercontent.com/media/jvelasc2/documentation-staging/main/docs/solutions/reference-designs/eval-cn0503-ardz/pH-measurement/ph_clickconnect.png" />
 </li>
-<li><p>Load the configuration file for pH Measurement: <a class="reference download internal" download="" href="../../../../_downloads/fc90fc7c574c28350e8a44ef0d68c5ec/cn0503_defaults_ph.zip"><code class="xref download docutils literal notranslate"><span class="pre">CN0503</span> <span class="pre">Configuration</span> <span class="pre">File</span></code></a></p></li>
+<li><p>Load the configuration file for pH Measurement: <a class="icon reference download external" download="" href="https://media.githubusercontent.com/media/jvelasc2/documentation-staging/main/docs/solutions/reference-designs/eval-cn0503-ardz/pH-measurement/cn0503_defaults_ph.zip"><code class="xref download docutils literal notranslate"><span class="pre">CN0503</span> <span class="pre">Configuration</span> <span class="pre">File</span></code></a></p></li>
 <li><p>Configure the settings for path 2 and 3 with the desired name, set
 wavelengths to 430 and 615, respectively, and select measurement type:
 absorption for both.</p>
-<img alt="../../../../_images/ph_pathsetting.png" src="../../../../_images/ph_pathsetting.png" />
+<img alt="https://media.githubusercontent.com/media/jvelasc2/documentation-staging/main/docs/solutions/reference-designs/eval-cn0503-ardz/pH-measurement/ph_pathsetting.png" src="https://media.githubusercontent.com/media/jvelasc2/documentation-staging/main/docs/solutions/reference-designs/eval-cn0503-ardz/pH-measurement/ph_pathsetting.png" />
 </li>
 <li><p>Add empty cuvette/s (or filled with distilled water) to the cuvette holder
 assembly and insert to path 2 and 3, and click <code class="docutils literal notranslate"><span class="pre">Optimize</span> <span class="pre">LED</span></code> for each path.
 This properly sets the LED current in these paths so that the light intensity
 is close to 50%.</p>
-<img alt="../../../../_images/ph_emptycuvette.jpg" src="../../../../_images/ph_emptycuvette.jpg" />
+<img alt="https://media.githubusercontent.com/media/jvelasc2/documentation-staging/main/docs/solutions/reference-designs/eval-cn0503-ardz/pH-measurement/ph_emptycuvette.jpg" src="https://media.githubusercontent.com/media/jvelasc2/documentation-staging/main/docs/solutions/reference-designs/eval-cn0503-ardz/pH-measurement/ph_emptycuvette.jpg" />
 </li>
 </ol>
 </section>
@@ -550,26 +566,26 @@ ratio RRAT.</p>
 <ol class="arabic">
 <li><p>Click <code class="docutils literal notranslate"><span class="pre">OK</span></code> on the settings window and on the main window select optical path 3
 and display mode ARAT.</p>
-<img alt="../../../../_images/ph_arat.png" src="../../../../_images/ph_arat.png" />
+<img alt="https://media.githubusercontent.com/media/jvelasc2/documentation-staging/main/docs/solutions/reference-designs/eval-cn0503-ardz/pH-measurement/ph_arat.png" src="https://media.githubusercontent.com/media/jvelasc2/documentation-staging/main/docs/solutions/reference-designs/eval-cn0503-ardz/pH-measurement/ph_arat.png" />
 </li>
 <li><p>Click on <code class="docutils literal notranslate"><span class="pre">Start</span> <span class="pre">Measurement</span></code> and note the average value on the graph. Remember
 the empty cuvette or distilled water sample should still be in the path. The
 average value will be used as the baseline ratio for this path.</p>
-<img alt="../../../../_images/ph_arataverage.png" src="../../../../_images/ph_arataverage.png" />
+<img alt="https://media.githubusercontent.com/media/jvelasc2/documentation-staging/main/docs/solutions/reference-designs/eval-cn0503-ardz/pH-measurement/ph_arataverage.png" src="https://media.githubusercontent.com/media/jvelasc2/documentation-staging/main/docs/solutions/reference-designs/eval-cn0503-ardz/pH-measurement/ph_arataverage.png" />
 </li>
 <li><p>Click on <code class="docutils literal notranslate"><span class="pre">Stop</span> <span class="pre">Measurement</span></code> (Repeat the two previous steps for path 3) then,
 click on the settings icon on the top right corner to bring back the settings
 and click on <code class="docutils literal notranslate"><span class="pre">Advanced</span></code> to bring up the another window.</p>
-<img alt="../../../../_images/ph_stopandadvance.png" src="../../../../_images/ph_stopandadvance.png" />
+<img alt="https://media.githubusercontent.com/media/jvelasc2/documentation-staging/main/docs/solutions/reference-designs/eval-cn0503-ardz/pH-measurement/ph_stopandadvance.png" src="https://media.githubusercontent.com/media/jvelasc2/documentation-staging/main/docs/solutions/reference-designs/eval-cn0503-ardz/pH-measurement/ph_stopandadvance.png" />
 </li>
 <li><p>In the “Enter a direct command” text field, type “DEF1 RATB &lt;average value&gt;”
 for path 2 and “DEF2 RATB &lt;average value&gt;” for path3, then press <code class="docutils literal notranslate"><span class="pre">Send</span>
 <span class="pre">Command</span></code>. Replace the &lt;average value&gt; to the value you have noted earlier.</p>
-<img alt="../../../../_images/ph_ratb.png" src="../../../../_images/ph_ratb.png" />
+<img alt="https://media.githubusercontent.com/media/jvelasc2/documentation-staging/main/docs/solutions/reference-designs/eval-cn0503-ardz/pH-measurement/ph_ratb.png" src="https://media.githubusercontent.com/media/jvelasc2/documentation-staging/main/docs/solutions/reference-designs/eval-cn0503-ardz/pH-measurement/ph_ratb.png" />
 </li>
 <li><p>Optionally, you can write pH to the primary unit field of path 2 and path 3.
 These are just labels and are not necessary.</p>
-<img alt="../../../../_images/ph_unit.png" src="../../../../_images/ph_unit.png" />
+<img alt="https://media.githubusercontent.com/media/jvelasc2/documentation-staging/main/docs/solutions/reference-designs/eval-cn0503-ardz/pH-measurement/ph_unit.png" src="https://media.githubusercontent.com/media/jvelasc2/documentation-staging/main/docs/solutions/reference-designs/eval-cn0503-ardz/pH-measurement/ph_unit.png" />
 </li>
 <li><p>Click <code class="docutils literal notranslate"><span class="pre">Okay</span></code> here and on the settings window to go back to the main. Remove the
 empty cuvette/s or distilled water sample/s. The device is now ready to
@@ -582,11 +598,11 @@ measure pH.</p></li>
 <li><p>Place a prepared cuvette with the test sample to either path 2 and path 3.
 Check the Preparing Test Sample section on how to prepare a cuvette with the
 test sample and indicator.</p>
-<img alt="../../../../_images/ph_samples.png" src="../../../../_images/ph_samples.png" />
+<img alt="https://media.githubusercontent.com/media/jvelasc2/documentation-staging/main/docs/solutions/reference-designs/eval-cn0503-ardz/pH-measurement/ph_samples.png" src="https://media.githubusercontent.com/media/jvelasc2/documentation-staging/main/docs/solutions/reference-designs/eval-cn0503-ardz/pH-measurement/ph_samples.png" />
 </li>
 <li><p>Select either path 2 or path 3, set display mode to INS1, and press <code class="docutils literal notranslate"><span class="pre">Start</span>
 <span class="pre">Measurement</span></code>.</p>
-<img alt="../../../../_images/ph_curve.png" src="../../../../_images/ph_curve.png" />
+<img alt="https://media.githubusercontent.com/media/jvelasc2/documentation-staging/main/docs/solutions/reference-designs/eval-cn0503-ardz/pH-measurement/ph_curve.png" src="https://media.githubusercontent.com/media/jvelasc2/documentation-staging/main/docs/solutions/reference-designs/eval-cn0503-ardz/pH-measurement/ph_curve.png" />
 </li>
 </ol>
 <div class="admonition important">
@@ -615,7 +631,7 @@ top.</p></li>
 thoroughly mix the reagent with the solution.</p></li>
 <li><p>If the solution in the cuvette has uniform color, it can now be used with the
 CN0503. Below is a photo of prepared samples from common household chemicals.</p>
-<img alt="../../../../_images/ph_solutions.jpg" src="../../../../_images/ph_solutions.jpg" />
+<img alt="https://media.githubusercontent.com/media/jvelasc2/documentation-staging/main/docs/solutions/reference-designs/eval-cn0503-ardz/pH-measurement/ph_solutions.jpg" src="https://media.githubusercontent.com/media/jvelasc2/documentation-staging/main/docs/solutions/reference-designs/eval-cn0503-ardz/pH-measurement/ph_solutions.jpg" />
 </li>
 </ol>
 </section>
@@ -630,35 +646,35 @@ absorbance to measure pH, the CN0503 uses the relative ratio RRAT. RRAT is the
 absolute ratio (ARAT) of the transmitted light intensity to the incident light
 intensity, and divided by the baseline ratio. RRAT is related to absorbance
 using the equation below.</p>
-<img alt="../../../../_images/ph_rratabsorbance1.png" src="../../../../_images/ph_rratabsorbance1.png" />
+<img alt="https://media.githubusercontent.com/media/jvelasc2/documentation-staging/main/docs/solutions/reference-designs/eval-cn0503-ardz/pH-measurement/ph_rratabsorbance.png" src="https://media.githubusercontent.com/media/jvelasc2/documentation-staging/main/docs/solutions/reference-designs/eval-cn0503-ardz/pH-measurement/ph_rratabsorbance.png" />
 <p>It is possible to change the mathematical expression for the ARAT but this
 demo will stick to using the default. Using Microsoft Excel, it is easy
 to generate the measurement curve by following the steps outlined below.</p>
 <ol class="arabic">
 <li><p>Create list of the RRAT measurements of each sample and the known pH in 2
 different columns.</p>
-<img alt="../../../../_images/ph_excelrrat.png" src="../../../../_images/ph_excelrrat.png" />
+<img alt="https://media.githubusercontent.com/media/jvelasc2/documentation-staging/main/docs/solutions/reference-designs/eval-cn0503-ardz/pH-measurement/ph_excelrrat.png" src="https://media.githubusercontent.com/media/jvelasc2/documentation-staging/main/docs/solutions/reference-designs/eval-cn0503-ardz/pH-measurement/ph_excelrrat.png" />
 <ul>
 <li><p>To get the RRAT measurement of a solution, select either path 2 or 3 and
 RRAT in the display units, and click <code class="docutils literal notranslate"><span class="pre">Start</span> <span class="pre">Measurement</span></code>.</p>
-<img alt="../../../../_images/ph_rrat.png" src="../../../../_images/ph_rrat.png" />
+<img alt="https://media.githubusercontent.com/media/jvelasc2/documentation-staging/main/docs/solutions/reference-designs/eval-cn0503-ardz/pH-measurement/ph_rrat.png" src="https://media.githubusercontent.com/media/jvelasc2/documentation-staging/main/docs/solutions/reference-designs/eval-cn0503-ardz/pH-measurement/ph_rrat.png" />
 </li>
 <li><p>Use the average or median of the measurement values.</p></li>
 </ul>
 </li>
 <li><p>Create a scatter plot of of the two columns with RRAT as the X-variable and
 pH as the Y-variable.</p>
-<img alt="../../../../_images/ph_curve.png" src="../../../../_images/ph_curve.png" />
+<img alt="https://media.githubusercontent.com/media/jvelasc2/documentation-staging/main/docs/solutions/reference-designs/eval-cn0503-ardz/pH-measurement/ph_curve.png" src="https://media.githubusercontent.com/media/jvelasc2/documentation-staging/main/docs/solutions/reference-designs/eval-cn0503-ardz/pH-measurement/ph_curve.png" />
 </li>
 <li><p>Create a trend line for the scatter plot and select the polynomial option
 with an order of up to 5. Also, check the box at the bottom to Display
 Equation on chart</p>
-<img alt="../../../../_images/ph_trendline.png" src="../../../../_images/ph_trendline.png" />
+<img alt="https://media.githubusercontent.com/media/jvelasc2/documentation-staging/main/docs/solutions/reference-designs/eval-cn0503-ardz/pH-measurement/ph_trendline.png" src="https://media.githubusercontent.com/media/jvelasc2/documentation-staging/main/docs/solutions/reference-designs/eval-cn0503-ardz/pH-measurement/ph_trendline.png" />
 </li>
 <li><p>Use the equation of the trendline and input the coefficients to the CN0503
 using the Command field in the Advanced settings. See the
 <a class="reference internal" href="../cn0503-software/index.html#cn0503-software"><span class="std std-ref">Software User Guide</span></a> for details on the command.</p>
-<img alt="../../../../_images/ph_polycommand.png" src="../../../../_images/ph_polycommand.png" />
+<img alt="https://media.githubusercontent.com/media/jvelasc2/documentation-staging/main/docs/solutions/reference-designs/eval-cn0503-ardz/pH-measurement/ph_polycommand.png" src="https://media.githubusercontent.com/media/jvelasc2/documentation-staging/main/docs/solutions/reference-designs/eval-cn0503-ardz/pH-measurement/ph_polycommand.png" />
 </li>
 </ol>
 </section>
@@ -667,7 +683,7 @@ using the Command field in the Advanced settings. See the
 <ul class="simple">
 <li><p><a class="reference internal" href="../index.html#eval-cn0503-ardz"><span class="std std-ref">Hardware User Guide</span></a></p></li>
 <li><p><a class="reference internal" href="../cn0503-software/index.html#cn0503-software"><span class="std std-ref">Software User Guide</span></a></p></li>
-<li><p><a class="reference download internal" download="" href="../../../../_downloads/203a10ef9f1994617acf2b4751fe1aee/cn0503_gui_quick_start_guide.docx"><code class="xref download docutils literal notranslate"><span class="pre">Quick</span> <span class="pre">Setup</span> <span class="pre">Guide</span></code></a></p></li>
+<li><p><a class="icon reference download external" download="" href="https://media.githubusercontent.com/media/jvelasc2/documentation-staging/main/docs/solutions/reference-designs/eval-cn0503-ardz/pH-measurement/cn0503_gui_quick_start_guide.docx"><code class="xref download docutils literal notranslate"><span class="pre">Quick</span> <span class="pre">Setup</span> <span class="pre">Guide</span></code></a></p></li>
 </ul>
 </section>
 </section>

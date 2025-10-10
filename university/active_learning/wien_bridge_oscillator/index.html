@@ -8,8 +8,8 @@
 
     <title>Activity: The Wien Bridge Oscillator &#8212; System Level Documentation  documentation</title>
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=8e8a900e" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/app.min.css?v=02e51da6" />
-    <script async="async" src="../../../_static/app.umd.js?v=a9cc9f1c"></script>
+    <link rel="stylesheet" type="text/css" href="../../../_static/app.min.css?v=85dade36" />
+    <script async="async" src="../../../_static/app.umd.js?v=3a4867e9"></script>
     <link rel="icon" href="../../../_static/icon.svg"/>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
@@ -42,7 +42,10 @@
     }
   }
 </style>
-  </head><body>
+  </head>
+  
+    <body>
+  
   <input type="checkbox" id="input-show-toc">
   <input type="checkbox" id="input-show-localtoc">
   <input type="checkbox" id="input-show-repotoc">
@@ -172,12 +175,14 @@ Content on this topic
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Software</span></p>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../software/ad9084-profile-generator/index.html">AD9084 (Apollo) Profile Generator</a></li>
 <li class="toctree-l1"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-3" id="toctree-collapse-3"/><div class="collapse"><a class="reference internal" href="../../../software/iio-oscilloscope/index.html">IIO Oscilloscope</a><label for="toctree-collapse-3"><div class="icon"></div></label></div><ul>
 <li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-3-1" id="toctree-collapse-3-1"/><div class="collapse"><a class="reference internal" href="../../../software/iio-oscilloscope/adrv9009/index.html">ADRV9009</a><label for="toctree-collapse-3-1"><div class="icon"></div></label></div><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../../software/iio-oscilloscope/adrv9009/plugin.html">Standard Plugin</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../../software/iio-oscilloscope/adrv9009/advanced-plugin.html">Advanced plugin</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../../../software/iio-oscilloscope/ad9084/index.html">AD9084</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-4" id="toctree-collapse-4"/><div class="collapse"><a class="reference internal" href="../../../software/libiio/index.html">Libiio</a><label for="toctree-collapse-4"><div class="icon"></div></label></div><ul>
@@ -213,7 +218,6 @@ Content on this topic
 <li class="toctree-l3"><a class="reference internal" href="../../../eval/user-guide/adc/ad4052-ardz/user-guide.html">Evaluating the device</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../../../eval/user-guide/adc/ad9084-ebz/index.html">EVAL-AD9084-EBZ</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../eval/user-guide/mem/adxl355-pmdz/index.html">EVAL-ADXL355-PMDZ</a></li>
 <li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-8-2" id="toctree-collapse-8-2"/><div class="collapse"><a class="reference internal" href="../../../eval/user-guide/transceiver/adrv9009/index.html">ADRV9009 &amp; ADRV9008</a><label for="toctree-collapse-8-2"><div class="icon"></div></label></div><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../../eval/user-guide/transceiver/adrv9009/prerequisites.html">Prerequisites</a></li>
@@ -330,17 +334,28 @@ Content on this topic
 <li class="toctree-l3"><a class="reference internal" href="../../../solutions/reference-designs/ad-swiot1l-sl/software-guide/index.html">Software User Guide</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-12-10" id="toctree-collapse-12-10"/><div class="collapse"><a class="reference internal" href="../../../solutions/reference-designs/admv96s-wgbe-ek1/index.html">ADMV96S-WGBE-EK1</a><label for="toctree-collapse-12-10"><div class="icon"></div></label></div><ul>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-12-10" id="toctree-collapse-12-10"/><div class="collapse"><a class="reference internal" href="../../../solutions/reference-designs/ad9084_ebz/index.html">AD9084-FMCA-EBZ (Apollo)</a><label for="toctree-collapse-12-10"><div class="icon"></div></label></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../solutions/reference-designs/ad9084_ebz/prerequisites.html">Prerequisites</a></li>
+<li class="toctree-l3"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-12-10-1" id="toctree-collapse-12-10-1"/><div class="collapse"><a class="reference internal" href="../../../solutions/reference-designs/ad9084_ebz/quickstart/index.html">Quickstart</a><label for="toctree-collapse-12-10-1"><div class="icon"></div></label></div><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../solutions/reference-designs/ad9084_ebz/quickstart/microblaze.html">Virtex UltraScale+ VCU118/VCU128</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../solutions/reference-designs/ad9084_ebz/quickstart/versal.html">Versal ACAP VCK190/VPK180</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../solutions/reference-designs/ad9084_ebz/quickstart/agilex.html">Intel Agilex 7 I-Series</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../solutions/reference-designs/ad9084_ebz/quickstart/new_usecase.html">Running a new JESD mode on hardware</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-12-11" id="toctree-collapse-12-11"/><div class="collapse"><a class="reference internal" href="../../../solutions/reference-designs/admv96s-wgbe-ek1/index.html">ADMV96S-WGBE-EK1</a><label for="toctree-collapse-12-11"><div class="icon"></div></label></div><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../../solutions/reference-designs/admv96s-wgbe-ek1/hardware-guide/index.html">Hardware User Guide</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../../solutions/reference-designs/admv96s-wgbe-ek1/software-guide/index.html">Software User Guide</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../../solutions/reference-designs/adrd8012-01Z/index.html">ADRD8012-01Z</a></li>
-<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-12-11" id="toctree-collapse-12-11"/><div class="collapse"><a class="reference internal" href="../../../solutions/reference-designs/eval-adbms6830bmsw/index.html">EVAL-ADBMS6830BMSW</a><label for="toctree-collapse-12-11"><div class="icon"></div></label></div><ul>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-12-12" id="toctree-collapse-12-12"/><div class="collapse"><a class="reference internal" href="../../../solutions/reference-designs/eval-adbms6830bmsw/index.html">EVAL-ADBMS6830BMSW</a><label for="toctree-collapse-12-12"><div class="icon"></div></label></div><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../../solutions/reference-designs/eval-adbms6830bmsw/software-guide/index.html">Software User Guide</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-12-12" id="toctree-collapse-12-12"/><div class="collapse"><a class="reference internal" href="../../../solutions/reference-designs/eval-cn0503-ardz/index.html">EVAL-CN0503-ARDZ</a><label for="toctree-collapse-12-12"><div class="icon"></div></label></div><ul>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-12-13" id="toctree-collapse-12-13"/><div class="collapse"><a class="reference internal" href="../../../solutions/reference-designs/eval-cn0503-ardz/index.html">EVAL-CN0503-ARDZ</a><label for="toctree-collapse-12-13"><div class="icon"></div></label></div><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../../solutions/reference-designs/eval-cn0503-ardz/cn0503-software/index.html">Software User Guide</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../../solutions/reference-designs/eval-cn0503-ardz/fluorescence-measurement/index.html">Fluorescence Measurement Demo</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../../solutions/reference-designs/eval-cn0503-ardz/nitrate-measurement/index.html">Nitrate Measurement Demo</a></li>
@@ -352,19 +367,19 @@ Content on this topic
 <li class="toctree-l2"><a class="reference internal" href="../../../solutions/reference-designs/eval-cn0575-rpiz/index.html">EVAL-CN0575-RPIZ</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../solutions/reference-designs/eval-cn0577-fmcz/index.html">EVAL-CN0577-FMCZ</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../solutions/reference-designs/eval-cn0581-ebz/index.html">EVAL-CN0581-EBZ</a></li>
-<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-12-13" id="toctree-collapse-12-13"/><div class="collapse"><a class="reference internal" href="../../../solutions/reference-designs/eval-cn0584-ebz/index.html">EVAL-CN0584-EBZ</a><label for="toctree-collapse-12-13"><div class="icon"></div></label></div><ul>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-12-14" id="toctree-collapse-12-14"/><div class="collapse"><a class="reference internal" href="../../../solutions/reference-designs/eval-cn0584-ebz/index.html">EVAL-CN0584-EBZ</a><label for="toctree-collapse-12-14"><div class="icon"></div></label></div><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../../solutions/reference-designs/eval-cn0584-ebz/digital-template/index.html">Digital Template Model</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../../solutions/reference-designs/eval-cn0584-ebz/matlab-configuration/index.html">MATLAB Configuration</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../../solutions/reference-designs/eval-cn0585-fmcz/index.html">EVAL-CN0585-FMCZ</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../solutions/reference-designs/eval-ess1-sys/index.html">EVAL-ESS1-SYS</a></li>
-<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-12-14" id="toctree-collapse-12-14"/><div class="collapse"><a class="reference internal" href="../../../solutions/reference-designs/eval-isomax/index.html">EVAL-ISOMAX</a><label for="toctree-collapse-12-14"><div class="icon"></div></label></div><ul>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-12-15" id="toctree-collapse-12-15"/><div class="collapse"><a class="reference internal" href="../../../solutions/reference-designs/eval-isomax/index.html">EVAL-ISOMAX</a><label for="toctree-collapse-12-15"><div class="icon"></div></label></div><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../../solutions/reference-designs/eval-isomax/hardware_guide/index.html">Hardware User Guide</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../../solutions/reference-designs/eval-isomax/software_guide/index.html">Software User Guide</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-12-15" id="toctree-collapse-12-15"/><div class="collapse"><a class="reference internal" href="../../../solutions/reference-designs/eval-ltpa-kit/index.html">EVAL-LTPA-KIT (LTpowerAnalyzer Kit)</a><label for="toctree-collapse-12-15"><div class="icon"></div></label></div><ul>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-12-16" id="toctree-collapse-12-16"/><div class="collapse"><a class="reference internal" href="../../../solutions/reference-designs/eval-ltpa-kit/index.html">EVAL-LTPA-KIT (LTpowerAnalyzer Kit)</a><label for="toctree-collapse-12-16"><div class="icon"></div></label></div><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../../solutions/reference-designs/eval-ltpa-kit/hardware_guide/index.html">EVAL-LTPA-KIT Hardware User Guide</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../../solutions/reference-designs/eval-ltpa-kit/software_guide/index.html">EVAL-LTPA-KIT Software Guide</a></li>
 </ul>
@@ -398,6 +413,7 @@ Content on this topic
 <li class="toctree-l2"><a class="reference internal" href="../../../learning/workshops_introduction_to_electronics/index.html">Introduction to Electronics</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../learning/workshops_embedded_baremetal/index.html">Embedded Baremetal</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../learning/workshops_embedded_linux/index.html">Embedded Linux</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../learning/workshops_applied_systems_control/index.html">Applied Systems Control Workshop</a></li>
 </ul>
 </li>
 </ul>
@@ -486,7 +502,7 @@ attenuation of 1/3, so the amplifier must have a gain of 3. The circuit shown
 in <a class="reference internal" href="#fig-wien-simple"><span class="std std-numref">Figure 1</span></a> is a simple Wien bridge oscillator with a 1.0kHz
 output that illustrates this principle.</p>
 <figure class="align-center" id="id1">
-<span id="fig-wien-simple"></span><a class="reference internal image-reference" href="../../../_images/williams_simple_wien_bridge_osc.png"><img alt="../../../_images/williams_simple_wien_bridge_osc.png" src="../../../_images/williams_simple_wien_bridge_osc.png" style="width: 600px;" />
+<span id="fig-wien-simple"></span><a class="reference internal image-reference" href="https://media.githubusercontent.com/media/jvelasc2/documentation-staging/main/docs/university/active_learning/wien_bridge_oscillator/williams_simple_wien_bridge_osc.png"><img alt="https://media.githubusercontent.com/media/jvelasc2/documentation-staging/main/docs/university/active_learning/wien_bridge_oscillator/williams_simple_wien_bridge_osc.png" src="https://media.githubusercontent.com/media/jvelasc2/documentation-staging/main/docs/university/active_learning/wien_bridge_oscillator/williams_simple_wien_bridge_osc.png" style="width: 600px;" />
 </a>
 <figcaption>
 <p><span class="caption-number">Figure 1 </span><span class="caption-text">1.0kHz Wien Bridge Oscillator</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
@@ -540,7 +556,7 @@ functionality</p></li>
 <strong>wheatstone_bridge.asc</strong> LTspice simulation shown in
 <a class="reference internal" href="#fig-wheatstone-ltspice"><span class="std std-numref">Figure 2</span></a>.</p>
 <figure class="align-center" id="id2">
-<span id="fig-wheatstone-ltspice"></span><a class="reference internal image-reference" href="../../../_images/wheatstone_ltspice.png"><img alt="../../../_images/wheatstone_ltspice.png" src="../../../_images/wheatstone_ltspice.png" style="width: 600px;" />
+<span id="fig-wheatstone-ltspice"></span><a class="reference internal image-reference" href="https://media.githubusercontent.com/media/jvelasc2/documentation-staging/main/docs/university/active_learning/wien_bridge_oscillator/wheatstone_ltspice.png"><img alt="https://media.githubusercontent.com/media/jvelasc2/documentation-staging/main/docs/university/active_learning/wien_bridge_oscillator/wheatstone_ltspice.png" src="https://media.githubusercontent.com/media/jvelasc2/documentation-staging/main/docs/university/active_learning/wien_bridge_oscillator/wheatstone_ltspice.png" style="width: 600px;" />
 </a>
 <figcaption>
 <p><span class="caption-number">Figure 2 </span><span class="caption-text">Wheatstone Bridge Simulation</span><a class="headerlink" href="#id2" title="Link to this image"></a></p>
@@ -566,14 +582,14 @@ peaking somewhere slightly less than 2kHz. Probe node Vcd next. Notice the
 extremely sharp null in response, making it very easy to locate the exact
 resonant frequency of 1.59kHz.</p>
 <figure class="align-center" id="id3">
-<span id="fig-basic-wien-ltspice"></span><a class="reference internal image-reference" href="../../../_images/basic_wien_ltspice.png"><img alt="../../../_images/basic_wien_ltspice.png" src="../../../_images/basic_wien_ltspice.png" style="width: 400px;" />
+<span id="fig-basic-wien-ltspice"></span><a class="reference internal image-reference" href="https://media.githubusercontent.com/media/jvelasc2/documentation-staging/main/docs/university/active_learning/wien_bridge_oscillator/basic_wien_ltspice.png"><img alt="https://media.githubusercontent.com/media/jvelasc2/documentation-staging/main/docs/university/active_learning/wien_bridge_oscillator/basic_wien_ltspice.png" src="https://media.githubusercontent.com/media/jvelasc2/documentation-staging/main/docs/university/active_learning/wien_bridge_oscillator/basic_wien_ltspice.png" style="width: 400px;" />
 </a>
 <figcaption>
 <p><span class="caption-number">Figure 3 </span><span class="caption-text">Wein Bridge Frequency Response Simulation</span><a class="headerlink" href="#id3" title="Link to this image"></a></p>
 </figcaption>
 </figure>
 <figure class="align-center" id="id4">
-<span id="fig-basic-wien-ltspice-result"></span><a class="reference internal image-reference" href="../../../_images/basic_wien_ltspice_result.png"><img alt="../../../_images/basic_wien_ltspice_result.png" src="../../../_images/basic_wien_ltspice_result.png" style="width: 400px;" />
+<span id="fig-basic-wien-ltspice-result"></span><a class="reference internal image-reference" href="https://media.githubusercontent.com/media/jvelasc2/documentation-staging/main/docs/university/active_learning/wien_bridge_oscillator/basic_wien_ltspice_result.png"><img alt="https://media.githubusercontent.com/media/jvelasc2/documentation-staging/main/docs/university/active_learning/wien_bridge_oscillator/basic_wien_ltspice_result.png" src="https://media.githubusercontent.com/media/jvelasc2/documentation-staging/main/docs/university/active_learning/wien_bridge_oscillator/basic_wien_ltspice_result.png" style="width: 400px;" />
 </a>
 <figcaption>
 <p><span class="caption-number">Figure 4 </span><span class="caption-text">Frequency Response Simulation Result</span><a class="headerlink" href="#id4" title="Link to this image"></a></p>
@@ -589,7 +605,7 @@ impedance, zero output impedance, and no offset or gain error. But it allows us
 to experiment with ideal cases, to gain some intuition into the Barkhausen
 criterion and test out some assertions made in the background information.</p>
 <figure class="align-center" id="id5">
-<span id="fig-wien-bridge-vcvs-gain"></span><a class="reference internal image-reference" href="../../../_images/wien_bridge_vcvs_gain.png"><img alt="../../../_images/wien_bridge_vcvs_gain.png" src="../../../_images/wien_bridge_vcvs_gain.png" style="width: 400px;" />
+<span id="fig-wien-bridge-vcvs-gain"></span><a class="reference internal image-reference" href="https://media.githubusercontent.com/media/jvelasc2/documentation-staging/main/docs/university/active_learning/wien_bridge_oscillator/wien_bridge_vcvs_gain.png"><img alt="https://media.githubusercontent.com/media/jvelasc2/documentation-staging/main/docs/university/active_learning/wien_bridge_oscillator/wien_bridge_vcvs_gain.png" src="https://media.githubusercontent.com/media/jvelasc2/documentation-staging/main/docs/university/active_learning/wien_bridge_oscillator/wien_bridge_vcvs_gain.png" style="width: 400px;" />
 </a>
 <figcaption>
 <p><span class="caption-number">Figure 5 </span><span class="caption-text">Wien Bridge Oscillator with Ideal Gain Stage</span><a class="headerlink" href="#id5" title="Link to this image"></a></p>
@@ -603,7 +619,7 @@ to zero and has no further effect on the circuit’s operation.
 Run the simulation, and probe the output node. Results should look similar to
 <a class="reference internal" href="#fig-wien-bridge-vcvs-g-2p97"><span class="std std-numref">Figure 6</span></a>.</p>
 <figure class="align-center" id="id6">
-<span id="fig-wien-bridge-vcvs-g-2p97"></span><a class="reference internal image-reference" href="../../../_images/wien_bridge_vcvs_g_2p97.png"><img alt="../../../_images/wien_bridge_vcvs_g_2p97.png" src="../../../_images/wien_bridge_vcvs_g_2p97.png" style="width: 400px;" />
+<span id="fig-wien-bridge-vcvs-g-2p97"></span><a class="reference internal image-reference" href="https://media.githubusercontent.com/media/jvelasc2/documentation-staging/main/docs/university/active_learning/wien_bridge_oscillator/wien_bridge_vcvs_g_2p97.png"><img alt="https://media.githubusercontent.com/media/jvelasc2/documentation-staging/main/docs/university/active_learning/wien_bridge_oscillator/wien_bridge_vcvs_g_2p97.png" src="https://media.githubusercontent.com/media/jvelasc2/documentation-staging/main/docs/university/active_learning/wien_bridge_oscillator/wien_bridge_vcvs_g_2p97.png" style="width: 400px;" />
 </a>
 <figcaption>
 <p><span class="caption-number">Figure 6 </span><span class="caption-text">Ideal Wien Oscillator, G=2.97</span><a class="headerlink" href="#id6" title="Link to this image"></a></p>
@@ -616,7 +632,7 @@ value for E2 to 2.997, or about 0.1% too low, as shown in
 <a class="reference internal" href="#fig-wien-bridge-vcvs-g-2p997"><span class="std std-numref">Figure 7</span></a>. Oscillations continue longer, but still
 decay.</p>
 <figure class="align-center" id="id7">
-<span id="fig-wien-bridge-vcvs-g-2p997"></span><a class="reference internal image-reference" href="../../../_images/wien_bridge_vcvs_g_2p997.png"><img alt="../../../_images/wien_bridge_vcvs_g_2p997.png" src="../../../_images/wien_bridge_vcvs_g_2p997.png" style="width: 400px;" />
+<span id="fig-wien-bridge-vcvs-g-2p997"></span><a class="reference internal image-reference" href="https://media.githubusercontent.com/media/jvelasc2/documentation-staging/main/docs/university/active_learning/wien_bridge_oscillator/wien_bridge_vcvs_g_2p997.png"><img alt="https://media.githubusercontent.com/media/jvelasc2/documentation-staging/main/docs/university/active_learning/wien_bridge_oscillator/wien_bridge_vcvs_g_2p997.png" src="https://media.githubusercontent.com/media/jvelasc2/documentation-staging/main/docs/university/active_learning/wien_bridge_oscillator/wien_bridge_vcvs_g_2p997.png" style="width: 400px;" />
 </a>
 <figcaption>
 <p><span class="caption-number">Figure 7 </span><span class="caption-text">Ideal Wien Oscillator, G=2.997</span><a class="headerlink" href="#id7" title="Link to this image"></a></p>
@@ -626,7 +642,7 @@ decay.</p>
 the gain to 3.0 as shown in <a class="reference internal" href="#fig-wien-bridge-vcvs-g-3p0"><span class="std std-numref">Figure 8</span></a> and run the
 simulation.</p>
 <figure class="align-center" id="id8">
-<span id="fig-wien-bridge-vcvs-g-3p0"></span><a class="reference internal image-reference" href="../../../_images/wien_bridge_vcvs_g_3p0.png"><img alt="../../../_images/wien_bridge_vcvs_g_3p0.png" src="../../../_images/wien_bridge_vcvs_g_3p0.png" style="width: 400px;" />
+<span id="fig-wien-bridge-vcvs-g-3p0"></span><a class="reference internal image-reference" href="https://media.githubusercontent.com/media/jvelasc2/documentation-staging/main/docs/university/active_learning/wien_bridge_oscillator/wien_bridge_vcvs_g_3p0.png"><img alt="https://media.githubusercontent.com/media/jvelasc2/documentation-staging/main/docs/university/active_learning/wien_bridge_oscillator/wien_bridge_vcvs_g_3p0.png" src="https://media.githubusercontent.com/media/jvelasc2/documentation-staging/main/docs/university/active_learning/wien_bridge_oscillator/wien_bridge_vcvs_g_3p0.png" style="width: 400px;" />
 </a>
 <figcaption>
 <p><span class="caption-number">Figure 8 </span><span class="caption-text">Ideal Wien Oscillator, G=3.0</span><a class="headerlink" href="#id8" title="Link to this image"></a></p>
@@ -640,7 +656,7 @@ input impedance, would cause the gain to be slightly more or less than 3.</p>
 impossible in the real world, set the gain to 3.03 (1% too high) as shown in
 <a class="reference internal" href="#fig-wien-bridge-vcvs-g-3p03"><span class="std std-numref">Figure 9</span></a> and run the simulation.</p>
 <figure class="align-center" id="id9">
-<span id="fig-wien-bridge-vcvs-g-3p03"></span><a class="reference internal image-reference" href="../../../_images/wien_bridge_vcvs_g_3p03.png"><img alt="../../../_images/wien_bridge_vcvs_g_3p03.png" src="../../../_images/wien_bridge_vcvs_g_3p03.png" style="width: 400px;" />
+<span id="fig-wien-bridge-vcvs-g-3p03"></span><a class="reference internal image-reference" href="https://media.githubusercontent.com/media/jvelasc2/documentation-staging/main/docs/university/active_learning/wien_bridge_oscillator/wien_bridge_vcvs_g_3p03.png"><img alt="https://media.githubusercontent.com/media/jvelasc2/documentation-staging/main/docs/university/active_learning/wien_bridge_oscillator/wien_bridge_vcvs_g_3p03.png" src="https://media.githubusercontent.com/media/jvelasc2/documentation-staging/main/docs/university/active_learning/wien_bridge_oscillator/wien_bridge_vcvs_g_3p03.png" style="width: 400px;" />
 </a>
 <figcaption>
 <p><span class="caption-number">Figure 9 </span><span class="caption-text">Ideal Wien Oscillator, G=3.03</span><a class="headerlink" href="#id9" title="Link to this image"></a></p>
@@ -666,7 +682,7 @@ resistance. Ignoring the diodes, the gain would be 1+(10k+4.7k)/(4.7k+2k)), or
 about 3.19. But as the voltage across D1 and D2 approaches 600mV or so, the
 effective resistance of R2 is reduced, dropping the gain.</p>
 <figure class="align-center" id="id10">
-<span id="fig-wien-bridge-osc-complete-ltspice"></span><a class="reference internal image-reference" href="../../../_images/wien_bridge_osc_complete_ltspice.png"><img alt="../../../_images/wien_bridge_osc_complete_ltspice.png" src="../../../_images/wien_bridge_osc_complete_ltspice.png" style="width: 600px;" />
+<span id="fig-wien-bridge-osc-complete-ltspice"></span><a class="reference internal image-reference" href="https://media.githubusercontent.com/media/jvelasc2/documentation-staging/main/docs/university/active_learning/wien_bridge_oscillator/wien_bridge_osc_complete_ltspice.png"><img alt="https://media.githubusercontent.com/media/jvelasc2/documentation-staging/main/docs/university/active_learning/wien_bridge_oscillator/wien_bridge_osc_complete_ltspice.png" src="https://media.githubusercontent.com/media/jvelasc2/documentation-staging/main/docs/university/active_learning/wien_bridge_oscillator/wien_bridge_osc_complete_ltspice.png" style="width: 600px;" />
 </a>
 <figcaption>
 <p><span class="caption-number">Figure 10 </span><span class="caption-text">Complete, Practical Wien Bridge Oscillator</span><a class="headerlink" href="#id10" title="Link to this image"></a></p>
@@ -680,7 +696,7 @@ much faster. Startup time is also a concern in some real-world applications,
 and circuits similar to V3, such as a pulse generator made from logic gates can
 be employed. Experiment with different values for vkick (including zero).</p>
 <figure class="align-center" id="id11">
-<span id="fig-wien-bridge-osc-complete-result"></span><a class="reference internal image-reference" href="../../../_images/wien_bridge_osc_complete_result.png"><img alt="../../../_images/wien_bridge_osc_complete_result.png" src="../../../_images/wien_bridge_osc_complete_result.png" style="width: 400px;" />
+<span id="fig-wien-bridge-osc-complete-result"></span><a class="reference internal image-reference" href="https://media.githubusercontent.com/media/jvelasc2/documentation-staging/main/docs/university/active_learning/wien_bridge_oscillator/wien_bridge_osc_complete_result.png"><img alt="https://media.githubusercontent.com/media/jvelasc2/documentation-staging/main/docs/university/active_learning/wien_bridge_oscillator/wien_bridge_osc_complete_result.png" src="https://media.githubusercontent.com/media/jvelasc2/documentation-staging/main/docs/university/active_learning/wien_bridge_oscillator/wien_bridge_osc_complete_result.png" style="width: 400px;" />
 </a>
 <figcaption>
 <p><span class="caption-number">Figure 11 </span><span class="caption-text">Wien Bridge Oscillator Simulation Result</span><a class="headerlink" href="#id11" title="Link to this image"></a></p>
@@ -689,7 +705,7 @@ be employed. Experiment with different values for vkick (including zero).</p>
 <p>Next, construct the circuit as shown in <a class="reference internal" href="#fig-wien-bridge-layout"><span class="std std-numref">Figure 12</span></a>.</p>
 <p><strong>To Do:</strong> Needs Update - V- not connected</p>
 <figure class="align-center" id="id12">
-<span id="fig-wien-bridge-layout"></span><a class="reference internal image-reference" href="../../../_images/wien_bridge_layout.jpg"><img alt="../../../_images/wien_bridge_layout.jpg" src="../../../_images/wien_bridge_layout.jpg" style="width: 800px;" />
+<span id="fig-wien-bridge-layout"></span><a class="reference internal image-reference" href="https://media.githubusercontent.com/media/jvelasc2/documentation-staging/main/docs/university/active_learning/wien_bridge_oscillator/wien_bridge_layout.jpg"><img alt="https://media.githubusercontent.com/media/jvelasc2/documentation-staging/main/docs/university/active_learning/wien_bridge_oscillator/wien_bridge_layout.jpg" src="https://media.githubusercontent.com/media/jvelasc2/documentation-staging/main/docs/university/active_learning/wien_bridge_oscillator/wien_bridge_layout.jpg" style="width: 800px;" />
 </a>
 <figcaption>
 <p><span class="caption-number">Figure 12 </span><span class="caption-text">Complete Wien Bridge Oscillator</span><a class="headerlink" href="#id12" title="Link to this image"></a></p>
@@ -701,7 +717,7 @@ oscilloscope, results should be similar to
 <a class="reference internal" href="#fig-wien-bridge-osc-complete-scopy"><span class="std std-numref">Figure 13</span></a>.</p>
 <p><strong>To Do:</strong> Take nicer Scopyshot</p>
 <figure class="align-center" id="id13">
-<span id="fig-wien-bridge-osc-complete-scopy"></span><a class="reference internal image-reference" href="../../../_images/wien_bridge_osc_complete_scopy.png"><img alt="../../../_images/wien_bridge_osc_complete_scopy.png" src="../../../_images/wien_bridge_osc_complete_scopy.png" style="width: 600px;" />
+<span id="fig-wien-bridge-osc-complete-scopy"></span><a class="reference internal image-reference" href="https://media.githubusercontent.com/media/jvelasc2/documentation-staging/main/docs/university/active_learning/wien_bridge_oscillator/wien_bridge_osc_complete_scopy.png"><img alt="https://media.githubusercontent.com/media/jvelasc2/documentation-staging/main/docs/university/active_learning/wien_bridge_oscillator/wien_bridge_osc_complete_scopy.png" src="https://media.githubusercontent.com/media/jvelasc2/documentation-staging/main/docs/university/active_learning/wien_bridge_oscillator/wien_bridge_osc_complete_scopy.png" style="width: 600px;" />
 </a>
 <figcaption>
 <p><span class="caption-number">Figure 13 </span><span class="caption-text">Wien Bridge Oscillator Measured Output</span><a class="headerlink" href="#id13" title="Link to this image"></a></p>
