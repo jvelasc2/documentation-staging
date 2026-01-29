@@ -41,9 +41,9 @@ IEC TS 63444 standard.
 
    Illustrative Current Step Characteristics During Power-up
 
-There is sequencing implemented on the power circuit of the APL field device; 
-the power parts should never start-up at the same time such that it 
-will cause huge spike that violates the APL specifications or even cause 
+There is sequencing implemented on the power circuit of the APL field device;
+the power parts should never start-up at the same time such that it
+will cause huge spike that violates the APL specifications or even cause
 malfunction if it is not design as intended.
 
 In addition, a proper power sequence is necessary for the
