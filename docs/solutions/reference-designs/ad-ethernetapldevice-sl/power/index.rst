@@ -25,10 +25,8 @@ As shown in Table 2 - Electrical Characteristics of Power Classes, the
 specification. For the complete table, read the document's Table 6 of
 `Ethernet-APL Port Profile specification <https://library.fieldcommgroup.org/10186/TS10186/1.1/#page=20>`_.
 
-.. csv-table:: 
+.. csv-table:: Electrical Characteristics of Power Classes (Excerpt only/incomplete table)
    :file: power_class.csv
-
-   Electrical Characteristics of Power Classes (Excerpt only/incomplete table)
 
 Circuit Analysis
 ----------------

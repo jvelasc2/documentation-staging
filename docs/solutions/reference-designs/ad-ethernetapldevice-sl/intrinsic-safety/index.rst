@@ -7,22 +7,20 @@ Introduction
 ------------
 
 The :adi:`AD-ETHERNETAPLDEVICE-SL` has been certify for Ex ia IIC Ga intrinsic
-safety requirements according to IEC 60079-11:2011 standard. It also complies 
-with 2-WISE (two-wire intrinsically safe ethernet) standard dictated 
+safety requirements according to IEC 60079-11:2011 standard. It also complies
+with 2-WISE (two-wire intrinsically safe ethernet) standard dictated
 by IEC TS 60079-47.
 
 Key Parameters
 ~~~~~~~~~~~~~~
-The 10Base-T1L Ethernet connection can only be considered 2-WISE, 
-especially for the APL Field Device if it passed the specification of a 
+The 10Base-T1L Ethernet connection can only be considered 2-WISE,
+especially for the APL Field Device if it passed the specification of a
 Power Load Port indicated in IEC TS 60079-47.
 
 .. csv-table:: Electrical Data
    :file: specifications.csv
    :header-rows: 1
    :widths: auto
-
-   IEC TS 60079-47 Permissible Values for Power Load Port
 
 Disclaimer
 ~~~~~~~~~~
@@ -32,9 +30,9 @@ device. Such an encapsulation is required for:
 
 - protection against spark ignition (IEC 60079-11:2023, 6.6.2.1)
 - protection against thermal ignition (IEC 60079-11:2023, 6.6.2.2)
-- rating of electrical components from which the intrinsic safety depends 
+- rating of electrical components from which the intrinsic safety depends
   (IEC 60079-11:2023, 6.6.6)
-- application of separation distances through casting compound 
+- application of separation distances through casting compound
   (IEC 60079-11:2023, Table 7, column 3)
 
 The corresponding sections of EN 60079-11:2012 shall be applied in addition.
@@ -80,7 +78,7 @@ value for intrinsic safety.
 
 To qualify the component, independent measurements have been performed to
 verify that the energy stored by the inductor is within allowable limits at
-different conditions. Maximum allowable energy is 20uJ 
+different conditions. Maximum allowable energy is 20uJ
 for Ex ia IIC Ga equipment or device.
 
 .. figure:: CM-choke.png
@@ -108,7 +106,7 @@ against explosion, more information can be learned on IEC 60079-11.
    :width: 800 px
    :alt: APL Front End Circuit with LT8440 Power Conditioner
 
-   APL Front End Circuit with LT8440 Power Conditioner   
+   APL Front End Circuit with LT8440 Power Conditioner
 
 LT8440 as Power Limiter
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -127,8 +125,8 @@ higher capacitance values.
    :width: 700 px
    :alt: Required Frontend Design with Large Effective Capacitance &
          Inductance on the Load Side
-   
-   Required Frontend Design with Large Effective 
+
+   Required Frontend Design with Large Effective
    Capacitance and Inductance on the Load Side
 
 Zener Diodes
@@ -184,7 +182,7 @@ are considered fast enough to catch that energy before it can propagate out to
 the connector and cause a spark in the case of a short circuit. For ‘Ex ia’
 level protection, we need 3 polarity protection diodes in series to account
 for 2 simultaneous short circuit failures. The diode bridge and the additional
-series Schottky diode provide this protection. 
+series Schottky diode provide this protection.
 
 3.  The DM (differential mode) inductor can store energy that must be
 dissipated safely in the event of an open-circuit fault. The bank of diodes
@@ -196,7 +194,7 @@ because of the diode forward voltages being dependent on ambient temperature,
 which the diodes must block the ethernet signal of 1V p-p during forward
 biased, and must not be distorted by diodes conducting across the inductor.
 But if size and component count are a critical factor, it can be reduced to 2
-diodes in series in lesser or narrower temperature range.  
+diodes in series in lesser or narrower temperature range.
 
 Capacitor as DC Blocker
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -228,7 +226,7 @@ In a circuit analysis when safety against explosion is involved, assume or
 anticipate the fault that will occur in the circuit, and the protection parts
 of the circuit must withstand permissible or maximum electrical parameters
 that can happen during circuit failure dictated by the requirements or
-specifications. 
+specifications.
 
 The design of the Intrinsic Safety protection is categorized by the level of
 protection indicated by IEC 60079-11. The more stringent the protection, the
@@ -238,8 +236,6 @@ based on the number of countable faults.
 
 .. csv-table:: Level of Protection for Intrinsic Safety
    :file: level-of-protection.csv
-
-   Level of Protection for Intrinsic Safety
 
 Countable faults are the type of faults or failure that if it happens, it will
 caused explosion, hence it is “counted” because they are critical and must be
@@ -257,8 +253,6 @@ conditions are provided in IEC 60079-11.
 .. csv-table:: Simplified Clearance Table based on IEC 60079-11 Level of Protection
    :file: pcb_clearance.csv
 
-   Simplified Clearance Table based on IEC 60079-11 Level of Protection
-
 This states that there should be a distance for the traces for different
 permissible voltages, and when in between the protection parts. These distance
 requirements are not just for the traces in the same layer, but also on the
@@ -272,10 +266,8 @@ different layers, meaning the clearance requirement is 3-dimensional.
 Depending on the Level of Protection, there will be required copper thickness
 and redundancy of vias that may involve.
 
-.. csv-table:: Requirements for infallible circuit board Tracks and Vias
+.. csv-table:: Requirements for Infallible Circuit board Tracks and Vias
    :file: infallable_circuit_requirements.csv
-
-   Requirements for Infallible Circuit Board Tracks and Vias
 
 .. figure:: conservative_layout.png
    :width: 600 px

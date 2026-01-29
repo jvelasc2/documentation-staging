@@ -28,14 +28,10 @@ must still undergo on the FMEDA process with some common assumptions on its safe
 states, to verify that it will be at least functional safety ready.
 
 .. csv-table:: Targets for Safety Function of AD-EthernetAPLDevice-SL
-    :file: safety-targets.csv
-
-    Targets for Safety Function of AD-EthernetAPLDevice-SL
+   :file: safety-targets.csv
 
 .. csv-table:: General FMEDA Definitions
-    :file: fmeda-definitions.csv
-
-    General FMEDA Definitions
+   :file: fmeda-definition.csv
 
 All functional safety documentation like safety manuals and FMEDA are available
 upon request and may require non-disclosure agreement as part of confidentiality
@@ -66,9 +62,7 @@ timing included. Two variants with corresponding enabled trims as shown in Table
 which utilizes only three channels.
 
 .. csv-table:: Default Voltage Monitoring Channels
-    :file: voltage-monitoring.csv
-
-    Default Voltage Monitoring Channels
+   :file: voltage-monitoring.csv
 
 In addition, besides voltage monitoring of the microcontroller, there is also a
 temperature monitoring of MAX32690 using the MAX6613 small-packaged temperature
@@ -93,10 +87,10 @@ amplitude reading of the parts, or worse, the diagnostic parts will fail to
 power up at all.
 
 .. figure:: diagnostic-circuit.png
-    :width: 700 px
-    :alt: Diagnostic Circuit for the Microcontroller
-    
-    Diagnostic Circuit for the Microcontroller
+   :width: 700 px
+   :alt: Diagnostic Circuit for the Microcontroller
+
+   Diagnostic Circuit for the Microcontroller
 
 ADFS7124-4 Diagnostic Features
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -183,15 +177,11 @@ summary on what parameters are analyzed is included for the common part types
 used in the reference design.
 
 .. csv-table:: Parameters Needed for Derating Analysis
-    :file: derating-analysis-parameters.csv
-
-    Parameters Needed for Derating Analysis
+   :file: derating-analysis-parameters.csv
 
 Besides which parameters to analyze, it's important that generic parameters are
 established when initiating the derating analysis, especially if ambient
 temperature is involved.
 
 .. csv-table:: Generic Parameters for AD-EthernetAPLDevice-SL
-    :file: generic-parameters.csv
-
-    Generic Parameters for AD-EthernetAPLDevice-SL
+   :file: generic-parameters.csv
